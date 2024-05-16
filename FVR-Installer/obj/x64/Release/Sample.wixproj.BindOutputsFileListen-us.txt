@@ -1,0 +1,2 @@
+C:\Workspace\Wix-VS16\Sample\Sample\bin\x64\Release\en-us\Sample.msi
+C:\Workspace\Wix-VS16\Sample\Sample\bin\x64\Release\en-us\Sample.wixpdb

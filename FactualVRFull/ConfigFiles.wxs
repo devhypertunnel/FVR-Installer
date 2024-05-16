@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="CLIENTINSTALLPATH" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ConfigFilesGroup">
+            <Component Id="cmp2E7EA3E3448445B68DEBB1CADAC306A5" Directory="CLIENTINSTALLPATH" Guid="{0193349E-A43E-49B4-AAB6-0759AF37FE36}">
+                <File Id="fil166A6F73F3C593ED6BD27AA56C666B18" KeyPath="yes" Source="$(var.LocalConfig)\FactualVRConfig.ini" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

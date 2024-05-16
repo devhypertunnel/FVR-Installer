@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="DefaultInstallPath">
+            <Directory Id="dir6EAD64AE87DF5B4EECD54DF7E9E6C439" Name="iisftp" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="MainFilesGroup">
+            <Component Id="cmpBF3436857AB53C4B01C6DB31C0D716BE" Directory="dir5F9D315E2865C48ABA55285212114BD6" Guid="{E548644D-334D-4E6C-9C94-2473E4A30B9D}">
+                <File Id="fil6164E45A9B232CFD14FB7AF5EE74AB4C" KeyPath="yes" Source="$(var.Assets)\iisftp\scripts\ftpconfig.ps1" />
+            </Component>
+            <Component Id="cmp3D4E1B12C2F4B5E7A47C7E09118C525B" Directory="dir5F9D315E2865C48ABA55285212114BD6" Guid="{A40FC277-CB5E-4F9C-B19A-B03B844B346D}">
+                <File Id="filAB4F51A402DEADC8C934BF1FCA4BA027" KeyPath="yes" Source="$(var.Assets)\iisftp\scripts\servicerun.bat" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir6EAD64AE87DF5B4EECD54DF7E9E6C439">
+            <Directory Id="dir5F9D315E2865C48ABA55285212114BD6" Name="scripts" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>

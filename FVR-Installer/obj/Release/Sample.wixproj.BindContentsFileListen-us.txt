@@ -1,0 +1,2 @@
+C:\Workspace\Wix-VS16\Sample\Sample\..\FactualVR\Config\Standalone\FactualConfig.ini
+C:\Workspace\Wix-VS16\Sample\Sample\..\FactualVR\Win32\Release\FactualPlatform.exe

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+  xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle Version="20.06.02"
+    UpgradeCode="EF001F10-C4B5-4875-A865-D6EFA7044A00"
+    IconSourceFile="../Images/app.ico">
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
+      <bal:WixStandardBootstrapperApplication LicenseFile="Eula-en.rtf"
+        ShowVersion="yes" />
+    </BootstrapperApplicationRef>
+    <Chain>
+      <PackageGroupRef Id="IISFTP" />
+      <PackageGroupRef Id="Client" />
+      <!--<PackageGroupRef Id="Server" />-->
+    </Chain>
+  </Bundle>
+  <Fragment>
+    <!-- UI customization -->
+    <WixVariable Id="WixUIBannerBmp"
+      Value="..\Images\BannerTop.bmp" />
+    <WixVariable Id="WixUIDialogBmp"
+      Value="..\Images\Dialog.bmp" />
+    <Icon Id="Icon.exe"
+      SourceFile="..\Images\app.ico" />
+    <PackageGroup Id="IISFTP">
+      <MsiPackage Visible="yes"
+        Cache="no"
+        Compressed="no"
+        ForcePerMachine="yes"
+        Permanent="yes"
+        Vital="yes"
+        SourceFile="..\Build\en-us\FactualVR - IISFTP.msi" />
+    </PackageGroup>
+    <PackageGroup Id="Client">
+      <MsiPackage Visible="yes"
+        Cache="no"
+        Compressed="no"
+        ForcePerMachine="yes"
+        Permanent="yes"
+        Vital="yes"
+        SourceFile="..\Build\en-us\FactualVR - Client.msi" />
+    </PackageGroup>
+    <!-- <PackageGroup Id="Server">
+      <MsiPackage Visible="yes" Cache="no" Compressed="no" ForcePerMachine="yes" Permanent="yes" Vital="yes" SourceFile="..\Build\en-us\FactualVR - Server.msi" />
+    </PackageGroup> -->
+  </Fragment>
+</Wix>

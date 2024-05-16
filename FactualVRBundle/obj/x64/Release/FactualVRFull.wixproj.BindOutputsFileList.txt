@@ -1,0 +1,4 @@
+C:\Workspace\FVR-API-Installer\Build\FactualVR - IISFTP.msi
+C:\Workspace\FVR-API-Installer\Build\FactualVR - Client.msi
+C:\Workspace\FVR-API-Installer\Build\FactualVR - Full.exe
+C:\Workspace\FVR-API-Installer\Build\FactualVR - Full.wixpdb

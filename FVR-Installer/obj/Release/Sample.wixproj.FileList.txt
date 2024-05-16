@@ -1,0 +1,9 @@
+obj\Release\Product.wixobj
+obj\Release\WixUI_HK.wixobj
+obj\Release\ServerDlg.wixobj
+obj\Release\LicenseAgreementDlg_HK.wixobj
+C:\Workspace\Wix-VS16\Sample\Sample\bin\Release\en-us\Sample.msi
+C:\Workspace\Wix-VS16\Sample\Sample\bin\Release\en-us\Sample.wixpdb
+obj\Release\Sample.wixproj.BindContentsFileListen-us.txt
+obj\Release\Sample.wixproj.BindOutputsFileListen-us.txt
+obj\Release\Sample.wixproj.BindBuiltOutputsFileListen-us.txt

@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="dir284F7506F6934B1F90A912A5FF5C612A" Name="FactualVRPlatform_Data" />
+            <Directory Id="dirA0B406B6410D4593FBC03B487715FB24" Name="MonoBleedingEdge" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ClientFilesGroup">
+            <Component Id="cmp5BAF425C22A65B5B5AEA76641F8DB254" Directory="INSTALLDIR" Guid="{02CC82BB-C76B-45F6-884A-6F34077F95A6}">
+                <File Id="fil875870F24AD81602236C4A1B2EEC273A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform.exe" />
+            </Component>
+            <Component Id="cmp561B3CC2E849B21E03EC4B98A9751D9B" Directory="INSTALLDIR" Guid="{2F23985C-6296-41F4-B408-4111952ACC32}">
+                <File Id="fil6AEAE809AFF7DD1FFC7886A94145E433" KeyPath="yes" Source="$(var.Assets)\UnityCrashHandler64.exe" />
+            </Component>
+            <Component Id="cmp750A136A803854344B3A92B2172F77E3" Directory="INSTALLDIR" Guid="{AA167A4A-5C3E-4D2E-AD46-FA987AD515B8}">
+                <File Id="fil07303C72C4DE9FD973A894CAA7530589" KeyPath="yes" Source="$(var.Assets)\UnityPlayer.dll" />
+            </Component>
+            <Component Id="cmpDCB277D90DBEF157C99F82009D14E69A" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{ABA9C027-67EF-47F4-B237-222A22E28A3D}">
+                <File Id="fil87127F0AA0F4199BFCCF13F4BD6AEE3E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\app.info" />
+            </Component>
+            <Component Id="cmp77EE69D17391DCFB5FFA080AE36C724B" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{FEE9DCB0-614D-48DC-AFAF-CC03E7746B4C}">
+                <File Id="fil0E691C0D35C7A237D57757A8FA8CD848" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\boot.config" />
+            </Component>
+            <Component Id="cmp5334BAC76AD90F89672E6699849C07ED" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{3B129FD7-6AFD-488D-BAA5-6486253695FF}">
+                <File Id="filB91D042016AD1D7F1618B985147C221B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\globalgamemanagers" />
+            </Component>
+            <Component Id="cmp58F8C0A3071FC1103EB0D1A0DF2D1185" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{79BBF190-A8C6-481D-984C-9159E9ECA864}">
+                <File Id="fil9CB7328F187E6B34C5C8667C35AF610B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\globalgamemanagers.assets" />
+            </Component>
+            <Component Id="cmpF40599D2D9AD4EA86EDB5414204BDD5A" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{2D0E9E94-8A45-47CA-867C-F4C9C73E88CB}">
+                <File Id="filA4A21FB75CD3EA96DA61A5948760261C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\globalgamemanagers.assets.resS" />
+            </Component>
+            <Component Id="cmpAD3C2601C35EA2217007FC992281481E" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{3D4FC148-3528-4DF3-917F-39DA79DF1898}">
+                <File Id="fil91CFFBB3506125CBF2770FCF3B24DE3D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level0" />
+            </Component>
+            <Component Id="cmp5D89BDC69E029B5D6BE11F0408CB6071" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{939B76EA-93BA-4BFA-AE22-03AE5B8A07EB}">
+                <File Id="fil87406F28536032D366A7E00EB00EDF83" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level0.resS" />
+            </Component>
+            <Component Id="cmpCE7A42EA70F307FB33FEECE6033997E0" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{9283AC17-41D4-4C16-B29F-5116B38753B2}">
+                <File Id="fil470C62570BA37D7D89BE7916B5127F78" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level1" />
+            </Component>
+            <Component Id="cmpE24DA921C805CA7AD5D807620E6C2DCB" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{A7C6FD95-F1FB-4554-AE40-73E8A79B8370}">
+                <File Id="filD80DEBC418FB4373FFA6974672C58FA9" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level1.resS" />
+            </Component>
+            <Component Id="cmp6D4F31CD334B9BC1722C12A44AB57B37" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{7A4B9D5F-C68A-4EAB-8E6E-0F25D131E2FD}">
+                <File Id="filC12C4D78A5A4D0BB23033644C60DC4ED" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level2" />
+            </Component>
+            <Component Id="cmp45D2F4F8E49441D0BA31959C2F20CCA4" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{22F052C0-00C7-4B91-AE65-1FEE439DE80D}">
+                <File Id="fil246C9F416909D2D0FAC8F4E15BF5E9E1" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\level2.resS" />
+            </Component>
+            <Component Id="cmpDD5A081FE3552C54457AABD8C38FF80D" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{1BF3B2CF-CD32-46F8-A8DD-637FA709F190}">
+                <File Id="filE608371ED113535E8FC131602AF03073" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\resources.assets" />
+            </Component>
+            <Component Id="cmp8CAEEB603E6A52FBD1B88D1675CDE7BF" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{B036DD91-F20F-4ED0-B3E4-ACB0752DB72D}">
+                <File Id="filDEAA598657D920DDEEE2708DB303E686" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\resources.assets.resS" />
+            </Component>
+            <Component Id="cmp83207EEF76CED3C16871E5918930F7B9" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{0941F11A-F3C6-41D7-A519-755D24A8F07B}">
+                <File Id="fil731B24CB1335FF1CC7D1E34985FA5280" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\resources.resource" />
+            </Component>
+            <Component Id="cmpBC55DA8997852C321617A008DDE352B0" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{0E925718-9C1C-4C81-92AF-3FDF3EF9536C}">
+                <File Id="fil177D7E2E7A44DF9C61BB48C44E1A9100" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\sharedassets0.assets" />
+            </Component>
+            <Component Id="cmp3D2A459169E11A8B071EED93DCDCA333" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{80CF344D-5677-4559-AFB7-7560F979768D}">
+                <File Id="fil5205EB6ADE0219D1C0A6DC6C9109F705" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\sharedassets0.assets.resS" />
+            </Component>
+            <Component Id="cmp8E0DEA3C959572CC21516F4F234A9B05" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{24AC6F4D-E9BD-4BB7-8E10-2845524A15A4}">
+                <File Id="fil3D0E943170C9940584F9AA76471D31AE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\sharedassets1.assets" />
+            </Component>
+            <Component Id="cmp9152CBFEB355F9DC040B3FA2F4EAE3EB" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{9953C816-0D21-4D19-9D5C-17E3447F4184}">
+                <File Id="fil597C03222A9EEBDD7B79F66211FB7404" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\sharedassets1.assets.resS" />
+            </Component>
+            <Component Id="cmpDEA20EB4D38DBB2CD8C01EFD2D321D2D" Directory="dir284F7506F6934B1F90A912A5FF5C612A" Guid="{1E397D2C-DF79-4E53-A2F2-91CFAFE36A8F}">
+                <File Id="fil2F01BD1A1A30BC170F85CCB5EFA29E1E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\sharedassets2.assets" />
+            </Component>
+            <Component Id="cmpB17434129C8B5EB74F22CBCD33427AA3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F6E09B0C-8D19-45C6-8A95-502177BF021C}">
+                <File Id="fil855773F5D1B0E06FA9674700387E838B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Accessibility.dll" />
+            </Component>
+            <Component Id="cmp34C4972C3077D54F07557AAA3C343E1D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{A18875DF-35C8-4A71-97DD-364D2E2447C5}">
+                <File Id="fil1DA1936A0D8B98909D4A879E86512E3E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Assembly-CSharp-firstpass.dll" />
+            </Component>
+            <Component Id="cmp736EB1CEFDE50F593EDDE15A1CAE5CCA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{7F302D57-4B2D-449B-BAD6-8DF754E26056}">
+                <File Id="fil1ADAB8B7DA7726217D835FC4D31BC644" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Assembly-CSharp.dll" />
+            </Component>
+            <Component Id="cmp5A54F7EDD77F501D9CBD2DCA4A796309" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{9FC1FC93-DD24-4B89-8CE1-15E20B9F5EE6}">
+                <File Id="fil6A83008CA2DB5FA87F095743228DF6F3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Byn.Awrtc.dll" />
+            </Component>
+            <Component Id="cmp01574F0A04958EFB0B612E12073C5AB9" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{579457C0-5675-4C37-B2B9-E5D1683A9C64}">
+                <File Id="filC7337C4D8A986BD41BE50A10C8595FC7" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Byn.Awrtc.Native.dll" />
+            </Component>
+            <Component Id="cmp3EDA9422D0E8F0BF8948251E2851304A" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D4F06BD9-C8A8-4503-BA9E-800204ECB565}">
+                <File Id="fil957221CF708317FF1D1D7F3C9DC40096" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\com.unity.multiplayer-hlapi.Runtime.dll" />
+            </Component>
+            <Component Id="cmp9C9F59E945E535AACA7C8359C9918BF4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5950918D-49D1-4312-8E03-5831A77E97B0}">
+                <File Id="fil08B0EDD30FA7B02FFD956AD0F09FA835" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\FileBrowserWin.dll" />
+            </Component>
+            <Component Id="cmpF763B78EB2F378B91C4F2C03ACC2F861" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{94E2C371-C2C0-4A66-8DB0-A6502BE22AFE}">
+                <File Id="filCACF4CC0671CA406045AE6E03728D83B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\InteractionEngineUtility.dll" />
+            </Component>
+            <Component Id="cmp8B793F04331C220CA8B3BD9BC11B8902" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{0A631688-0E2E-4C8D-99EC-D97D6EF9E7AC}">
+                <File Id="fil43D44CEADD91D9091A4FA3B3502D1CCD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.CSharp.dll" />
+            </Component>
+            <Component Id="cmp03009A5E5168A9861AB8A85CDB071A66" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D005C094-9505-4C14-BAD6-7A8FACCB9E03}">
+                <File Id="fil7CF448B26615AC880E9335FC2DE4BD11" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Async.dll" />
+            </Component>
+            <Component Id="cmpA9EEBCC1F3C2EF727E7FB396B3413C6A" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1158F74E-D244-47A8-B79B-CB852A3831EF}">
+                <File Id="fil3EA3DB3A58698CAA8A9A2FB89A24E667" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.dll" />
+            </Component>
+            <Component Id="cmp593A4C39315D89393818433E193DDE88" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{31078AC8-D42D-4FBD-9A3C-43EF333B6798}">
+                <File Id="fil7B21F5F3B5AEDCEEBBFCDD184A07CEDD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Gltf.dll" />
+            </Component>
+            <Component Id="cmpBCF00BBE8FF7DC80B70FFB14EAD48324" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3692C07F-F61C-4998-AF1D-B9B7A0DC57E6}">
+                <File Id="fil68389496B91D8973E1546A870D02F74D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll" />
+            </Component>
+            <Component Id="cmp935228F93DF15E9BD376240ECE82B149" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{26254FFE-CD23-41FF-9DA7-1D314E49EF4F}">
+                <File Id="fil5568BFC4F71A255EBC5EC895B0E85729" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.dll" />
+            </Component>
+            <Component Id="cmp1AD57DDB914AB6C39A850AD0C38A1C67" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{FA268CEE-763E-45C5-B06E-3E28CBFC4D99}">
+                <File Id="fil891CFE1D9D7B6AA6B97A2DFDE633027F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.SDK.dll" />
+            </Component>
+            <Component Id="cmpBF52D97ECB57B988DF5DF67E17E707AA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B2B9CFA0-7993-45B6-8784-B2AC6C36EA44}">
+                <File Id="fil55FF2D82507A009A32F25CCB1A04B075" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.BoundarySystem.dll" />
+            </Component>
+            <Component Id="cmpBBAF1693BFA111A9E8AF9D54C4155777" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1AD0416A-24F9-48D7-B3F6-D0F4E71FD5B1}">
+                <File Id="filBEE4E83CE7BEB59DFA83E0E7C9025942" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll" />
+            </Component>
+            <Component Id="cmp3552995923CE95E8D54117F96DCB4CC1" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{2D940AE5-CC40-43A2-A6EC-B685E25054B5}">
+                <File Id="fil51243BA950DA7B941F09075BEBC74AA4" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll" />
+            </Component>
+            <Component Id="cmpFDFCB704E219E1EF1F3A42C6B10B0799" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{375C4CC7-8DE7-4806-A9A8-827F0AF632E5}">
+                <File Id="filC47FCC4ABDEA402C92014E747CA4378B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll" />
+            </Component>
+            <Component Id="cmpCA3D10A51FE6780BC409DB767A842161" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{483E2E3A-453B-4EF5-A2C7-2AB484325B6B}">
+                <File Id="fil81397C27E68C05BF4CDF0F8C1242286D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.InputSystem.dll" />
+            </Component>
+            <Component Id="cmp6DC4067886D646AF71DE410732A26373" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{074D88A1-C082-4C28-A341-3805450453B3}">
+                <File Id="fil7B3216CA147BD0113CF523646C85DE58" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll" />
+            </Component>
+            <Component Id="cmp18A60D64B5B8AA38C7C91AC803965B76" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AA87BDC7-729D-45BD-9334-5B84D726BC4A}">
+                <File Id="fil70E9420185B2E2D66996A5E69B1A5972" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll" />
+            </Component>
+            <Component Id="cmpE4323FAF6E6469DF1EF7A3BB97A5E5D3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B7BCD6F1-43B6-4CCC-9697-0038EE619A73}">
+                <File Id="fil34536CD422D8613833FAB96DFE466B72" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll" />
+            </Component>
+            <Component Id="cmpE7A7DC6D77E1BD6EF9D54E1B2E464D49" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{48193A8D-B422-4AA5-AA05-B48A68F816D7}">
+                <File Id="filDF850BA5CB8ECC3A4F75351D82E1053F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Mono.Data.Sqlite.dll" />
+            </Component>
+            <Component Id="cmp7629C861C16F69757E622F29DB78432D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{392EDDE9-EBE0-4696-8F4B-596EC1F40FD9}">
+                <File Id="fil257C9C6C2B351939DDDAA74151127862" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Mono.Posix.dll" />
+            </Component>
+            <Component Id="cmp207A13C14841E1457C4AAE354F054EE0" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B3D05954-96E1-437D-852F-F5BA0663CC13}">
+                <File Id="filE8D5793310A898E3206251CFF9A3E9B8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Mono.Security.dll" />
+            </Component>
+            <Component Id="cmp881921D0CA28A0CBE80ADCDD8585E1AD" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{01463EFB-ADEB-4558-9657-D6BC11D42C99}">
+                <File Id="fil6DC7B5BB3A799F562B2225A038596FFB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Mono.WebBrowser.dll" />
+            </Component>
+            <Component Id="cmpB993CC6E137A45AE1EAC83852A4C3D95" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1893F2B1-3B05-4774-B67A-E73A98D2CF45}">
+                <File Id="filAFDF1C1A19EF8B1F833BEA445CEA7943" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\mscorlib.dll" />
+            </Component>
+            <Component Id="cmpB9330C001555F21614656EA5C766C5E6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3017C115-E093-4EE0-B2BD-579A28C701EA}">
+                <File Id="fil1B5943DB4D7151AE788A373A3882546A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Newtonsoft.Json.dll" />
+            </Component>
+            <Component Id="cmpA317614A6F1BFFA728EA5E6E8D109BB7" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{7A3805A5-AA65-4763-9973-769AF0D841E5}">
+                <File Id="fil1D3165894F7F437FA9AF6E2D8ABC9F65" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Novell.Directory.Ldap.dll" />
+            </Component>
+            <Component Id="cmpD2421B400A1C9DB0463C1D920566EBE6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F0590FEE-8992-483F-8FC1-94068FD8F790}">
+                <File Id="fil97FDB277155ACF1F46155C7BB6789538" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\ObjReader.dll" />
+            </Component>
+            <Component Id="cmp2B4D8066328543F907BDDA7E5A387DAB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{27C84693-C42D-4CFA-89CB-2EE86BB35184}">
+                <File Id="filCDC8758E34E71F806FF956987A335403" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Ookii.Dialogs.dll" />
+            </Component>
+            <Component Id="cmp77794290AC74939AC86D2D2E98DF4193" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{10AFAF9B-0677-47DC-B223-C99F1F313574}">
+                <File Id="fil2CE7F0FCD87DE3B1857E0BFE6B896659" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Photon3Unity3D.dll" />
+            </Component>
+            <Component Id="cmp6DE12F6D7113A710A4BCEDFAF925D6F6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3540B21E-F0D1-48A8-B82C-FCEE0D5D17A3}">
+                <File Id="fil02505D958376748F6336F83F6DA8942A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonChat.dll" />
+            </Component>
+            <Component Id="cmpC3F2D3427BAB7C3182DF83CC0E5F5733" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B09A9DF1-9EE0-4204-9E74-0D5FFDE58D0C}">
+                <File Id="filB5D2E593EFD44C145BF1FFC4D9D89D75" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonRealtime.dll" />
+            </Component>
+            <Component Id="cmpB265BFB7E9425FB2F97F4742DCAC1FE4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{DA7CC092-EBDD-42DE-A17C-7B783E2FCDDB}">
+                <File Id="fil45A3001502A802CBEC818857304965DD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonUnityNetworking.dll" />
+            </Component>
+            <Component Id="cmpC06727A637458922DE12061AAD90E2E4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{71A8D044-A930-4611-BB51-00AB6D0B08B3}">
+                <File Id="fil0304E7FFC0148E0B19C07FBD72C53478" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonUnityNetworking.Utilities.dll" />
+            </Component>
+            <Component Id="cmp6DD25DF00C114B49E90D0D21932C7496" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{41A5A5C1-913F-4894-BB31-B8AE1F66A253}">
+                <File Id="filE0B91FA19091CC8865632D9DFDB0D511" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonVoice.API.dll" />
+            </Component>
+            <Component Id="cmp9718C8B3B0A394B73F0C5ACD49DD9A96" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5AFAAFBD-3607-43E7-A66F-46D027119F18}">
+                <File Id="fil327FB93466753F1FF105CC07AEFEBD03" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonVoice.dll" />
+            </Component>
+            <Component Id="cmpA1E743B06C83C68EC4334C50865FCC52" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{2D66BA0D-A767-4A96-9DA0-5FF77D4C9715}">
+                <File Id="fil6C5DA7B215B054EB0E517F357477B85C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonVoice.PUN.dll" />
+            </Component>
+            <Component Id="cmpD855BD4C34BC3A1E7DDCA1D1E590E824" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{276BFBA0-E8B0-4E23-8D03-109CBE019B53}">
+                <File Id="fil4AAA417FFB78E23A46E2F6C44DA94251" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\PhotonWebSocket.dll" />
+            </Component>
+            <Component Id="cmp641B3597A4075B41DA53D14D04B24B5D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{69CBF908-399F-4A9D-95D1-488B7526FEC9}">
+                <File Id="fil46E1736F53688FF5F971CC68D88BBF2C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.ComponentModel.DataAnnotations.dll" />
+            </Component>
+            <Component Id="cmpEFA717935C422A95C43E69A6F9232F06" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B2153D87-9FDE-4980-9C52-673967C50683}">
+                <File Id="fil2EF7C779D5CBC933E37765AE6EA1AD15" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Configuration.dll" />
+            </Component>
+            <Component Id="cmp5F95A94247F27FB22CAA92866828FD29" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{6E11A996-B6F6-4935-8EB0-63186163C17C}">
+                <File Id="fil33DA04B772F0F607646C9D6A0D686A1C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Core.dll" />
+            </Component>
+            <Component Id="cmp67B43BD6A3066AF457E8945D18FB2B2A" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{197F8F93-9C2D-4F58-9BC0-A132C750FD2A}">
+                <File Id="fil73AE16E468338A6366A45D7D5EE5C8E8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Data.dll" />
+            </Component>
+            <Component Id="cmpC3C97DF557BAA38682D3A9DA8288F4A2" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{63B54BE2-6C37-4099-8BB3-A53F829432A7}">
+                <File Id="fil574C654D54DC85C9BE60B7A14020C400" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Design.dll" />
+            </Component>
+            <Component Id="cmpEF085FC156C738ADEE56ED54E34441AB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F5E1C82A-7836-402C-B252-FDB68118B19F}">
+                <File Id="fil097F33A5A61F53B539793E46F92CD9AE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.DirectoryServices.dll" />
+            </Component>
+            <Component Id="cmp3F63560BABF4DCB3ADCFC7B832781E2B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8A0736C4-9065-4CA1-99CE-9B9E3FCDC9F6}">
+                <File Id="fil4F1233E6780CE1B24D83AA4682FBCB07" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.dll" />
+            </Component>
+            <Component Id="cmp0F26F68FECE7026F10540C6C54C24504" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D52D0F2F-37E2-48C7-9E93-DF10CD8A61FC}">
+                <File Id="fil46E89C43A3E76EDB646927ABFD161CC8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Drawing.Design.dll" />
+            </Component>
+            <Component Id="cmpAD35E532EB668E0885298A0CEFDDB042" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{767313DE-CF16-43D7-87F2-A7B7880A2AE9}">
+                <File Id="fil8E697895A61C7A222FFCDFA04018E82E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Drawing.dll" />
+            </Component>
+            <Component Id="cmp2A1DD23329B0178706129019CCC3B9FC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D2CF62BB-2514-4AE8-B5CC-1EA58BFC4DD5}">
+                <File Id="fil4497EAF1045F74FFD831CB47CE4A1D26" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.EnterpriseServices.dll" />
+            </Component>
+            <Component Id="cmpA4406C98C7C8FB382878BCF65AED73C6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{70D23087-6838-4123-BBD1-478917AEAC17}">
+                <File Id="fil656C47BD182AE2FB7E12B674B5FC4051" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Numerics.dll" />
+            </Component>
+            <Component Id="cmpB20041E5E59F72F1D7D51B31DE0EB94E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{7BB89990-90A2-41EE-A817-A8422C2DC165}">
+                <File Id="fil8B24E74A8A1D63EFBF675A4BB1AA8016" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Runtime.Serialization.dll" />
+            </Component>
+            <Component Id="cmp13E4DAF2A863A3DE09AB91E726048FC3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{99A9F04A-F088-45DB-9BBA-22BF16E767F3}">
+                <File Id="filF0903CCB26ABEC5B3FBCFE4DCE964C10" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Runtime.Serialization.Formatters.Soap.dll" />
+            </Component>
+            <Component Id="cmpC8C7F7F9D781D115A046D85E61DCC896" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8EE43B17-1DC6-4D26-B9C1-4EAB7F85C1D6}">
+                <File Id="filC956A52BB5E3667333CB4D1C24852C4A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Security.dll" />
+            </Component>
+            <Component Id="cmp62B2912A127C3CBE0DF667B6E06A83EC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{54DA61A1-2220-4CA9-82B0-3386BD98797E}">
+                <File Id="filC5E5BBBA5D9D4059F7BC9C1CB4BEB964" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.ServiceModel.Internals.dll" />
+            </Component>
+            <Component Id="cmpA03D06398DE5516C519A69414D2F1226" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{4BDA2641-28A2-4585-B8C4-23467BBFF461}">
+                <File Id="filCE37EB7C2AE30088A391826EB4528C98" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Transactions.dll" />
+            </Component>
+            <Component Id="cmp4E421F85F265BA28692F9B8D0C265B92" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E9165180-AE5E-434F-9363-3F143CC7D51F}">
+                <File Id="filFD003BBCEF4AD1699A4AFF1B1DCE2DED" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Web.ApplicationServices.dll" />
+            </Component>
+            <Component Id="cmp008A934B3C69E59196925638406362FB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CEAFDEFB-75C8-490A-8E5A-6F33EC87912E}">
+                <File Id="fil41A554EB5E99DD4CFAF1A6A374AAD712" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Web.dll" />
+            </Component>
+            <Component Id="cmpF8F6C1E650F65CE3DF22C6834B9CB881" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C344C0ED-8154-4FDA-B888-DB946079AE4F}">
+                <File Id="fil8BD067B87E74FC5F2B857AB6F4C1EC0F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Web.Services.dll" />
+            </Component>
+            <Component Id="cmp13E6224EE637F1A83769518CAD46ECA1" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5D3F46C6-4D2F-48DB-805F-813DF515C9A0}">
+                <File Id="filD68A3C75A04B60A5C8F18CB1ED6372D2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Windows.Forms.dll" />
+            </Component>
+            <Component Id="cmp5D53B629AB59363EDE39E24278968957" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C1E7539F-8197-43B0-B472-715CE7A6EAF3}">
+                <File Id="fil9C9C87DA5241352C503391B3FC4D2B52" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Xml.dll" />
+            </Component>
+            <Component Id="cmp9721611A46A2C111033B0FA48003C45B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{373BD9E9-8EED-46C1-BC38-C4BC3C5FC1E1}">
+                <File Id="fil6FFE0684C908A9215637A062F6C3D6A5" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\System.Xml.Linq.dll" />
+            </Component>
+            <Component Id="cmpA0ECE00F8C4D85C8F65D48F1F0D798D7" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{0983D4B0-E0B8-42A9-B541-072C1B320F16}">
+                <File Id="filAB877D8ED1976999B86E3D96E4F09345" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Unity.Subsystem.Registration.dll" />
+            </Component>
+            <Component Id="cmp23722531326849B2805D7CB49A2D9CDF" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CE16C557-3868-4231-A8CA-9297F9BF77EC}">
+                <File Id="filDA5499B4B68B141FE9E1898B17112200" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Unity.TextMeshPro.dll" />
+            </Component>
+            <Component Id="cmpA746AB1CC85DD3750D56F54D134EC794" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E61A945B-E5C6-4784-B5FE-BE610748AE70}">
+                <File Id="fil9C35918A1391DC7EB3D1E3B00BEE8A12" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Unity.XR.ARFoundation.dll" />
+            </Component>
+            <Component Id="cmp2A4EAD3CEEE78F8BDAC1C8B03E97B2BA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5B1A6D37-FF6E-42D2-B11F-66F6C89EC905}">
+                <File Id="fil6DDC9D03EDC37BAE570D5440C90F3BE2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\Unity.XR.ARSubsystems.dll" />
+            </Component>
+            <Component Id="cmp4E3C888C04F61DC64467D615F1FC377D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F179C685-91B5-4C53-B70B-EBF9D39EEEE2}">
+                <File Id="filCEE087C97C77B16C53C07E4ED3B67241" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AccessibilityModule.dll" />
+            </Component>
+            <Component Id="cmpA0618D30AD27C50E570B7385C1CF7A9B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D2A59F29-8D7E-4D0F-9B2B-68424EA48924}">
+                <File Id="filF77FA4D9D7FA7338A3C2FC93262B1F29" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AccessibilityModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp17EA6D02DB778F055D1BED35E9FA8F97" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B424CE1E-FF27-4422-A633-7B1C122530DA}">
+                <File Id="fil84B285ABA9BCB92D374275D6A0B7EFE9" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AIModule.dll" />
+            </Component>
+            <Component Id="cmpF222CB029D6C5D47EEE07546B65ABE03" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E3A65EA2-EB96-4711-B2E3-31E099CE99F5}">
+                <File Id="fil69E2F2070B5C5B432A852D127D471737" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpA661BF6DE64B238862128CAEC93F3F92" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D2D90BC1-09E6-41E0-A30D-A2B39BD26A4E}">
+                <File Id="filA75ABEAADACCEF91ADC0BBA6F321B5E5" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AndroidJNIModule.dll" />
+            </Component>
+            <Component Id="cmpADE480F22AF7D7E26CB33E0186036469" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{267A152A-4431-467B-AAEB-7D1AE8505166}">
+                <File Id="filA04A4464A5DE9384F7DD9205B3FCB703" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AndroidJNIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8E70A5323A6D6E62F5338A5387727D61" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{98206259-8397-4E02-88A4-5128B5726E82}">
+                <File Id="fil1212A838BEE3847AE4593F974D825366" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AnimationModule.dll" />
+            </Component>
+            <Component Id="cmp8632039583C6392044FE9C7998400F67" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B1837C59-B6A0-474E-ACB2-1304E4FB6FCD}">
+                <File Id="filA4DD4ACEC6BD5516127188EB5F52DAE0" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AnimationModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp12B49054E4E52FCF10774EEBDAB0F857" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C30CA7D5-5C34-46B8-85A5-9B0DE236EA39}">
+                <File Id="fil34C598AA9B7D47BD9AA8C221143F02FA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ARModule.dll" />
+            </Component>
+            <Component Id="cmp38B9CF10507AA66C635B64CFB4A7F554" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E0A8283A-3897-4318-A96E-7CCB3F4F087A}">
+                <File Id="fil2C7A3415B6317B61D7200F442C1003F2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ARModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp259A59DCA399C41E857E33655FC5428D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CC73A695-680C-4B69-B59A-193876903ABA}">
+                <File Id="filDE22691AD39B659C936444253CD58942" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AssetBundleModule.dll" />
+            </Component>
+            <Component Id="cmp679A18ECB1F165EB179BED86475F47D1" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F6BC68B1-C978-4CAD-AB8C-2953F0E8AB9F}">
+                <File Id="filDFA8EE42143AEA1B819EC7B87F864F45" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AssetBundleModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp906331ABD6AEFB97277A900D48BE146D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{53432B74-2776-4A15-B5B5-B85EB1533D5D}">
+                <File Id="filDAFABC26509D34698BC37DBD1F50B790" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AudioModule.dll" />
+            </Component>
+            <Component Id="cmp197F41F1098D8493D1F18B304F887E6F" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E66CDD95-5752-421E-8CB8-C55BCF335453}">
+                <File Id="filAE98B821D47DD9C299C099AA697CC422" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.AudioModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8373AA217C0B739D65E3ADD4540BC4DC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C1D773F7-BBE6-45EB-90D5-8432D418AB03}">
+                <File Id="fil4E5048D738F36B6C701CD7722BC656D0" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClothModule.dll" />
+            </Component>
+            <Component Id="cmp59BC1FFAD2BD064A6F8BF7432F3DB004" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8A0AF9A4-D30B-458F-9A30-1220C7496B92}">
+                <File Id="filA337BCCF756C1B0BD80327DE009F56DE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClothModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp48E0879B1BF03C1A27EC5D1D591E39CA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{7AF72328-197B-424F-8173-34D61898B612}">
+                <File Id="filE1C84A12E1D0E653AE0E81DEB2BC82CD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClusterInputModule.dll" />
+            </Component>
+            <Component Id="cmp655404AA1A414EE016AA2C5A96D4E8A3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5AC44F36-9759-4485-BD0B-DD110EF46BA4}">
+                <File Id="filAD4764700BF4DFDF6508071BFC55991F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClusterInputModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpDA0DF0A29975FFE88B4604996B8A18ED" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D08F7055-8978-4966-955D-238D25FACB08}">
+                <File Id="filB0B186B4F1F13725520B95B885878285" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClusterRendererModule.dll" />
+            </Component>
+            <Component Id="cmpBE69D25680F60BAE5171E7D57D94B4DC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E8BC8791-DCCF-4C0F-8995-5D1008104BA8}">
+                <File Id="fil3DCAD995E89A2E0C7C70AB8F8F5624E8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ClusterRendererModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp3059E5538795F1A5F9CBEE504E75F108" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{DA974585-A530-4194-B229-56EE5D060DA1}">
+                <File Id="fil129380B496F235B36706C271BAAD7509" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.CoreModule.dll" />
+            </Component>
+            <Component Id="cmpF44F733C24017ADBE0F8A6D618FA8830" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{20751EF6-7B07-46D6-B2F6-559029C9A20F}">
+                <File Id="filC3AEE7FBFC70EC8F4D4167FBF462342A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.CoreModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp17F3F64C93FF0C480D1CBD541F2700B6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B5F8EF40-9B79-4A58-82B4-6A63BF46D1AD}">
+                <File Id="fil008B14A28D83623B54D5C828212FD578" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.CrashReportingModule.dll" />
+            </Component>
+            <Component Id="cmp65419581BF0F39A8F606AC540280428F" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3D542724-98DD-43A2-BA30-3EB94BF7DE89}">
+                <File Id="fil876CE1D0FDF801EDB6103E8AA2634BE0" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.CrashReportingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpEA2A2CA373A7F5C1D296FFE0C7E0AC4B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AE34B425-9BEF-4CAD-8C17-F2B42D592ECD}">
+                <File Id="fil82A5297E3137E946DEFC73F0023EFE9F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.DirectorModule.dll" />
+            </Component>
+            <Component Id="cmpA72E9412AC2B84665E8E9131220D6FAD" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{54DD86DD-305A-4D4B-9180-F8C665C9E9A4}">
+                <File Id="fil41DDC2B5B1B6309760351C3110108F6C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.DirectorModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp1304771CF1BCA867C723168FDEA8F450" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{A614FD99-AF84-4CFF-BCA6-CA61C4417220}">
+                <File Id="fil13412CBB49D3B413BBC6F66277D3AC7C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.dll" />
+            </Component>
+            <Component Id="cmp9DD1F07C04B97142FD0992311BA7B196" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CE3351D1-32F8-487A-B473-540DAC2B94EE}">
+                <File Id="filECC698E5ED25F5A918C4CEF33716A94E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.dll.mdb" />
+            </Component>
+            <Component Id="cmp6288F11D019A91C16E2674FB03A78A19" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{BCA9148C-1375-4EC0-9EB9-3A9FCFCF34B8}">
+                <File Id="fil152EEFCD097520C0ADDD218D6E2A15A5" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.DSPGraphModule.dll" />
+            </Component>
+            <Component Id="cmp679FA5733FB033C546D2A4591C89104D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{0EA64F6B-F1DC-4D32-AC94-FBD15B5843CC}">
+                <File Id="filB1F660337B0DB239986DF618382C0FFB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.DSPGraphModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp516CCC46F65480B346A4983283B4A337" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D2B5C853-0EA1-4078-87A6-94854B12B8E4}">
+                <File Id="fil9DC5CBCFCD9FFBEEEA9DF0F9D2A69996" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.FileSystemHttpModule.dll" />
+            </Component>
+            <Component Id="cmp66E3D1C4AAADB9C140B595AD2B81F454" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B0F8FC68-4052-418E-94CD-F5DA80A19E9F}">
+                <File Id="filF9A8ACE2939A6F8537F6DC3DFBF9C989" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.FileSystemHttpModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp6F89D37AE54269630C6F4C9C14B4EB66" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AEBAD55B-4283-417B-AC29-1ECF094878E7}">
+                <File Id="fil70AFFA8AC3983E5FBFD4FC3F2E672EE1" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.GameCenterModule.dll" />
+            </Component>
+            <Component Id="cmpF64ABB240285D50A342F9CA51332F4B9" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{9B9ECC28-F750-4E89-BE8F-E0B3DB632C2E}">
+                <File Id="filEA228B474638EB74B25D5E359D856721" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.GameCenterModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp09DE033F37853A553226757A94B0C262" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D7B8BE7C-5FA1-4845-AA62-2C9AEA1C6C74}">
+                <File Id="filC7AA9AECB7D488AC48397104D23D6C24" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.GridModule.dll" />
+            </Component>
+            <Component Id="cmpF33BF8C87EA94F6FEC9DC3B44E4D9168" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AE6F5EA8-3A9F-474D-B846-37B53DBAACC0}">
+                <File Id="fil9E8305D25634FAA8E3B79D058F372501" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.GridModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp2D19F1D741BB86ED4984886EBC82D7D6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B88DEF85-F6E2-412C-823D-07D509C2F8AE}">
+                <File Id="fil85C4603F618EC51040BAA6F957759F01" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.HotReloadModule.dll" />
+            </Component>
+            <Component Id="cmp093B0DEB2F5CA4FAE78389E997C86FF8" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{6F385BBE-95FE-4A46-B116-E5A5C94E57BA}">
+                <File Id="fil33639C30A3F667C28E5A02BD43F6E848" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.HotReloadModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8C732D799BDA0CA1EC981874689D708B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{BC4630A2-99E0-4E2B-98EC-C9980B7BC641}">
+                <File Id="fil5AA7FD4F64DC30C6A7E28B324F04286F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ImageConversionModule.dll" />
+            </Component>
+            <Component Id="cmp7A609D259BEC5E4D251E532E25DB2BE4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D3F1C37C-8DE8-4CAD-9A3A-85AF6F901997}">
+                <File Id="fil1B88EE8E5AB047B90A431E7B6FA2568E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ImageConversionModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpCC067DDF90B5188245A8FDCD927C3B87" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E4883342-D859-4974-B13B-EC9F0B6A2A69}">
+                <File Id="filDE388E5DA7AE00C7E504993190561446" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.IMGUIModule.dll" />
+            </Component>
+            <Component Id="cmp8B6BDB6D06467164A2ACFB2CCE38BE7E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{4E084464-7140-4C69-A27D-929C477DAC59}">
+                <File Id="fil75B65AEE06E2BC1CC25BF7CE8FE07903" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.IMGUIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC4200210AE3D8A60288DBF88B46D4346" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CA45E7CE-6B42-43E3-BF4B-57C5BD8B2765}">
+                <File Id="fil76DF01DA6389A20705FE965B4267BCAC" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+            </Component>
+            <Component Id="cmp7084E0695DA654CB64B0F9F5162BF361" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{6209F170-D1C4-4CAB-83CD-1EC76F2E72CD}">
+                <File Id="fil67316C345B9F0C063715046BB3F76FC2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.InputLegacyModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp9F110ABC30AC4B21A0E10F372B59B414" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{49B84EA5-C8BA-420C-85A7-B557910A5383}">
+                <File Id="fil2CBB51A76F7C8CA3DDBA6B403670AE7A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.InputModule.dll" />
+            </Component>
+            <Component Id="cmp381324D57489F8AF8E8B915F18B2AF40" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F3D37223-CE46-4B4B-BFF0-0C6C8EBF6F04}">
+                <File Id="fil726BAE6BDCB1E5F00C28EE02C3B41D2C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.InputModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp1DD0D0FF9A42E37635CAFA527699AC56" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AFFA8591-B867-4DAB-BA6C-361D524BC5C3}">
+                <File Id="filE2CADE5EBA63AC5D88F3252162FC236C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.JSONSerializeModule.dll" />
+            </Component>
+            <Component Id="cmpF6E9B2146038D9720FB3DA65C3CD11C4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D31E3322-F993-4608-BDE3-976E15ACCCEA}">
+                <File Id="fil8688573F4AFDA40E4BF4CCCFCD25B655" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.JSONSerializeModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp5740BADCEF28C115F6A3A0B6AFCA6442" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{0DCA77B2-16D3-4603-B128-858422190C37}">
+                <File Id="fil1CD88001D876C118D46A8EFFB5BDE439" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.LocalizationModule.dll" />
+            </Component>
+            <Component Id="cmp7DFC3BE872DE3FBBFEF0D48D1B170114" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E931020F-45BA-42A1-B238-2BC64C1ABCE9}">
+                <File Id="fil7B9AB71DA5D7980F6B37AEBF313C7DAA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.LocalizationModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp5C7B0CFE66B4ED867791A59135F2E261" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{2ED7D30C-5427-4705-95A4-4AF4C639A16A}">
+                <File Id="fil60188CB61950B44775D0EA19CD51F227" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+            </Component>
+            <Component Id="cmpBCE45138F8CA1C9FD4B38B75D9AA2DE9" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C815741F-7380-46A7-9EF1-1139FF1B98BB}">
+                <File Id="fil41E566F1A0EC7E8FC3604B3E217A8B58" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ParticleSystemModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF13D12BA00E061113BEC79FB567F000D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F6D8A6E7-5089-4958-BE34-45BCC10C728A}">
+                <File Id="filDD2E31DAAFD298543CD2D21B70B91483" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.PerformanceReportingModule.dll" />
+            </Component>
+            <Component Id="cmp191FA2CC74DFCAFABC91A6AC95CCE193" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CE41EFA8-BEBB-4DE5-89D7-F96E77259581}">
+                <File Id="filBBE31D8CA1F6F9BDB91B67E10998F14D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.PerformanceReportingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp56A7E479E2103982104B17D204DCDE40" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{49427EF7-DB56-4E40-97A3-F04A332728D3}">
+                <File Id="fil9D65B50865B7480CEF69D38E19EDF50D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.Physics2DModule.dll" />
+            </Component>
+            <Component Id="cmp63174F357176DB7166D1ED94A5DE8BCA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{27E6583C-638F-430B-8CBF-99606506AE14}">
+                <File Id="fil5E693CCAD0AA0F87B4D3EB5BEF6DC3A0" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.Physics2DModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp76263894AD78A93D6AE7F8866E90BBB0" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CA1BCAC5-D02B-4EA4-9621-A9FA96594F1A}">
+                <File Id="fil1977CE429378C22AD388946D7D1D55B3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.PhysicsModule.dll" />
+            </Component>
+            <Component Id="cmp097EC3B44E58E863E09685A11C6F3414" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{50937FD9-BF19-4E3E-85B9-06CE1907A070}">
+                <File Id="fil24BBB7EF20DB4E71ABF8865A724936E3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.PhysicsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp639F0967E09BAEBDF01A6A6A807A1B5C" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D479D92A-02B1-4A0C-9739-A903ABF32E80}">
+                <File Id="filDBB67B8785588BB095637285756617EE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ProfilerModule.dll" />
+            </Component>
+            <Component Id="cmp2E4BB3AB4B30DC01D23A44C22CB18616" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{07DF28CA-C2A9-44BD-A11F-0B30FBA60C7A}">
+                <File Id="filFC4D8E5E8F26BA1F0D13922E2E135CD4" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ProfilerModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpB3A835228FA9BDF100A0D2DA3496F3B3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3B2C93D7-A17B-4639-B696-F0F3E2ADE68B}">
+                <File Id="fil8BCC637AF25E0155B24E00F481B068FE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ScreenCaptureModule.dll" />
+            </Component>
+            <Component Id="cmpFD08BA886AB4E8A4AF7227F588D19D32" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{FDDAE2BE-44C8-41E5-B7E1-30A48D2BD171}">
+                <File Id="filA8F2D456CD110B75FB6C2A608501CF34" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.ScreenCaptureModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpB1386E02E393F7289C2C355C0152AFDB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{DC43F5EF-01F7-4612-A7E4-247E84F20502}">
+                <File Id="filB2B309C69602FFD78AF00C7DA6A2E95D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SharedInternalsModule.dll" />
+            </Component>
+            <Component Id="cmp8760FD3B3D908AC1900E2588D1BACA0B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{6B0EABB1-D550-4AA3-B7F9-7E7CC3F8C182}">
+                <File Id="filD7FBE811645C54C8013F5B5A574547B7" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SharedInternalsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF74D12B38266997B59E4D6D6F32E962E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5F98E0BA-9AC9-4048-9C6E-BC484B0CCF1C}">
+                <File Id="fil39E4ACD465B2CA8F3898EE7AFFE4DB1B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SpatialTracking.dll" />
+            </Component>
+            <Component Id="cmp33178C441FF62BDC00F81A9617B9A6F2" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{63FF2F77-DB5C-4A31-8E3F-8D9000A805C6}">
+                <File Id="filB178DF9AA2BDF0D6C20D2DF3DD14C3C6" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SpriteMaskModule.dll" />
+            </Component>
+            <Component Id="cmpB0D697F92628B74BFB489112FB139FA2" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CC89ABD3-3C4C-4D38-9A9C-9BC7FE4BDFA8}">
+                <File Id="fil2837599D3278D92257F3723470A2169F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SpriteMaskModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp5BCC9E5CFADE977FBD4E070C400021CE" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{BA6177B7-671A-4FDF-9571-CEF16DCD6316}">
+                <File Id="fil0103CA09E75C8A59A31F1EEE9F21F586" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SpriteShapeModule.dll" />
+            </Component>
+            <Component Id="cmp4CDC7FCB92981B92484BA16D8B015F68" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8150310A-7466-4794-A868-2825BF05791F}">
+                <File Id="filB388BB08001FB55DB5E2AD6404A5825C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SpriteShapeModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp6E407C0F26FDE70855065DDEC69CCC33" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{931E34F3-8C94-4701-B809-2182629B493E}">
+                <File Id="fil178450EE0D05D34DA19E86EF76A14E32" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.StreamingModule.dll" />
+            </Component>
+            <Component Id="cmp39BC384EB1660AE06E9D8B3A13F5728C" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{7FBCBABA-95D2-4F80-AC5E-6EF1C9D852EF}">
+                <File Id="fil4E24CA246D130DAE01DDCBDDEB3C22C8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.StreamingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp4A40F58DBAE7EEC6DFF28A77823F4B10" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{76B5CE06-211A-4C38-87FA-676A143090C3}">
+                <File Id="filA5E41DAB9246B7725F6E892FE42F44E3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SubstanceModule.dll" />
+            </Component>
+            <Component Id="cmp847775E0F2EA2BBA33F44100B5813AA9" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8242D61B-5216-459C-8261-042A16F1F8B6}">
+                <File Id="filD06CB13FF88C60AAD89CD23DFBECA82B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.SubstanceModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpE8BCF47A7DCAC10FB501A1A0267E7235" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1C4F889D-FE09-43FF-9287-78E1C68DA896}">
+                <File Id="filAE9ABC91B80D136E72C892DF0FEAD637" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TerrainModule.dll" />
+            </Component>
+            <Component Id="cmpD5926AE29B6E70AA9FEAE1C84CD57B83" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E140619A-FAE8-45CB-A546-B7AE6BA37E98}">
+                <File Id="fil74B3D0EA7414488A35CAAD2AC47461C8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TerrainModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp69EF52D0D5F7C47007D2D6EAB7AADBFC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{4FEECC8C-002B-4A43-B4D6-1EC7D98A8AF9}">
+                <File Id="filC3760386765CAACB79911D5E499CDC96" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TerrainPhysicsModule.dll" />
+            </Component>
+            <Component Id="cmp963273A23DF8D61D1EFFB8803BCDD56E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{73FF1519-4D95-4F3D-8F53-707AFFB13EDF}">
+                <File Id="filF6FDE8A87F1711EFACD8D161A946C4EF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TerrainPhysicsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp532EE3D9AC8BBA5887E1E2BE0E924DEB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{923DAC3A-9128-4AE7-A1D2-0DF2A5044355}">
+                <File Id="fil5F8EA9CA590356676C05530817ED8C5B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TextCoreModule.dll" />
+            </Component>
+            <Component Id="cmpC89BDF64D68A6AF7DC3DF01D2B0D04BD" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E8CBF33D-3087-4570-905B-76FA4B485DCE}">
+                <File Id="filA0EC7F284ED653FFFA055442CB2FB283" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TextCoreModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpB49C285619D49EC3D2EFDFBCC7D9173E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5BFC015C-E479-4F60-895F-53444CBFCBF8}">
+                <File Id="fil7B5580D648576204AA56DD25D50B0EE3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TextRenderingModule.dll" />
+            </Component>
+            <Component Id="cmp553D9EE5AC87DEE274DE23F4A262952A" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{EF5CBC27-8FDA-4935-B38C-73706CE0D641}">
+                <File Id="fil69F48BC7AAC46898CC2F7B300CBA9CC1" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TextRenderingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC213A0669AB0455D89773CD7FA89CC6A" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E21F84A0-446F-4425-9CEC-3CAC7E560BDE}">
+                <File Id="fil8C5FCDF2439BF0A5B69086914AE24419" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TilemapModule.dll" />
+            </Component>
+            <Component Id="cmp0235C770A04968E2233344B398C91DCC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{2C1D001B-CFC3-433F-8F1B-10DCFE54FF89}">
+                <File Id="fil197C70FC6B15AC9EEA0CECD497943905" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TilemapModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp29B2F697E3ECE661ACEF936A577F8309" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1CBCF18E-F472-4707-B7F6-9AE3794AEC52}">
+                <File Id="fil3A086A3D0CB7DADC02DD9C0F65810A12" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TLSModule.dll" />
+            </Component>
+            <Component Id="cmp2818C5A8ACFF3C1F290621CED41443E7" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{89CE27F0-86ED-4319-925A-5BCC9EAC870D}">
+                <File Id="fil64E5026C780ED4D7435FE7B7AB6CDAEF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.TLSModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp23FEF546D0D36B7786750A66F3A706F4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{A38A853A-C55D-42A5-A812-66FED0B9E2D0}">
+                <File Id="fil14953D6F33807EEE0AB7EE512D521732" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UI.dll" />
+            </Component>
+            <Component Id="cmpF09C241F9A1CFE72C4E7CFA5B11FA078" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{5E45D4C4-DF4E-4756-9CE8-E163FDF2DBB9}">
+                <File Id="filAAF20E1960BCE252C670586628E49023" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UIElementsModule.dll" />
+            </Component>
+            <Component Id="cmpE6E2C3588977D7BA813B9BBE98183BEB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C14491B6-AFE1-414A-942B-F45CD204D5E4}">
+                <File Id="fil70472EFA569C300F60A3125A32170622" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UIElementsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp2C1CFB718A5FFAD692B51566D5B04BF4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B0D0852B-38D6-4794-89A2-99EE0E16D490}">
+                <File Id="fil79348B0EBE8BC781C167D15D90A5C05D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UIModule.dll" />
+            </Component>
+            <Component Id="cmpEB92EA64EDEA69CD523D68E5D9CC87C1" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{87CA51CC-38E6-45EE-B345-DB96A575DFDD}">
+                <File Id="fil8171BB144D6858A2BE293F2473CDD2C9" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp62C3E88196D2603044319E320854545E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{24F26CDB-4053-4211-89D0-644D408FC3B2}">
+                <File Id="fil16341AA948925C7672D194239A46198F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UmbraModule.dll" />
+            </Component>
+            <Component Id="cmp23627992A27AA7D1A99DD3B8AF75A6DF" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C008BECC-39D1-48E8-84D0-E7FA5E267314}">
+                <File Id="filAD0D5B3F81FB5AB309A672CCD9BCE6D6" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UmbraModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp486E6E8A12A84FA065BD8087B2812C21" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{C3285592-16C8-4C9A-A514-65EC36A14A5E}">
+                <File Id="filABE59C05569DFF017C05B97F09B8B4EF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UNETModule.dll" />
+            </Component>
+            <Component Id="cmpD127C1EFA974F38608DC653D1D6C451C" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{62A4D915-52F4-40BF-A6C3-7A709D5D246E}">
+                <File Id="fil932F2C4A1D9E46BEFBD8594D8675C15D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UNETModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp1BA329884F6C33E0D07554DCFD6841CA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{AAC93989-5A09-4FA8-A6D0-3C290F2E957D}">
+                <File Id="fil4E9A6AEEAC399243B0D7D573ABE72490" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityAnalyticsModule.dll" />
+            </Component>
+            <Component Id="cmpF5665E9CF325546D6FDCF42AADEFEA5D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{EF617E87-B103-40DC-89EB-775F67D09A17}">
+                <File Id="filEA0C6C819E98054A3CEC8E001070FAC8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityAnalyticsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp86E272F9C3224EB1BE8241315D475D01" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{56577502-EF5B-4E74-906D-8526E6A436C9}">
+                <File Id="fil1718BE037276DBEE9AE6A1B8CD111BF2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityConnectModule.dll" />
+            </Component>
+            <Component Id="cmp967EE516C882C8C3A8C2968B576BC819" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CDE95D67-4A99-43F5-BFAA-AF56B9D87949}">
+                <File Id="fil6A40B62CAD274989E7C717CF69956384" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityConnectModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpD54C420AF6D5C64676EDFC937EFD7711" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3054291E-AABF-4CEE-B607-AD4723368471}">
+                <File Id="fil87C53A4E1C5EC94440AF5CD77FEB55AD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityTestProtocolModule.dll" />
+            </Component>
+            <Component Id="cmpFB5C64D2CAFCB6D0B97309F1083D0993" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{9443EEFD-6B24-4C4F-9A18-3049F2C6841B}">
+                <File Id="filE095A1D27AC6086CCDAC3B7C41F6B8C2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityTestProtocolModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp2081BD8E99C5219E8D5225700950CA8C" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{03332A68-439A-4FB6-8897-C0A2504C24DA}">
+                <File Id="fil70CB2F8F8B10358C7953F15C606F898B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+            </Component>
+            <Component Id="cmp9E396BFE48EDC93D22BA42E56EC1AFAD" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{450A0789-A425-4280-BC43-CBB8C8311322}">
+                <File Id="fil787B689B25683BA4F06C0410A9011911" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpD50D9E0DDE11D410D688556EFB1BA7FC" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E080B3D3-F7A6-4583-9E60-6AB6AF47BDF6}">
+                <File Id="fil767C42D98FFD7D0683A5F461D8193DCA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll" />
+            </Component>
+            <Component Id="cmp70B51C40A37EFDAE56D3DC96D23DEFB2" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{996CB291-10F5-4B26-B33F-92E88B97415C}">
+                <File Id="fil1C3C10F2EF89FC160EACD92C93F9FA93" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp9141D7F5B4210A349024745A9F10B5C0" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1CE31E01-35E8-4130-9E37-DE677CAAB4DD}">
+                <File Id="filBCC3EBC1C509DD09CAC6CBB63FB3CFB3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestModule.dll" />
+            </Component>
+            <Component Id="cmp4036B40F5FF905325E03D6D27DF227C3" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B8E375FF-AC11-435F-BB48-17B3E8449FE0}">
+                <File Id="fil068D4E767E9DD37075C8C1F0BD3EAA0E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp56899A4814F8A546C399C2D836284B6B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{06F02D57-1873-453C-AFE8-B762957A36C2}">
+                <File Id="fil3ABEBDB33CB3EE2A7A36BC2FCE9A9CA6" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll" />
+            </Component>
+            <Component Id="cmpD1B70DB7C1C6947696CF8C859099310E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B4EAAD76-AC99-480B-A4EB-A7E4258595FC}">
+                <File Id="fil7D5629304DAA8B41338AD75C54F33662" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp2DC2861E9DC6559B236021CDE9D53887" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{9E8838F8-BAA2-4F89-B2E3-18565A577EF7}">
+                <File Id="fil42B9230D1C2C6FE5B4DD89FEEE63FE05" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll" />
+            </Component>
+            <Component Id="cmpBA544F97E777CB1D8C01ACF545997517" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E77B4C20-4A5C-4D2A-9656-00E89B232F40}">
+                <File Id="filFCA8CC50C03B16F5E8692D293F9050B4" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp671EA7DCA751E50823DB1B01158D396B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{219F7A18-7438-4B20-BCE4-F32368F71CAF}">
+                <File Id="filF901F2D4FDD7F1CF491F7CC1ED2590A8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VehiclesModule.dll" />
+            </Component>
+            <Component Id="cmpD6E6C154B5870C7233D01E3B66005D2E" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1FA7BAC3-1ACF-45C0-ABD8-96635129880D}">
+                <File Id="fil10D23928C13FD4B551BDF3BDCF6CC456" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VehiclesModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8E9DC96247E34A382789F80A28BE27D2" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{475D4AED-CDC6-48A5-8622-84473FE61736}">
+                <File Id="fil3B4DAF21E1B2330B924FDC9A4997509D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VFXModule.dll" />
+            </Component>
+            <Component Id="cmp9A81D8EBFFE9D26A4D623E098EE16F9B" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{3F26265C-720E-44D1-804E-59EB9B3DD33F}">
+                <File Id="filB5696B2490B9F0376EB0CD7062A935C7" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VFXModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp343946BA51739C06545992100034B5C6" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{82363D54-E823-4286-A869-B81A66F75FAA}">
+                <File Id="fil38AFDEA6393AAABBE25B3AAF27BC1C79" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VideoModule.dll" />
+            </Component>
+            <Component Id="cmpCB8310390A2EF1ADC4568F44889F33A9" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{E502A02C-98D2-4DC7-802A-004FF6BC3061}">
+                <File Id="fil7B93A7913396F67C50CCF8524A05CEFF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VideoModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp4A50578A16EF204118A92E126C6A63CF" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{9A3B9833-278F-40F6-B9CC-5D9CE28B8319}">
+                <File Id="fil4768CE865E774357F510DF685B076D01" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VRModule.dll" />
+            </Component>
+            <Component Id="cmp77C93B1FB808B631B5543CB6C5D8FBBB" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{78710411-3BD4-4275-9E31-9F0D9744559E}">
+                <File Id="fil03DFAD1BBB35F1B690800ECF0D5B59B6" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.VRModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp036938C41F58FD994B972EA697503EBD" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{1EC2A1F2-E30C-43B2-8362-8AFA3757D796}">
+                <File Id="fil5346F01C4BB7D7E1AC1752597EC9D06B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.WindModule.dll" />
+            </Component>
+            <Component Id="cmp0BF3579BC0CD489C65EF67BA28350640" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{8DF73FE0-65CB-4F03-9146-1A7148CFE23F}">
+                <File Id="fil05E313C5239958594D879BF3EF6226FB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.WindModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpA7B02B84FA55E461BB99A387CBA8E58D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{F69C739D-DC0E-49C5-A0D7-F052EFA42FB5}">
+                <File Id="fil57A3AD176563F9CD118E8810BFECC6AA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll" />
+            </Component>
+            <Component Id="cmpAD5734CAFA63FE4451716319AD6AD94D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{B2E3F84A-B7B6-4E1C-9FC7-9EB075FD4699}">
+                <File Id="fil63FFA9B9BAC9F0DDC4FD818B538169BA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.XRModule.dll" />
+            </Component>
+            <Component Id="cmpF9F48AD8A2412A11BA5C8DA827C62BBA" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{35D296F5-B58C-47AD-90B8-DF4E4600BE87}">
+                <File Id="filBEBF1C69FCC5D52702C8394C2F31ABD4" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\UnityEngine.XRModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp86F8EC11C05C83F5047185708A65A9E4" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{CB4A0EB2-4C24-4183-9DE5-C9B21D16148A}">
+                <File Id="fil9031862ACF6FA5F1577797F50FCE5DC1" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\WebRtcCSharp.dll" />
+            </Component>
+            <Component Id="cmpC7FEBF47574BECA5592784CEBD0D747D" Directory="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Guid="{D0A0360C-0C67-47B5-A7D3-CC6657DCC969}">
+                <File Id="fil3A9C9C5D2B139E92FDE665D9DD8525CF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Managed\wrtc.dll" />
+            </Component>
+            <Component Id="cmp495BBA4EBED85522F399BD5FD99BC688" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{2B74CF65-96F1-4FFC-8582-95F67CD2495E}">
+                <File Id="fil708EB7CA9AE7396183C64A89577C032C" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\AudioIn.dll" />
+            </Component>
+            <Component Id="cmp91801A078AAFE6CC0504388824B18B7B" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{E2514BA5-7218-41C3-AE52-634AA81891E4}">
+                <File Id="fil86296889CD36893D39C682474C90152A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\AudioPluginOculusSpatializer.dll" />
+            </Component>
+            <Component Id="cmp4539E79F6A2B98C9CBE04A46DF5B7382" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{9683EE8B-E0E5-4A12-A09D-1FAB7A735EA7}">
+                <File Id="filC486F2C71810F89E443271B1A7C0F38A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\boost_system-vc140-mt-1_60.dll" />
+            </Component>
+            <Component Id="cmp83CBB83944E9A50E17D7E647782E851D" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{D4831D66-FB28-46D1-8B34-900E22156560}">
+                <File Id="filB7C3095E8573FE2FB4727D49E06D2BE4" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\cbia.lib.blas.dyn.rel.x64.12.dll" />
+            </Component>
+            <Component Id="cmp5AA8F74F50D9B38DDE2AA6CBFF1D7990" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{1E717CC3-BF30-4CDD-B727-AB96036FF63D}">
+                <File Id="filB3F190E0D76324A3E2E9B39BD3CE63FA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\cbia.lib.lapack.dyn.rel.x64.12.dll" />
+            </Component>
+            <Component Id="cmp732E7BC4798D5FF3EC21A536F797CE98" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{2A2CAB5F-5518-4361-B443-CFA51DE83AAD}">
+                <File Id="fil45016BB0BE12829903D5C27F6B014A50" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\cublas64_80.dll" />
+            </Component>
+            <Component Id="cmpC78291DAB5B17B17BC485D8F6D958201" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{903AC6CE-C08B-4827-A78A-00D2F0B6553D}">
+                <File Id="filCFE232D27CE51332A250AC60D8554B8A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\cudart64_80.dll" />
+            </Component>
+            <Component Id="cmpD0D93F7263B45DA620B17CDF0360BDEE" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{76FE56FE-5661-4027-B7D8-6E9647A427C7}">
+                <File Id="filF45EA2F32EF3B5FC992EB029ECAF8E1B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\DualCameraInterface.dll" />
+            </Component>
+            <Component Id="cmp043443ED75282E58F3838196B23FE825" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{78413DFB-9BF4-4478-B1BF-95E2B6DDBFF1}">
+                <File Id="filCAB7D678DE318B18AA59EE5C584A78A8" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\Dual_Camera_Device_Intrinsic.dll" />
+            </Component>
+            <Component Id="cmp7A70887B1D36DE3FE14033AF69579F76" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{787BCCEF-60B3-4780-98A0-CBD7082D886F}">
+                <File Id="fil371DE2E0010AC91002B9B60429B45A61" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\freeglut.dll" />
+            </Component>
+            <Component Id="cmp626EEC6A324C8907229075442C3B03E6" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{57C1CEF6-74ED-4F2C-9740-85DAE10C1516}">
+                <File Id="fil285FD3E34B914168A888F67965017AC7" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\glew32.dll" />
+            </Component>
+            <Component Id="cmpC7D80F4BE9B1046780AA7B5F47DAE6A5" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{DEF0C07B-9B4B-48A4-8B38-805C041A4140}">
+                <File Id="fil21AFB5FC1506658F12EDACBF9BCB183F" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\glfw3.dll" />
+            </Component>
+            <Component Id="cmp5C837EDFB9F63095ED21B0D0DF03F68A" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{CD78A244-414B-4AA9-BEAA-967A43A20F5B}">
+                <File Id="filE88A68F67067CE9C1B9EB48F77FBD559" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\LeapC.dll" />
+            </Component>
+            <Component Id="cmpDD72D0E23E0F3ED5519159875D20B928" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{4D9146D6-A4A1-47FF-A67F-7C99E3173816}">
+                <File Id="fil4075738F022FE7FC201D7E93B723DCB0" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\libifcoremd.dll" />
+            </Component>
+            <Component Id="cmp24595BF11FE408DF489F35F4694B70DF" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{BCCD6D5E-F46E-4237-96CE-0EEB3156A2C2}">
+                <File Id="filCB2F0E5D690F8545870913AD1ED5FB54" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\libmmd.dll" />
+            </Component>
+            <Component Id="cmpF19171DB22CB96F15B4BCB0ADCEEEE06" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{2D1F6DD0-6C83-46A0-B06F-8EC8F204F1C2}">
+                <File Id="filC7DF4CB80539A80EBC6A3FBAE55035A2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\Module_Depth.dll" />
+            </Component>
+            <Component Id="cmp0ADB9CA0C6474C4251BA30015A95E7EE" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{988D5DAA-14D3-4F89-B4A5-1239885DA947}">
+                <File Id="filEB120226858ABE8F88A4B5843DC514E5" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\Module_Undistortion.dll" />
+            </Component>
+            <Component Id="cmp842C396A43E8C7F85659481A6A0057C9" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{C460EBA6-238E-4BBE-B23C-4B4953E0E310}">
+                <File Id="filBBDF7BB1F4E553901F321458A66CB8D1" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\NatCorder.dll" />
+            </Component>
+            <Component Id="cmpA4C7DFC8CB32CB650EC0C07347C4A53F" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{BE6764D1-721D-47E4-9CCD-60E8FAFD986D}">
+                <File Id="fil8B279778EF42AC00374FEE0C9CB9D598" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\nppc64_80.dll" />
+            </Component>
+            <Component Id="cmpA3B187E358A548F94943C946E7743A54" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{EAE03648-DCA7-4ED2-B578-FEEBA835122F}">
+                <File Id="filE7A62A9101B064D97FF050E88AF29928" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\nppi64_80.dll" />
+            </Component>
+            <Component Id="cmp9AB9821EAC3F35CFD62DB57491E954E3" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{86EF3233-2922-4EA4-8255-0D82A7DC350A}">
+                <File Id="fil075589AD3398D486770B0ECF3B4C92EF" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\OnFlyControl.dll" />
+            </Component>
+            <Component Id="cmp8F20E1FF9991CAFDBB0AC79B7C261A3D" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{02443C29-D6C5-4693-A404-01E5A64DBA1C}">
+                <File Id="fil31A9304CF01507FA70CAEB59C41A9130" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\OnFlyRectifyDll.dll" />
+            </Component>
+            <Component Id="cmp4FEC922EE20F95B8B3649ECF2B4238E5" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{7A7D24DE-1955-4D1B-90EA-34D2277CDF23}">
+                <File Id="fil6D7DD9893894906B4B5D708AD798CD02" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_calib3d310.dll" />
+            </Component>
+            <Component Id="cmp4BB4AAB0095DBBE5D744FF97DF62B5C0" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{E00B40C3-E520-438D-9F27-302635599CA1}">
+                <File Id="fil007E33C7467D01BE02EFBB5376E4AB72" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_core310.dll" />
+            </Component>
+            <Component Id="cmpCD4446F30EC8813C714C6240A36350F5" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{26D1B48F-40EC-42BF-A034-75B3607611B8}">
+                <File Id="fil98C128E40572C7A09191BAE08467FE20" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_cudawarping310.dll" />
+            </Component>
+            <Component Id="cmp53CF8ED6640ACEF7C88AEFB79C87361E" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{6EEEC898-68D2-4345-948B-345587411691}">
+                <File Id="filA8345895552732E8F4AE8330DED023A2" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_features2d310.dll" />
+            </Component>
+            <Component Id="cmp526FFF1AB6784A255FB368DA56AD5BCE" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{F3663620-954B-4A8F-B0FD-FCC664500387}">
+                <File Id="fil467788DF56A637312E57020723AF23DB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_flann310.dll" />
+            </Component>
+            <Component Id="cmp762227522BBB3341DED1749A50BF6869" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{C8D44677-6680-496A-AB91-D3C333CAAE1F}">
+                <File Id="filD4BC8A1044267A3AEC296D9D3155E4EB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_imgproc310.dll" />
+            </Component>
+            <Component Id="cmp8B0624B90AF67D9C7542846FC2415412" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{3C77F744-AABF-46C7-A2BE-E30ACEDEE926}">
+                <File Id="fil9119AFB0623E74BA1897C8885AC15819" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opencv_world310.dll" />
+            </Component>
+            <Component Id="cmp888D0937A91657779A8944E176FB6E9B" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{F7D22CE5-C142-40F3-9074-FDEF621764DC}">
+                <File Id="filF9FF573CFE1DD70017713C23218CAEB3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\openvr_api.dll" />
+            </Component>
+            <Component Id="cmp11C1BDD40C83478E5B0495469C509737" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{8BCA6258-3A08-40CB-81EC-6CE583FF810D}">
+                <File Id="filB2B7AB707617FC6A1663C7015D5851FD" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\opus_egpv.dll" />
+            </Component>
+            <Component Id="cmpF20B51FFC6A11B6D3CE5A68D08F2AE36" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{25F89B4E-7FF5-4AF0-8849-CC96D483FFE4}">
+                <File Id="filC553868BBAF7A6D8B70D255F3851764D" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\OVRPlugin.dll" />
+            </Component>
+            <Component Id="cmp347FC95E07EA125F91AB78772762C1EA" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{84EB892F-52A8-463B-A5DF-2B00E414FB61}">
+                <File Id="filA25D221E052E8926DEB10DA019B65EA3" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\path_registry.dll" />
+            </Component>
+            <Component Id="cmp4A3752EE3F77471F1B75A9DE91AFE765" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{3FE6E5C1-63FC-43C5-A355-FDF10C9067F0}">
+                <File Id="fil7F7BBE71ECBC574AA49781BB561C43BA" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\SRWorks_Log.dll" />
+            </Component>
+            <Component Id="cmp84C5684219AF80CE965576A68D2C88B3" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{A2FC7728-AB85-47A9-8779-E04193EAEFED}">
+                <File Id="filA05D69E0E3E20EB5940F24C01778414A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\svml_dispmd.dll" />
+            </Component>
+            <Component Id="cmp13531ED7B0AC5D042B2E346C73BFC24F" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{0B5D19DA-DC20-4BE3-B51B-A2D7FFF8836D}">
+                <File Id="fil01897BD94EAB8A38F68BFE72B9B8D0FB" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\ViveDepthSpatialAnalyzerLib.dll" />
+            </Component>
+            <Component Id="cmpA09EACF77D937B4177D81C00F8881214" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{F6BB794E-F4A4-49E6-9E14-B2D9444EC515}">
+                <File Id="filA5AD8AC7A62BC998856E2AE967AC415E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\ViveSR_API.dll" />
+            </Component>
+            <Component Id="cmp7C2AFD074A8721AF36F1DC3F4DD2754A" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{4DFAF3EF-CFF4-43DE-A1D3-459485F796AF}">
+                <File Id="fil75F5B17A9662AB0DB7D0674EA349BD6B" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\ViveSR_SystemMonitor.dll" />
+            </Component>
+            <Component Id="cmp996A9745947260B88C4AE4B873C29B7D" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{3F58C787-374E-4FAA-B1DC-34D4F5CCBAAC}">
+                <File Id="filDAB938AB48CE60AE45E7FC0C7F479988" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\ViveStaticReconstructionLib.dll" />
+            </Component>
+            <Component Id="cmpAB17F6F3879DCCE3C2F9D486E22D1BC6" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{838483EC-1DBD-4A40-8F56-2993D551D1D8}">
+                <File Id="fil8D1C107F964B8CE91F8FC4D14714D41A" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\webrtc-audio.dll" />
+            </Component>
+            <Component Id="cmp3A33B0476662F9F857DCC78EB38DC96E" Directory="dir072A38C495C5EE5D1471592AFE80DAFA" Guid="{3763741D-C4BB-464A-9D7F-459713EA638C}">
+                <File Id="filE3775B50C6BCBB8FBCF28D3E1E62C07E" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Plugins\webrtccsharpwrap.dll" />
+            </Component>
+            <Component Id="cmp486FC5B4616527327E470141D3C48002" Directory="dirDBFDD852D56F4802836893388E46AD6D" Guid="{912BB54B-6814-4F08-89FC-56231331DDCE}">
+                <File Id="fil652C79A4B1D44B2E3B1491A3A57756EE" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Resources\unity default resources" />
+            </Component>
+            <Component Id="cmpEBDEAEE13397A8BD0F14049CE3E51BBA" Directory="dirDBFDD852D56F4802836893388E46AD6D" Guid="{7B4A3C01-54D4-4BBC-A88D-61E8190804FA}">
+                <File Id="filC1E229BD5F9FCCCD44BC1D213F2140B6" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\Resources\unity_builtin_extra" />
+            </Component>
+            <Component Id="cmpF85325B70FD6DB2504F97F59B0D18554" Directory="dir3341BE8D9638545DF3907243067F7320" Guid="{E7339AE7-467E-4325-91DA-D7FCCEAD8560}">
+                <File Id="fil07ACFDEDA7C44E9C33D0A7DF9D805C95" KeyPath="yes" Source="$(var.Assets)\FactualVRPlatform_Data\StreamingAssets\ExternalProcesses\GetAllAdminProcesses.bat" />
+            </Component>
+            <Component Id="cmp2942C93C9163FD88D9A54552CE3C4ED7" Directory="dir671C5B8B831897BC7BB0B17567C0AF2E" Guid="{577A45A7-E41C-4D7E-AAE5-707D26FD3711}">
+                <File Id="fil13D56F15FB079A8027DF2AF56AC56CE4" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll" />
+            </Component>
+            <Component Id="cmp7DE61F93F36078326BF74D43A29CB79E" Directory="dir671C5B8B831897BC7BB0B17567C0AF2E" Guid="{30DCAE03-D92D-4A1A-97A8-88E1B7FED30F}">
+                <File Id="fil708D01429A23B1EE6DFCA2AB98D5E102" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll" />
+            </Component>
+            <Component Id="cmpA69F9393F3FC97A9A43CFBE6D639E650" Directory="dir0896512F906E7502E888E4C463E56173" Guid="{DFCE3CC4-5151-4EA0-8E49-B71DBFD576D8}">
+                <File Id="fil920724F5DDD85DE7858C1D3D51EE9B28" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\browscap.ini" />
+            </Component>
+            <Component Id="cmp49B2170FC0C675D99A1B7A068F0635A4" Directory="dir0896512F906E7502E888E4C463E56173" Guid="{A37CEE0F-3333-48CB-B8F5-702FAED5C93C}">
+                <File Id="fil1D7043A80A8894211240391FAECBD6A6" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\config" />
+            </Component>
+            <Component Id="cmp68AC8E41C8FE6FAFEE8B63D3EEF4B5F1" Directory="dirA4963E4031EDB56168B54161D3D104CB" Guid="{ED60245E-DDAB-41F6-8D9A-D01C65C22C4E}">
+                <File Id="fil0AA8B8E7C877DF21A451BA9BF8A39EEB" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmp6A1C3D5101EEE05852911029F1B176BD" Directory="dirA4963E4031EDB56168B54161D3D104CB" Guid="{4FEF230B-91E1-4C73-AC9F-205E71A6BFC4}">
+                <File Id="fil09717721E27C7A8071D4F3BE0FEC3DD0" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\2.0\machine.config" />
+            </Component>
+            <Component Id="cmp982216F675EFC455589B34BC27143FEF" Directory="dirA4963E4031EDB56168B54161D3D104CB" Guid="{C957A322-D12E-443F-9E02-39A401D3A9E8}">
+                <File Id="fil9C800E36B25DC8558EB89425F9F4A4AB" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\2.0\settings.map" />
+            </Component>
+            <Component Id="cmp4479C86C5B9E16DB084AC700245CAB94" Directory="dirA4963E4031EDB56168B54161D3D104CB" Guid="{5983753B-685B-4CB7-B063-4C074A35944D}">
+                <File Id="fil98A04FD9480499F8F87A579F40A93BE5" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\2.0\web.config" />
+            </Component>
+            <Component Id="cmp7FB533FD995BB2DF990A084D70C7874B" Directory="dir0329A7DCE3F4CAAD8B63468ADF0C07A0" Guid="{11D284E6-1972-4F52-B1FC-555A3C005815}">
+                <File Id="filD6C709ACC0764D45DA65A543813DF97C" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmp90F492F13712409D6BD854777B5EEFEA" Directory="dirFC4A40D249F4E309970979DE03E822C7" Guid="{9EBD9C47-585F-4553-B3E1-204E18109F26}">
+                <File Id="filBD28FAC1C521DA5D07D783F4A0781519" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmp2D153A3083383D1F48406F6E515F7A2B" Directory="dirFC4A40D249F4E309970979DE03E822C7" Guid="{76D8C337-E535-462E-84DD-A1442B2C81D3}">
+                <File Id="filE882740FB7D2F249D2D77E797E3A3822" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.0\machine.config" />
+            </Component>
+            <Component Id="cmp7541BE6E0D135661CF149B22C154F120" Directory="dirFC4A40D249F4E309970979DE03E822C7" Guid="{B09F04E9-3A90-4308-88EE-86565D66A6E9}">
+                <File Id="fil1CB391FCE02B1C9E98695E12F9F80059" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.0\settings.map" />
+            </Component>
+            <Component Id="cmp29003A7AEE6B6A3F73F3A44560017153" Directory="dirFC4A40D249F4E309970979DE03E822C7" Guid="{4C4DDF3D-E14C-4113-8189-C6492A3B9EBF}">
+                <File Id="filAEC9D4BB54B9112D0C0FEBDF09143EBE" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.0\web.config" />
+            </Component>
+            <Component Id="cmp3C8BBBBF9C7D5CFFCB401B319B9A1D09" Directory="dirF527446E74B9F3C3D18347792F5AB1A9" Guid="{B05291A5-5D80-402C-BA32-1D8B52E98036}">
+                <File Id="fil1EF9DFAD9BEC935F2E31A428A52335F4" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmpCB617F3B3E44AA4543B9A779FA2C37C4" Directory="dir9F93CFDBE1E9007BE915541C1F238E27" Guid="{98B69D83-1CB1-405A-BFB9-3706B83792C6}">
+                <File Id="fil0CFCF87646D4095404345418620D04F6" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmpB46869CCF453EBC81611A56B13782701" Directory="dir9F93CFDBE1E9007BE915541C1F238E27" Guid="{A602ABED-DF68-421B-91DC-F83871957F0B}">
+                <File Id="fil7FDAC416EF500C5C8C277D7CF10A52B8" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.5\machine.config" />
+            </Component>
+            <Component Id="cmpF830246A4624896FD72E54EC559D535F" Directory="dir9F93CFDBE1E9007BE915541C1F238E27" Guid="{2427EC55-D643-43C3-A2DC-397869B274E4}">
+                <File Id="filB7C8EE31F0817E4A69AAB859D4F71BC7" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.5\settings.map" />
+            </Component>
+            <Component Id="cmpD3337D4CF283AAE0F4F538ECA2C06614" Directory="dir9F93CFDBE1E9007BE915541C1F238E27" Guid="{11D8F702-EE4B-486F-B985-8F674783D0FE}">
+                <File Id="fil6163CFF8EC45C98F975FEDF0906304F4" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.5\web.config" />
+            </Component>
+            <Component Id="cmp7AB8A552E1322637F2EFD1437136FDFE" Directory="dirE96237D39F8F95D78D3CF194A89ABA38" Guid="{AFD283C7-FA02-4AE2-8E7C-0663A2F3D41B}">
+                <File Id="fil930A3B99A2672CBCCDA2D4EC058EE3C9" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmp10DCE4EB9D954523896D79D209DF0342" Directory="dir7FE7DCBB0F37B94FDA787EBC2FA78DDF" Guid="{5710F9A5-16A8-4732-BFB1-C7B846B664B6}">
+                <File Id="filB5E73517997C0AB4BE8CC38DD19238D6" KeyPath="yes" Source="$(var.Assets)\MonoBleedingEdge\etc\mono\mconfig\config.xml" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA4963E4031EDB56168B54161D3D104CB">
+            <Directory Id="dir0329A7DCE3F4CAAD8B63468ADF0C07A0" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir284F7506F6934B1F90A912A5FF5C612A">
+            <Directory Id="dir072A38C495C5EE5D1471592AFE80DAFA" Name="Plugins" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirF86C95D433CFFB7EEF0FE76A4DD2170A">
+            <Directory Id="dir0896512F906E7502E888E4C463E56173" Name="mono" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir284F7506F6934B1F90A912A5FF5C612A">
+            <Directory Id="dir1BF686F149AB96CD43A7BE4ECCA9669C" Name="StreamingAssets" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir1BF686F149AB96CD43A7BE4ECCA9669C">
+            <Directory Id="dir3341BE8D9638545DF3907243067F7320" Name="ExternalProcesses" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir284F7506F6934B1F90A912A5FF5C612A">
+            <Directory Id="dir4A96C1E08595AA0AFE422AB2FB5EFC26" Name="Managed" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA0B406B6410D4593FBC03B487715FB24">
+            <Directory Id="dir671C5B8B831897BC7BB0B17567C0AF2E" Name="EmbedRuntime" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir0896512F906E7502E888E4C463E56173">
+            <Directory Id="dir7FE7DCBB0F37B94FDA787EBC2FA78DDF" Name="mconfig" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir0896512F906E7502E888E4C463E56173">
+            <Directory Id="dir9F93CFDBE1E9007BE915541C1F238E27" Name="4.5" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir0896512F906E7502E888E4C463E56173">
+            <Directory Id="dirA4963E4031EDB56168B54161D3D104CB" Name="2.0" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir284F7506F6934B1F90A912A5FF5C612A">
+            <Directory Id="dirDBFDD852D56F4802836893388E46AD6D" Name="Resources" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9F93CFDBE1E9007BE915541C1F238E27">
+            <Directory Id="dirE96237D39F8F95D78D3CF194A89ABA38" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirFC4A40D249F4E309970979DE03E822C7">
+            <Directory Id="dirF527446E74B9F3C3D18347792F5AB1A9" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA0B406B6410D4593FBC03B487715FB24">
+            <Directory Id="dirF86C95D433CFFB7EEF0FE76A4DD2170A" Name="etc" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir0896512F906E7502E888E4C463E56173">
+            <Directory Id="dirFC4A40D249F4E309970979DE03E822C7" Name="4.0" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>

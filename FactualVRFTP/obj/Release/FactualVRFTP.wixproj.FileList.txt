@@ -1,0 +1,12 @@
+C:\Workspace\FVR-API-Installer\FactualVRFTP\bin\Release\FactualVR - IISFTP.msi
+C:\Workspace\FVR-API-Installer\FactualVRFTP\bin\Release\FactualVR - IISFTP.wixpdb
+obj\Release\Product.wixobj
+obj\Release\WixUI_HK.wixobj
+obj\Release\MainFiles.wixobj
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - IISFTP.msi
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - IISFTP.wixpdb
+obj\Release\FactualVRFTP.wixproj.BindContentsFileListen-us.txt
+obj\Release\FactualVRFTP.wixproj.BindOutputsFileListen-us.txt
+obj\Release\FactualVRFTP.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - IISFTP.msi
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - IISFTP.wixpdb

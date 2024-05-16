@@ -1,0 +1,10 @@
+obj\x64\Release\ReleaseFiles.wixobj
+obj\x64\Release\WixUI_HK.wixobj
+obj\x64\Release\ServerDlg.wixobj
+obj\x64\Release\LicenseAgreementDlg_HK.wixobj
+obj\x64\Release\Product.wixobj
+obj\x64\Release\Installer.wixproj.BindContentsFileListen-us.txt
+obj\x64\Release\Installer.wixproj.BindOutputsFileListen-us.txt
+obj\x64\Release\Installer.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Workspace\FVR-Install\Installer\Installer\bin\x64\Release\en-us\FactualVR.msi
+C:\Workspace\FVR-Install\Installer\Installer\bin\x64\Release\en-us\FactualVR.wixpdb

@@ -1,0 +1,4 @@
+C:\Workspace\FVR-Install\Installer\FactualVR\x64\Release\Server\iisftp\scripts\serviceinstall.bat
+C:\Workspace\FVR-Install\Installer\FactualVR\x64\Release\Server\ftpinstall.bat
+C:\Workspace\FVR-Install\Installer\FactualVR\x64\Release\Server\serviceinstall.bat
+C:\Workspace\FVR-Install\Installer\FactualVR\x64\Release\Server\iisftp\scripts\ftpconfig.ps1

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="CLIENTINSTALLPATH" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ClientFilesGroup">
+            <Component Id="cmp80D44122A0D2F05FDA95A34E16A72B32" Directory="CLIENTINSTALLPATH" Guid="{A2E51E04-A57C-4858-AFC1-28A324E5631A}">
+                <File Id="filBEAE5BB3BDFB2732DA1D4A1296E6538C" KeyPath="yes" Source="$(env.FvrApiClient)\FactualPlatform.exe" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

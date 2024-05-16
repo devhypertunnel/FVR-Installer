@@ -1,0 +1,13 @@
+obj\Release\ClientFiles.wixobj
+obj\Release\ClientInstallDirDlg_HK.wixobj
+obj\Release\FtpInstallDirDlg_HK.wixobj
+obj\Release\LicenseAgreementDlg_HK.wixobj
+obj\Release\Product.wixobj
+obj\Release\ServerFiles.wixobj
+obj\Release\WixUI_HK.wixobj
+obj\Release\ConfigFiles.wixobj
+obj\Release\FactualVRSusan.wixproj.BindContentsFileListen-us.txt
+obj\Release\FactualVRSusan.wixproj.BindOutputsFileListen-us.txt
+obj\Release\FactualVRSusan.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Susan.msi
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Susan.wixpdb

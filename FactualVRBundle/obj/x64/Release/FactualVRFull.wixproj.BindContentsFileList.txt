@@ -1,0 +1,2 @@
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - IISFTP.msi
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - Client.msi

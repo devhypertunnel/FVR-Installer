@@ -1,0 +1,2 @@
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Susan.msi
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Susan.wixpdb

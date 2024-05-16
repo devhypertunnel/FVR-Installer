@@ -1,0 +1,14 @@
+C:\Workspace\FVR-Installer\FVR-Installer\bin\x64\Debug\en-us\FactualVR.msi
+C:\Workspace\FVR-Installer\FVR-Installer\bin\x64\Debug\en-us\FactualVR.wixpdb
+obj\x64\Debug\WixUI_HK.wixobj
+obj\x64\Debug\LicenseAgreementDlg_HK.wixobj
+obj\x64\Debug\Product.wixobj
+obj\x64\Debug\FVR-Installer.wixproj.BindContentsFileListen-us.txt
+obj\x64\Debug\FVR-Installer.wixproj.BindOutputsFileListen-us.txt
+obj\x64\Debug\FVR-Installer.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Workspace\FVR-Installer-2\FVR-Installer\bin\x64\Debug\en-us\FactualVR.msi
+C:\Workspace\FVR-Installer-2\FVR-Installer\bin\x64\Debug\en-us\FactualVR.wixpdb
+obj\x64\Debug\ServerFiles.wixobj
+obj\x64\Debug\ClientFiles.wixobj
+obj\x64\Debug\ClientInstallDirDlg_HK.wixobj
+obj\x64\Debug\FtpInstallDirDlg_HK.wixobj

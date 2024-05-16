@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR" />
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ConfigFilesGroup">
+            <Component Id="cmp7C7D1CC81E1252C6732814A939A81085" Directory="INSTALLDIR" Guid="{D14B8363-BB56-4097-A3D4-6F5824E8239D}">
+                <File Id="fil456DD4C33418F7C1CA7E029F24531CD8" KeyPath="yes" Source="$(var.Config)\cleanup.ps1" />
+            </Component>
+            <Component Id="cmp1FF1065DD25D8B694B694AE71D1A7B4F" Directory="INSTALLDIR" Guid="{209B037B-D1E9-44D3-9CEB-111D06B39F59}">
+                <File Id="fil26D1EDBA9C8554AA78275A84949F9026" KeyPath="yes" Source="$(var.Config)\FactualVRConfig.ini" />
+            </Component>
+            <Component Id="cmp887ECFCEC513F74E09E6805AA9E9CEB6" Directory="INSTALLDIR" Guid="{95331C14-D9A2-4CAD-B98C-0BFD445551B0}">
+                <File Id="filAF3372F3265663CF3F1594BEA54D4159" KeyPath="yes" Source="$(var.Config)\setup.ps1" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

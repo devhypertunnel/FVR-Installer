@@ -1,0 +1,14 @@
+C:\Workspace\FVR-Installer\Assets\Server\iisftp\scripts\ftpinstall.ps1
+C:\Workspace\FVR-Installer\Assets\Server\photon\scripts\servicerun.bat
+C:\Workspace\FVR-Installer\Assets\Server\servicestop.bat
+C:\Workspace\FVR-Installer\Assets\Server\misc\scripts\createshortcut.ps1
+C:\Workspace\FVR-Installer\Assets\Server\photoninstall.bat
+C:\Workspace\FVR-Installer\Assets\Server\misc\scripts\fixshortcut.ps1
+C:\Workspace\FVR-Installer\Assets\Server\iisftp\scripts\ftpconfig.ps1
+C:\Workspace\FVR-Installer\Assets\Server\iisftp\scripts\ftpremove.ps1
+C:\Workspace\FVR-Installer\Assets\Server\servicerun.bat
+C:\Workspace\FVR-Installer\Assets\Server\iisftp\scripts\servicerun.bat
+C:\Workspace\FVR-Installer\Assets\Client\FactualPlatform.exe
+C:\Workspace\FVR-Installer\Assets\Server\servicestart.bat
+C:\Workspace\FVR-Installer\Assets\Server\serviceinstall.bat
+C:\Workspace\FVR-Installer\Assets\Server\photon\scripts\serviceinstall.bat

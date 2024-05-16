@@ -1,0 +1,4 @@
+..\Assets\IISFTP\iisftp\scripts\start.ps1
+..\Assets\IISFTP\iisftp\scripts\ftpconfig.ps1
+..\Assets\IISFTP\iisftp\scripts\setup.ps1
+..\Assets\IISFTP\iisftp\scripts\servicerun.bat

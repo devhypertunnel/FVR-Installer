@@ -1,0 +1,2 @@
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - IISFTP.msi
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - IISFTP.wixpdb

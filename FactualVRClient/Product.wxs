@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+
+  <!-- === Defines & Variables === -->
+
+  <!-- Full version number to display -->
+  <?define VersionNumber="20.06.02" ?>
+  <!-- UpgradeCode must remain the same for minor updates, but must be changed for a major update -->
+  <?define UpgradeCode="EF001F00-C4B5-4865-A865-D6EFA6044A00" ?>
+  <!-- URL to direct clients on add or remove -->
+  <?define InfoURL="https://factualvr.com/" ?>
+
+  <!-- === Main product installer configuration === -->
+
+  <!-- ID must be * for major updates to function correctly -->
+  <Product Id="*"
+    Name="!(loc.ApplicationName)"
+    Language="!(loc.Language)"
+    Version="$(var.VersionNumber)"
+    Manufacturer="!(loc.ManufacturerFullName)"
+    UpgradeCode="$(var.UpgradeCode)">
+
+    <!-- Installer options -->
+    <Package Id="*"
+      InstallerVersion="400"
+      Compressed="yes"
+      InstallScope="perMachine"
+      Description="!(loc.ProductDescription)"
+      Comments="!(loc.Comments) $(var.VersionNumber)" />
+
+    <!-- License agreement -->
+    <WixVariable Id="WixUILicenseRtf"
+      Value="dummy" />
+
+    <!-- UI customization -->
+    <WixVariable Id="WixUIBannerBmp"
+      Value="..\Images\BannerTop.bmp" />
+    <WixVariable Id="WixUIDialogBmp"
+      Value="..\Images\Dialog.bmp" />
+    <Icon Id="Icon.exe"
+      SourceFile="..\Images\app.ico" />
+
+    <!-- === Properties === -->
+
+    <!-- Add/remove programs -->
+    <Property Id="WIXUI_DONTVALIDATEPATH"
+      Value="1" />
+    <Property Id="ARPPRODUCTICON"
+      Value="Icon.exe" />
+    <Property Id="ARPHELPLINK"
+      Value="$(var.InfoURL)" />
+    <Property Id="ARPNOREPAIR"
+      Value="yes"
+      Secure="yes" />
+    <!-- Remove repair -->
+    <Property Id="ARPNOMODIFY"
+      Value="yes"
+      Secure="yes" />
+
+    <!-- Determine the directory of a previous installation (if one exists). If not INSTALLDIR stays empty -->
+    <Property Id="INSTALLDIR">
+      <RegistrySearch Id="DetermineClientInstallLocation"
+        Type="raw"
+        Root="HKLM"
+        Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)"
+        Name="ClientInstallLocation" />
+    </Property>
+
+    <Property Id="MSIUSEREALADMINDETECTION"
+      Value="1" />
+    <Property Id="WIXUI_INSTALLDIR"
+      Value="INSTALLDIR" />
+
+    <!-- Upgrade logic -->
+    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)"
+      AllowSameVersionUpgrades="yes" />
+
+    <!-- Installer properties -->
+    <CustomAction Id="SetARPINSTALLLOCATION"
+      Property="ARPINSTALLLOCATION"
+      Value="[INSTALLDIR]" />
+
+    <InstallExecuteSequence>
+      <Custom Action="SetARPINSTALLLOCATION"
+        After="InstallValidate" />
+    </InstallExecuteSequence>
+
+    <CustomAction Id="Setup"
+      Directory="INSTALLDIR"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "[INSTALLDIR]setup.ps1" -ShortcutName "FactualVR - Client.lnk" -ShortcutTarget "[INSTALLDIR]FactualVRPlatform.exe" -ShortcutDesc "Launch FactualVR client." -ShortcutWorkDir [INSTALLDIR]' />
+    <CustomAction Id="Cleanup"
+      Directory="INSTALLDIR"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -command "Remove-Item -Path [INSTALLDIR]setup.ps1 -Force"' />
+
+    <InstallExecuteSequence>
+      <Custom Action="Setup"
+        After="InstallFiles">NOT Installed AND NOT REMOVE</Custom>
+      <Custom Action="Cleanup"
+        Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction Id="CleanupFiles"
+      Directory="INSTALLDIR"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "[INSTALLDIR]cleanup.ps1" -TempPath [INSTALLDIR]_Temp' />
+
+    <InstallExecuteSequence>
+      <Custom Action="CleanupFiles"
+        After="InstallInitialize">(NOT UPGRADINGPRODUCTCODE) AND (REMOVE="ALL")</Custom>
+    </InstallExecuteSequence>
+
+    <!-- Launch conditions -->
+    <Condition Message="!(loc.OS2Old)">
+      <![CDATA[Installed OR (VersionNT >= 600)]]>
+    </Condition>
+    <?if $(var.Platform) = x64 ?>
+    <Condition Message="!(loc.x86VersionRequired)">
+      <![CDATA[VersionNT64]]>
+    </Condition>
+    <?endif?>
+    <?if $(var.Platform) = x86 ?>
+    <Condition Message="!(loc.x64VersionRequired)">
+      <![CDATA[NOT VersionNT64]]>
+    </Condition>
+    <?endif?>
+
+    <!-- === Directory structure === -->
+
+    <!-- Embedded cabinet file -->
+    <Media Id="1"
+      Cabinet="media1.cab"
+      EmbedCab="yes" />
+    <Directory Id="TARGETDIR"
+      Name="SourceDir">
+
+      <!--Client-->
+      <Directory Id="INSTALLDIR"
+        Name="FactualVR">
+        <Component Id="INSTALLDIR_comp"
+          Guid="E2FF7042-ED00-4FD9-BF74-C6E8AEE8E395">
+          <CreateFolder />
+          <util:RemoveFolderEx Property="INSTALLDIR" On="uninstall"/>
+          <RemoveFolder Id="INSTALLDIR" On="uninstall"/>
+        </Component>
+      </Directory>
+
+      <!-- Registry changes -->
+      <Component Id="RegValClientInstallLocation_comp"
+        Guid="A507892A-6AD4-4E7F-8396-AB2A104C2889">
+        <!-- This key will be removed on uninstall -->
+        <RegistryKey Root="HKLM"
+          Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)">
+          <RegistryValue Name="ClientInstallLocation"
+            Value="[INSTALLDIR]"
+            Type="string"
+            KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+    </Directory>
+
+    <!-- === Features === -->
+    <Feature Id="Client"
+      Title="!(loc.ApplicationName)"
+      Description="!(loc.FeatureCompleteDescription)"
+      Display="expand"
+      Level="1"
+      ConfigurableDirectory="INSTALLDIR">
+
+      <!-- Install harvested files -->
+      <ComponentGroupRef Id="ClientFilesGroup" />
+      <ComponentGroupRef Id="ConfigFilesGroup" />
+
+      <!-- GUI feature block -->
+      <Feature Id="ClientPackage"
+        Title="!(loc.FeatureClientPackageTitle)"
+        Description="!(loc.FeatureClientPackageDescription)"
+        Level="1">
+
+        <ComponentRef Id="INSTALLDIR_comp" />
+        <ComponentRef Id="RegValClientInstallLocation_comp" />
+      </Feature>
+    </Feature>
+
+    <!-- Define the installer UI -->
+    <UI>
+      <UIRef Id="WixUI_HK" />
+    </UI>
+  </Product>
+</Wix>

@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="CLIENTINSTALLPATH">
+            <Directory Id="dir9CC62EAFFA9842CB0787C0F229B39A5B" Name="FactualPlatform_Data" />
+            <Directory Id="dirC4E056E63F35A6265226986898FE0D8E" Name="MonoBleedingEdge" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="ClientFilesGroup">
+            <Component Id="cmp80D44122A0D2F05FDA95A34E16A72B32" Directory="CLIENTINSTALLPATH" Guid="{3144CDA3-A50D-41C7-8F04-FF871148953F}">
+                <File Id="filBEAE5BB3BDFB2732DA1D4A1296E6538C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform.exe" />
+            </Component>
+            <Component Id="cmp31DCD4956720D4EA3B840528E33671BE" Directory="CLIENTINSTALLPATH" Guid="{28E0D3C2-9406-4A05-8E84-0A526EB0F410}">
+                <File Id="fil20826BCF8B260CE6C3A846DB14272313" KeyPath="yes" Source="$(var.ClientAssets)\UnityCrashHandler64.exe" />
+            </Component>
+            <Component Id="cmpDD8C39A77BE064605E5D6A1270A1704E" Directory="CLIENTINSTALLPATH" Guid="{C67738B4-254F-4942-B65C-5B95E421372C}">
+                <File Id="filDDC1AF0AC00E0751D700FE9E313A0BC4" KeyPath="yes" Source="$(var.ClientAssets)\UnityPlayer.dll" />
+            </Component>
+            <Component Id="cmp626C8F02C140107BC8144CFD57AE86F5" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{75F11D2A-1388-4BF8-9C0A-0AEF1CBEF229}">
+                <File Id="filDB9996E0E5F1437DABE8DB672CBB41DF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\app.info" />
+            </Component>
+            <Component Id="cmp5DC76444010491B2F4C2AD72708B92C9" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{8282469E-1E63-4CB4-9BE8-526C986E1D3A}">
+                <File Id="filCD174DF9B655B5E989B6D5B631269640" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\boot.config" />
+            </Component>
+            <Component Id="cmp21DC94E1EEB2D59E17954C302D696EE3" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{D5DF4C32-DFE3-4D69-B5D6-7B81EEC5C7A0}">
+                <File Id="fil0FF112B6A1C425025B83CB778A7E25BA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\globalgamemanagers" />
+            </Component>
+            <Component Id="cmp91D5109FC3A4B2BE042045DFA55FC51E" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{3B7063F9-1AA8-4445-BFA7-E86F3F9F84A1}">
+                <File Id="fil99FEB05C0F19A2183FB1B7524CC45245" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\globalgamemanagers.assets" />
+            </Component>
+            <Component Id="cmpB4A0712F0CF356F86C8F91046CA1F417" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{15F2C687-92AF-4881-9390-77663B39E76B}">
+                <File Id="filE8FD44B42C5993000041585E696F2AFF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\globalgamemanagers.assets.resS" />
+            </Component>
+            <Component Id="cmp313B5AA538FD73A00BA447498C5E7F07" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{85FA7421-696C-4973-AE59-24BA6246F5BB}">
+                <File Id="filC78F7218B9052C959F376C1B7F2C9FB1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level0" />
+            </Component>
+            <Component Id="cmp6AE368B709A0882BEA22E789B2A92A4B" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{A8B73FF2-A8E2-4B9F-82DA-3FFFFDA18DEB}">
+                <File Id="fil2C2C21524107CAB73BE2F13C98881698" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level0.resS" />
+            </Component>
+            <Component Id="cmp6ED74920A084BE3540A650980D7303E3" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{7F44937F-4EB2-40EE-BF12-061EE0059C4A}">
+                <File Id="fil88D82077485F2DAEF537F2919A933952" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level1" />
+            </Component>
+            <Component Id="cmpCC73D14A38AB930DF8956681972502AB" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{67E8127E-BDE9-49A0-8F3F-02250654542A}">
+                <File Id="filAE3B895394D38E9FE37E8317611180F9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level1.resS" />
+            </Component>
+            <Component Id="cmp72B56A38AE095518DDA830FB1D953D08" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{71019235-8967-4EDB-A6AC-C8EF1966E116}">
+                <File Id="fil9E12A714D62789637FA16F1C28D741A1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level2" />
+            </Component>
+            <Component Id="cmp85823D9822D1171B03C1664B252E2DB6" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{3EC60B42-487C-4082-A4FF-6B023D2A3D1D}">
+                <File Id="filC18A52E30795C46426709A635DF0AF8E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level2.resS" />
+            </Component>
+            <Component Id="cmp7B18A63A1A29A4498E0ABD88CA66F19A" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{D9CDA0C9-5F22-4702-A3BD-7A496FEAE2CE}">
+                <File Id="fil54072EBB55B58D3C85BAF8102729788C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level3" />
+            </Component>
+            <Component Id="cmpF9862D3B77DC0D5A71F39D3FF5AF0F32" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{87150E71-7927-473C-A10D-C9722732F0D2}">
+                <File Id="fil1AF2B638D87FEB4E1C110A5CE080F369" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level3.resS" />
+            </Component>
+            <Component Id="cmp46F365872D95376B5A6A913D267D7014" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{9B01BC77-4E96-43F3-B1C2-6C3B05A80D56}">
+                <File Id="filAAB0D54A3C0FFDA3598D651B41FA4B8A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level4" />
+            </Component>
+            <Component Id="cmp28E9BC86F50D059E734D409C6A58447C" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{727C944C-652D-4F0C-9D01-869EF6565F70}">
+                <File Id="filDE8FBA5DED13A30BBF8BB3F64204D200" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level4.resS" />
+            </Component>
+            <Component Id="cmpF692B789B9E5E9D981130DB5E80673F4" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{79818D3B-17B4-4C1C-9649-4782A4FC705A}">
+                <File Id="filD681DE364150841BF80F8A21103B5BE4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level5" />
+            </Component>
+            <Component Id="cmp783379E4A2174A2B226299D273E175DB" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{D5DFD686-9CE5-4D1D-834D-FE290660ADBB}">
+                <File Id="fil486F1462AFB926C9C91216A77A411145" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level5.resS" />
+            </Component>
+            <Component Id="cmp5A1CA6BDC9E635FA15DD9DAB0AAA7D42" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{51C6D6F8-EC38-43D2-AE0D-540314C3DF7F}">
+                <File Id="fil6BE54AC854C5E988C3D07274FA9914E5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level6" />
+            </Component>
+            <Component Id="cmpE102074792B11401BAF0D51FE3731F43" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{52E19C15-145E-4EE0-962D-1ED3CA7EB5FC}">
+                <File Id="fil9792C17472709C523AB26EFF6344AA61" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level6.resS" />
+            </Component>
+            <Component Id="cmp525ABDA75F527B260F06DD9E482F2761" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{8F73FCD4-80AF-4041-B275-6424ED0A711E}">
+                <File Id="filE233E4EB8A54BC04EE4A2109569490E5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\level7" />
+            </Component>
+            <Component Id="cmpDBD1809ED932F89E0C36E0861D10CC67" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{934561D1-51B6-442B-A4DA-5CA7282514F4}">
+                <File Id="fil846064A2E4DE2CA47EF9D80C33EAA703" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\resources.assets" />
+            </Component>
+            <Component Id="cmp5F1B9E6F54279CD010B5036CC83B7F72" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{7F72D9DF-A5B8-47D7-9D41-CC801554A624}">
+                <File Id="filDBD6D117AD11F642A0456B7006803636" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\resources.assets.resS" />
+            </Component>
+            <Component Id="cmpE7F2D5E9B6385EA4F5BF6FF8AE572988" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{0D38EC41-39BC-412A-9B96-2F869E29D0E2}">
+                <File Id="filC566D2555C4A5E181B76B9A98BBB4139" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\resources.resource" />
+            </Component>
+            <Component Id="cmpB9AA01BFB106089F5FF308980FCDAC1A" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{9CF5438B-3002-40AF-B329-B92D20E883B9}">
+                <File Id="fil99878208D17CD3CF16E25792CDF7477F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets0.assets" />
+            </Component>
+            <Component Id="cmp53AE1019FC2038BE1C10E2F713A2B9DD" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{D03C4AFA-52BA-40A7-9C00-44EC1F5E6D47}">
+                <File Id="fil9CA03FBAC04DCB5E669FDDDB795A945E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets0.assets.resS" />
+            </Component>
+            <Component Id="cmp401998DF6ED74CB221C61831E06F68E8" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{F764ACEB-DD09-4786-A4D0-A3FE32520FC9}">
+                <File Id="filD872AA4A6DA5DDF467D763A1673D9C23" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets1.assets" />
+            </Component>
+            <Component Id="cmp0F2192260EA2872C205A27312AD4356C" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{194F4CBD-DE3A-4BE2-924F-E2B63BA3FA5E}">
+                <File Id="fil82F5F586C01B51EABF2DD625AB32EB95" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets1.assets.resS" />
+            </Component>
+            <Component Id="cmpE867255A0849A0A4D10FC007927E3907" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{701053DF-0483-41C7-AF88-269465FA8903}">
+                <File Id="fil719FF12093314BB215399CA0F679D6FF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets2.assets" />
+            </Component>
+            <Component Id="cmpFF20A0524926602EC074CD003A6BF98A" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{476F8BED-4B6A-43D1-8260-7A0E3497AD7C}">
+                <File Id="fil19BFC49E0BD268412BCBE80C23AC802D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets2.assets.resS" />
+            </Component>
+            <Component Id="cmpC8976E0251FBA0E9BDB74345DCAE27EE" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{5A2E596F-ABA8-463D-840B-68077D2F0011}">
+                <File Id="fil188D7C442DD58A9B75AF3C49EBE4EC63" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets3.assets" />
+            </Component>
+            <Component Id="cmpF5CBC9527121690DA3746950923060D6" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{FE4A06FD-6C30-48D9-888A-B5F70F7437CE}">
+                <File Id="filA784F84079933171E5D7C091ADB2B3EC" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets4.assets" />
+            </Component>
+            <Component Id="cmpEB955F203806A5A3616B082FA7392B72" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{1AB3853C-F6D8-4BEC-870A-ED6CBD017651}">
+                <File Id="fil32173EF78C01127B2CC0C77E710256DB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets5.assets" />
+            </Component>
+            <Component Id="cmp958A5D38688C8C848D2C34D117B2F512" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{6AC060DF-CE16-42B4-BA39-3D56A670DE42}">
+                <File Id="filA2C142243DBC8BBAF017DB0BC4F825CF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets6.assets" />
+            </Component>
+            <Component Id="cmpDD05827B3EE828011B4167C52DEAEFF5" Directory="dir9CC62EAFFA9842CB0787C0F229B39A5B" Guid="{3FD383E4-B930-4ED9-BD8A-8CED49B7EA73}">
+                <File Id="fil8AE03C3D32F97374B53C543DAF42CC08" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\sharedassets7.assets" />
+            </Component>
+            <Component Id="cmp2DBA377B0B49E00F1C815A8A2D77E084" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9F89D9B4-3009-4723-A0A9-754B813D1CCE}">
+                <File Id="fil819A22436B08EF674128AD34540A83AA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Accessibility.dll" />
+            </Component>
+            <Component Id="cmpE5716FED6171A3449A90046FFC9C5BA2" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FC1DF835-8332-4C39-B80A-23A7EE170D14}">
+                <File Id="filE03F84450CC7F28D44B9EEFF158A1EA6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Assembly-CSharp-firstpass.dll" />
+            </Component>
+            <Component Id="cmp7554A61EA0E4A788069618F1BD734B2A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E3DA7C57-36D7-45EB-87B3-683B92FB62D9}">
+                <File Id="fil5FB7C2BCD9A07F9653DA0BDE943E6641" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Assembly-CSharp.dll" />
+            </Component>
+            <Component Id="cmp2F86FAEA1188247E32837E419B916876" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C08A66F5-6D59-4949-8501-7D6D5BB16E82}">
+                <File Id="fil8F86405775BBE556231DC6C061A6F8C9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Byn.Awrtc.dll" />
+            </Component>
+            <Component Id="cmpCB7AFB492BEFE62C1BE95D3FCA64B522" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{820FEF3A-D32C-4F5D-A497-DA63CC277047}">
+                <File Id="fil9A8A642D878CC7E64BA91E7665255436" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Byn.Awrtc.Native.dll" />
+            </Component>
+            <Component Id="cmpE5C7F962151C283F15E176C95895F2A2" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2CA37F0C-2283-4BC0-AB62-EDF457522DD0}">
+                <File Id="fil4B83CF4D69746AE4EDD406F0AF42B72D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\com.unity.multiplayer-hlapi.Runtime.dll" />
+            </Component>
+            <Component Id="cmp80D08A35CB3ED7B90878379C8CFDB5D5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{97073371-F0C7-4AC7-8573-B625213F62B6}">
+                <File Id="filA315A2E12ECED515BAC6786528F430AE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\FileBrowserWin.dll" />
+            </Component>
+            <Component Id="cmp36AD270FE8AA683177C00A92DDEC5E95" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{22DE47C9-5F73-416A-A544-F461B48C1AED}">
+                <File Id="fil3090D8806BA7221B3B6C79F850B6B7ED" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\InteractionEngineUtility.dll" />
+            </Component>
+            <Component Id="cmpC7870DEEF46F9BAEFFF2F58040DF06EE" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F286B3E0-1AC0-4FD9-B577-3E5E573ADDA4}">
+                <File Id="filB40F1EF4A6E37D4DF93D0E7283EAC6CE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.CSharp.dll" />
+            </Component>
+            <Component Id="cmpEE170609092823EBACA24BBA51C461FA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A2D7B5F0-7C1F-4D66-B5DF-E8AEBE29BA2B}">
+                <File Id="fil2D841C18CD1387AF6C82F732C3762BC8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Async.dll" />
+            </Component>
+            <Component Id="cmp86046AD1EE4795B984411D0E52D022AF" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{780D8BA4-BD75-4115-A49F-21F56767E3BD}">
+                <File Id="fil8129C59418560787D1A01C3381F3F1C6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.dll" />
+            </Component>
+            <Component Id="cmpA5C1F4A7D0702D2373D9A420B01EA246" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D18858E6-3D7B-4100-9954-1711858AFD1C}">
+                <File Id="fil99BD69BDD7568CD3BACC716A97D272D2" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Gltf.dll" />
+            </Component>
+            <Component Id="cmp812840BA5717F9D11278790CA456CA7B" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DE6CA47D-C2EE-4339-B288-2793DFABDF6D}">
+                <File Id="fil3442808EFB4E3A7AE41D899524E00D94" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Providers.OpenVR.dll" />
+            </Component>
+            <Component Id="cmp543685470EDA5034DF084E2CEF448B0E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E1D2D7C2-EF39-447C-A1C4-87C98A1B3D87}">
+                <File Id="fil80F947E48AF685A7E230CB7DC0EFFE69" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.dll" />
+            </Component>
+            <Component Id="cmpDA0796E397243B97D4BAE64946E2DD1C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{B2855FD9-505F-4FDF-B9E0-49E23D304FF7}">
+                <File Id="fil6C667053F511E3DC81BAA83B30052F11" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.SDK.dll" />
+            </Component>
+            <Component Id="cmpE29B8C7EBC19169023C9EAED2BC58DFC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F78C7C06-E532-41AC-8C72-F1AD30709A4C}">
+                <File Id="filD1D80DEBE72764E367E92C82A1D00F70" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.BoundarySystem.dll" />
+            </Component>
+            <Component Id="cmp5587841155CB8F8AFD4E3E0ADFBC9453" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{767A4CF5-7337-46ED-BE6A-4186FD0847A4}">
+                <File Id="filDC560DA61CA7F05BC77989EB8524E563" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll" />
+            </Component>
+            <Component Id="cmp4E4C1D1540135874A5C9412DADE5EC3C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{72C7A79C-AE12-4AB1-BEE6-A6A589420843}">
+                <File Id="fil8E9851DAE523F5E3B173319399156028" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll" />
+            </Component>
+            <Component Id="cmpD3E6691B3E61DB5C84FC63EBDE23315C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{371AF7A4-123E-4BAE-9AB0-ABC268664F16}">
+                <File Id="fil8C8229C78C5AB71F91E56CF7517AFF48" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll" />
+            </Component>
+            <Component Id="cmp87962523F689E6D208F34EC02F6BE65F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FA87EE7E-D3D3-4FB4-846F-FD5AE881FDFA}">
+                <File Id="fil2A1E108F35CD911E4BB42322509A31F6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.InputSystem.dll" />
+            </Component>
+            <Component Id="cmp2C3608232391A3EEAF83AD3E6527F8CC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{0232ACC2-D6E6-4EC4-8777-6FF52E7FFD8A}">
+                <File Id="filA1F2DA0B2009FBE0DBDB8A8187D62E19" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll" />
+            </Component>
+            <Component Id="cmpD049D78803E2FE6D5385884F3F3D5AB5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2E5CC97C-E8A2-429B-8628-DAD20985AA1E}">
+                <File Id="fil59E36D0F8117E7657AF0DB13538E3FB8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll" />
+            </Component>
+            <Component Id="cmp8B47B01720E31C025C284E6F9194E0B5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{8918EDC2-8411-4E6F-8833-5FC847E284F6}">
+                <File Id="filAFCBD048E54CC3B3725FD47F93D5068C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll" />
+            </Component>
+            <Component Id="cmpD8EEB8772B0FE23D0415A8226295FF70" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C1132036-1253-4D7B-9690-5F55640CEE38}">
+                <File Id="filC07FEE0AA3E2CC679A3A99094B1677CE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Mono.Data.Sqlite.dll" />
+            </Component>
+            <Component Id="cmp0AEB39BFC3E52A31BC5C1810D24FDAB4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{3881AEDB-D8DF-427A-9D25-351A51C2B216}">
+                <File Id="fil55DEFFD0F730AF5D5B067BB2993944E6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Mono.Posix.dll" />
+            </Component>
+            <Component Id="cmp122C8569E363CA8CEF642A9FA4146BFE" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{8DB9E3DC-2FD3-466D-8495-2EAFFB53C17C}">
+                <File Id="fil8A6D92633C5BC9C1B17E06F9970DD88A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Mono.Security.dll" />
+            </Component>
+            <Component Id="cmp8C84ED8045D3A0CF5D9B4267481494E2" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{96F119AB-3CF1-42C7-8DC1-3FF7D8888E91}">
+                <File Id="filA56344262432C7391ED9637FDE620415" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Mono.WebBrowser.dll" />
+            </Component>
+            <Component Id="cmpFABE916C7A72A36F97816C1E7C1B7FFA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{834367A2-8B15-4A49-855D-380A0ACC37E7}">
+                <File Id="fil5012889405597541B4DFAB7631E06F92" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\mscorlib.dll" />
+            </Component>
+            <Component Id="cmp8DC72EB7C33D31077589645172DF3842" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2100F742-A030-487F-9165-2B270EFB651C}">
+                <File Id="fil5723550395511009D56CD2931D0665EC" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Newtonsoft.Json.dll" />
+            </Component>
+            <Component Id="cmp6208DF94E33173C74E753CBB899FB84B" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4682E5E5-E477-4D8D-806A-9E26E4A52553}">
+                <File Id="fil169F7DB7CCF68A28E33F96789548C9E5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Novell.Directory.Ldap.dll" />
+            </Component>
+            <Component Id="cmpCBDB28F640E88D44E68C08B1A326A407" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{840B19D1-640C-4031-89FA-80D8DD22AD27}">
+                <File Id="fil8B783C7D5F31DE12FC2B5A648FC12F9A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\ObjReader.dll" />
+            </Component>
+            <Component Id="cmp555F73814E7182165C36698E1B834695" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E3789AD2-8201-4ECB-A5D9-8F88AB2B3AF4}">
+                <File Id="fil173E82A6034E736D21A7B4AD29F738EE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Ookii.Dialogs.dll" />
+            </Component>
+            <Component Id="cmp0B988C46784620726918755FCDB2C340" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D00BE6FA-A982-429B-B09B-B1CD988BE01D}">
+                <File Id="filA6AB17977A18E7D6F74899860237A476" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Photon3Unity3D.dll" />
+            </Component>
+            <Component Id="cmp20A3122098718BC7343CB13E321F211F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{BBC7E42A-F565-4109-A0D7-1985A40DEE4B}">
+                <File Id="fil412681FD55BA567FF1426B7E5C4D9C89" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonChat.dll" />
+            </Component>
+            <Component Id="cmp5FBA9D103FB1854814D1D2E7F305677C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4BB14C41-CEEA-40D1-A006-471C1F2E6785}">
+                <File Id="fil624E3B96E97E6B0736DC17120B572376" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonRealtime.dll" />
+            </Component>
+            <Component Id="cmpE18247C121414B59A329208343F87548" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9F60716C-37EE-4969-9724-61CA4EBEC42C}">
+                <File Id="fil74F23213FB3E9550DE73683A402951CE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonUnityNetworking.dll" />
+            </Component>
+            <Component Id="cmp99CCC5BDEC649246A71EF5E2C3C154B6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2CA96CB3-29F0-45C5-A970-A1CD33B89B2D}">
+                <File Id="fil60AD4298EEC15A6CB9857DF9B55D678F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonUnityNetworking.Utilities.dll" />
+            </Component>
+            <Component Id="cmpE672A58CE1BDFF78760F828634060681" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AF3DC444-F490-4343-9DBA-DFCF2CEBAD7A}">
+                <File Id="fil0A6CD4929824B4A9F972DAC0DA577288" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonVoice.API.dll" />
+            </Component>
+            <Component Id="cmpD8604A496D03509B72DE49920FE2035F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C03FA9B9-A71F-4F7D-964E-EB3E19B2B275}">
+                <File Id="fil7224C09F3265F973ECEC0EBAE1E00EB5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonVoice.dll" />
+            </Component>
+            <Component Id="cmpE328DEB886F7270BC7837C91A8055494" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D4CBB6F6-2526-401E-9AAF-3868A1D6840C}">
+                <File Id="fil689611BF8A53FF39C1D865F8C8AA0CB4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonVoice.PUN.dll" />
+            </Component>
+            <Component Id="cmp4C2F2A40BBDBC6985EA0F2C69536FC49" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{B819F121-8914-49FC-8100-678B3247344F}">
+                <File Id="fil81ED643CFEC2166E1E2BEA77AB533BEB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\PhotonWebSocket.dll" />
+            </Component>
+            <Component Id="cmp444E64F221F8FF574A511951415A9C00" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FB5CEFA9-2BDA-4508-8EFA-5EC16D36DA4F}">
+                <File Id="fil489DF1EC4C652F91C9DF086CA411A383" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.ComponentModel.DataAnnotations.dll" />
+            </Component>
+            <Component Id="cmpEB799DF9B2544F104BE11352D3675813" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{22DD54CB-A273-44CE-90A6-E99EE40960F3}">
+                <File Id="fil1AFF8921CF5650CAF30E5E8CED0E81AE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Configuration.dll" />
+            </Component>
+            <Component Id="cmp325BCB66949200FA4451259EFEA97B9E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E3B1B1EB-5FD0-4DFE-9221-18C3F3394BA2}">
+                <File Id="fil3A9897A57DDE190A10A397FA639918A3" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Core.dll" />
+            </Component>
+            <Component Id="cmp4A0F4D0150FBF8C53A7B7DB61E307503" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{45E78D42-45ED-4A5A-94B4-F81DDD79EA4A}">
+                <File Id="filDEA65302A88A2C1CE88F76BA29A9ED3F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Data.dll" />
+            </Component>
+            <Component Id="cmp1803247DCD4A04BA2E47B9905987C124" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{8AD84BCF-4DB3-46D8-BE50-857E1819FC2A}">
+                <File Id="filB72745981F69F8FA8C63A9A9592E0DCF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Design.dll" />
+            </Component>
+            <Component Id="cmp8B6ED1B224251F02FC7196E0903E9B20" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AE356804-92E3-4A7D-9994-7D699F336B40}">
+                <File Id="fil765E280A60590C4658FC35504B8A59DA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.DirectoryServices.dll" />
+            </Component>
+            <Component Id="cmp5F020269DA7DC0B90F8583507C622C2E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{68340AF4-AE32-43A2-9B21-770B817A3B10}">
+                <File Id="filC5826651BA467D20882BED7E072151F4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.dll" />
+            </Component>
+            <Component Id="cmp4B01851543ED85733C5A9F2C758FC3AB" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{5C72BDC9-3F3F-4E8D-8F70-C8A34642BED2}">
+                <File Id="fil09C015CB84FF5E902A3E57FB6292809C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Drawing.Design.dll" />
+            </Component>
+            <Component Id="cmp35A6B01249B502CD269FDCE95B0F2F10" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A85B5397-52E7-48A6-9D57-0292B1F5D54F}">
+                <File Id="fil71DD67F91111C881E5404BB2D394ED42" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Drawing.dll" />
+            </Component>
+            <Component Id="cmpC5F71D0D52FB2BD6D8834145A89C60C4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{27056B72-E88C-4ED3-84E9-20DBF8A0A4C1}">
+                <File Id="fil19BB080D12D8FEFE0442742A9A388716" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.EnterpriseServices.dll" />
+            </Component>
+            <Component Id="cmpC977CFB267170E205C343867D08F8DD6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{7D7E11DE-9D93-409F-99AB-84F9B4F39DF9}">
+                <File Id="filAC2E76E09290CF06258EE5B5B496C104" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Numerics.dll" />
+            </Component>
+            <Component Id="cmpAAD6F2B5CF802FC0782A8EEA0636B9D7" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{464C81C8-8B23-4543-97EA-30982ED52930}">
+                <File Id="filA915B3CBDEBB789396736A767C6FBE83" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Runtime.Serialization.dll" />
+            </Component>
+            <Component Id="cmpCC1292C6B5C173C0580959B2CEBA76BF" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AE035ED0-A032-44EF-AC87-9F8981634ED4}">
+                <File Id="filEA6C6175EFD841AB0659A8F7CC8225E5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Runtime.Serialization.Formatters.Soap.dll" />
+            </Component>
+            <Component Id="cmpCD445F31C28FD3F930DFA122730F45B0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A2487DBE-6142-4D68-814F-659F89D7E363}">
+                <File Id="fil5BE24197BA5974D766ACAFC67BD85490" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Security.dll" />
+            </Component>
+            <Component Id="cmp8ED3862932FFBA2DB304A63C60B45DB4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1ECE8AE1-7647-4313-B31A-7F41B826D370}">
+                <File Id="filBB7DC751961107B768EB2B8388B34A51" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.ServiceModel.Internals.dll" />
+            </Component>
+            <Component Id="cmp6768BEAF68F8DD759BB16D0F194CA1E6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DF942277-F534-44A8-8D66-3A34409AB2C7}">
+                <File Id="fil5318A3B7634FD20585ABD093505AC3B9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Transactions.dll" />
+            </Component>
+            <Component Id="cmp0937F6B6ECAF985886C7F45ACCF02AD5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{48C0E36E-5520-4264-B164-8D2F769C6322}">
+                <File Id="filE539F23EFC061F04838CBEBCDA6FB431" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Web.ApplicationServices.dll" />
+            </Component>
+            <Component Id="cmp732C9BF48B5F7103CC0812F6FFCB6AC3" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{3BF19F76-B308-440B-8608-EABB307E6D7F}">
+                <File Id="fil22F38AF2CDB03F88E83D7C2CAC10D92E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Web.dll" />
+            </Component>
+            <Component Id="cmp55B7DADA7B0E91280B4A86F118D24C0A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{CBBBEB3F-9D27-4D95-9FE7-9DC758C28724}">
+                <File Id="fil9BDF4495ED640692E5BAED31366E6E72" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Web.Services.dll" />
+            </Component>
+            <Component Id="cmp407676D4B3FE9E6D978DF1EE522EA6E6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AD557DCD-49CA-4D1F-B623-C36BB82B83DF}">
+                <File Id="filAAF3C7B73BD575B91FC7CB0084659912" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Windows.Forms.dll" />
+            </Component>
+            <Component Id="cmpADB07CAC3E2274ACD9D664D417A3E7C9" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{93E96CB8-E398-41BF-8DD3-9E1F7F962098}">
+                <File Id="fil0E458E384DFA25745249F3A8180C5354" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Xml.dll" />
+            </Component>
+            <Component Id="cmp15C28097EB2501986024CA2D67C37FCD" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{46F4B97C-87E5-4BD5-A5A0-1EA52CBFA3F1}">
+                <File Id="fil5FA995765DCAE8D4B1CB936439982922" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\System.Xml.Linq.dll" />
+            </Component>
+            <Component Id="cmp3C6B9C4A1506758802AAAEAF3E55B0F0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AA1C8280-5265-4B03-BAB3-8D7116E79145}">
+                <File Id="filA0B04C6F43094876F22A9F31E782E3B0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Unity.Subsystem.Registration.dll" />
+            </Component>
+            <Component Id="cmp00D754A995B5270BFE2119EBA1428056" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D02C79D3-895A-4FFE-9839-56E642151FD2}">
+                <File Id="fil672B039D8F62731410F7B46320021986" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Unity.TextMeshPro.dll" />
+            </Component>
+            <Component Id="cmp8BDEBB7E3995A91D28E1B34996054E81" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{0224E212-C41B-4D87-B0E6-5ADEAF24A2EA}">
+                <File Id="fil69A60BC9FE67651CA98DF700A5D3B6AA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Unity.XR.ARFoundation.dll" />
+            </Component>
+            <Component Id="cmpAB9D2F8EB6FB6E98DA8F49D473724D10" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{50604503-6BD9-4CA8-B372-06F86C383E91}">
+                <File Id="fil70B092B254087DE61D8DD7FC4BB303B7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\Unity.XR.ARSubsystems.dll" />
+            </Component>
+            <Component Id="cmp6FF89E9316AD36EE72E5EFCCB1C6347E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2C0ACF07-EAAA-4E4C-A49D-2112DBFC0090}">
+                <File Id="fil3457DC56AD81E5AE151C1CA7695DDC35" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AccessibilityModule.dll" />
+            </Component>
+            <Component Id="cmp9D0062616AA57286E35A2D8D28FE0FEE" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4E1B236D-647C-4B45-86A8-D2D2F0E3D24F}">
+                <File Id="fil5F710AB4271043353138DD1B8F2186B9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AccessibilityModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp1139357A720501D3A7C6B3A1CD75FE83" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DFB7AA99-349B-43BB-BC03-0FA0D232129C}">
+                <File Id="filEF1D7CC9804B8E76096AE6158F9D0482" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AIModule.dll" />
+            </Component>
+            <Component Id="cmp0319182226FE7C345A317C64AAF20578" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A902E775-237C-4388-BD19-AAB5CB78FE49}">
+                <File Id="fil222FB6BF2642176C0D356F75F8FF35A1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8B20164EC64BC38CC5B83C1407A38DE4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{ED754C2B-6570-4050-8932-42835197CB91}">
+                <File Id="fil202DBC2F1E4BBD3DFF138A58710C8B73" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AndroidJNIModule.dll" />
+            </Component>
+            <Component Id="cmp7B9049B92D6B55448BE26058FF78BCE3" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{0F970E16-43B3-477C-BE31-1BA7F654363C}">
+                <File Id="filE05EB084A5298F42204D88C04B71078F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AndroidJNIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF36875E477B501B2DFB8F2FB99B49420" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{CC3B9C0B-CE36-4174-8D9E-2480D310FC6F}">
+                <File Id="filD2FA853D7992FBB421B6F84DBF26206A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AnimationModule.dll" />
+            </Component>
+            <Component Id="cmp9D608E5B27F70019BB5A10A10040FB4D" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{631374FD-6EE6-4E5D-835A-1130224C2BE0}">
+                <File Id="fil72C97D7201EAD11364EF83D96C76E67C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AnimationModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp15A29FD3DB790BAC2A64486DCB316D4F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{B7ACD90B-01C2-419C-8CD7-708A100554BE}">
+                <File Id="fil813632CBB65E9A565F6272A2E3B40F57" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ARModule.dll" />
+            </Component>
+            <Component Id="cmp50872BB63D9CF8E1F65E097334A8CA05" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{53019547-89D7-4181-907B-0EC9CD17A5BF}">
+                <File Id="filAF5E400DEAA2B9504E623BE06A2D7025" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ARModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp42820167A77A82D6DD15996002303150" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1B412ED1-18BB-4AA3-B1A5-3635E1DB90A0}">
+                <File Id="fil1CEB290B871FEDE9628DEB608EB6828E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AssetBundleModule.dll" />
+            </Component>
+            <Component Id="cmpAA104130985FAF9952253FFC950B5DC2" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D86BEA2F-60B5-46D7-BC5C-96C1A1E53B7B}">
+                <File Id="filC75F892A2F1F26623A7918759F78A54E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AssetBundleModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF6029914B6AD6AE65F9A2295F41B36CC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D2C9ADC2-32D3-498E-8A37-9005735BC9CF}">
+                <File Id="fil946F7E689C53DE0F535089BA04EA88C2" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AudioModule.dll" />
+            </Component>
+            <Component Id="cmp6959A3508C7F490085164C16A7D9F820" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9F854220-5246-46A4-B55C-3B78A34C598C}">
+                <File Id="fil61667C10926898BD9B33ED85F0DAF8E1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.AudioModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp6AABE112F8ED23ECBAA9D221BF85FB78" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1F76CC64-1876-4E40-AE37-9846280311FE}">
+                <File Id="filDE80DBFB77D2175979CC7D8D52A317B5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClothModule.dll" />
+            </Component>
+            <Component Id="cmp3B5FD3843B968FED6CC0071517F65BFA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F8185138-740C-4116-B8AC-A36278C098BC}">
+                <File Id="filAD94DD3E37DBA7F35F35992E059FD1ED" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClothModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8C3926DC058D2C05435A4ADAD37D6400" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A3CFB198-A150-43A4-806B-01E4C09D1584}">
+                <File Id="filF7BCC6BF7C6136D42C790551C1703EB6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClusterInputModule.dll" />
+            </Component>
+            <Component Id="cmp23BE8E7952C5E446728220A83C4F885F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{7122E272-59C8-4F70-9A12-82E83EEBA949}">
+                <File Id="fil07015DCCE966EAEB6038AC8720EED9DE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClusterInputModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp509723627938EAFF042D6A5DF417B647" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{140F1A52-04E6-4E80-A36F-A0B2E346AA63}">
+                <File Id="fil3520DFF3D56D69BF9D965EE87C98F493" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClusterRendererModule.dll" />
+            </Component>
+            <Component Id="cmpBEEDF24B5D127D8B91B980EC1372D2EA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9AEAC92A-81B6-4132-8E0A-621539D24B2A}">
+                <File Id="filA3FD9BD92A5438A33E20B048FDA62365" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ClusterRendererModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp87F95121294D7D4B7480C81A1C18EF1C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4587DFA8-BDBA-4442-8473-02138BE6BBA7}">
+                <File Id="fil9852DFC04E32FFBB8094D6A8105E305B" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.CoreModule.dll" />
+            </Component>
+            <Component Id="cmp03192827FEF16C6E4D50763413816E03" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C4AEDECA-BC38-476A-A803-81751742B271}">
+                <File Id="filE08C37FB44BC0C6151002F06ADA9DB7A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.CoreModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp7F716AAD97E60D32087E199538425CDA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A89FB46C-07F1-4A22-9852-ACD971FB2138}">
+                <File Id="filDEB4E562E4C4692BBA3B34395B5C27FB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.CrashReportingModule.dll" />
+            </Component>
+            <Component Id="cmpFE1281BF6B6BE0E207AA40745F84F5CD" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{14880D7B-DC99-4897-B5E6-E09E0642E568}">
+                <File Id="fil1F3557780C923725F567DEE4BA7FCD8A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.CrashReportingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp7289FF3B5BC0008B924AB737971085AB" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DAAB99A3-2C76-457D-900A-F11F008085C5}">
+                <File Id="fil6E762161CB7270BCED4BD0CF5F30CBAD" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.DirectorModule.dll" />
+            </Component>
+            <Component Id="cmpDD2BA0829BE7D4E14835E58839B233BC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F95702C6-8392-4374-8E1D-3BA46F8A31CE}">
+                <File Id="fil9AD3BDE550B730BCF07E106CE6421648" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.DirectorModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF00E00FC2582E7958DBF2616C4DF6F34" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{182E1937-F31A-4DB4-B342-E84BF36BA34F}">
+                <File Id="filCBE9229B0BB3B61F680C9AE3C74DDF20" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.dll" />
+            </Component>
+            <Component Id="cmp8633720BBD623DCBA0BEC3D80A82C994" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2803D876-74FB-44C1-B75F-DF9F6C4BDC14}">
+                <File Id="filAE28E4DACE9969931A21F044CF261096" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.dll.mdb" />
+            </Component>
+            <Component Id="cmp4917DAEABCEF74123AD2BCA3E9D93B76" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{005A5AB6-7ADF-42B6-8FB6-060218624406}">
+                <File Id="filD9185DBCFB888E9952A07A0C532C0A70" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.DSPGraphModule.dll" />
+            </Component>
+            <Component Id="cmp746B899609E760C3767E8ACA0876F7F3" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1A10FF0A-E295-4BF3-921F-075C98F85687}">
+                <File Id="fil52F98FBE8B6BC69F75E60FCF74D72E9D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.DSPGraphModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp062F3284406756698966759653B2970B" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2E83D14D-8235-49C4-8569-A8803EE61A6E}">
+                <File Id="fil55AC1506BA4DECAD39ABDCCA83D013A8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.FileSystemHttpModule.dll" />
+            </Component>
+            <Component Id="cmpC504876CE73925768645EE897DE5F10A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D61C8706-EE84-4B8F-BC24-1B9FB78F07EE}">
+                <File Id="fil29598EDCF851A69DA427944697498A56" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.FileSystemHttpModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8B5C67E3A3F446688D6E660C99F95E5C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{722E7539-F38F-49C1-8BB2-0E957B62F18E}">
+                <File Id="filF2DCEA71EF3828D466E8AA494FFF96DF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.GameCenterModule.dll" />
+            </Component>
+            <Component Id="cmp5AD9A3C7969D27D89135D3F59C517CC5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{81D24030-16FD-4074-99FC-A2324A2E8DB7}">
+                <File Id="fil5217727A9045BF285B3B3A96D70C1E67" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.GameCenterModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp078BAD854E3B894D5583979B0F112F58" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{B5C22211-237B-488C-851E-A232F253C024}">
+                <File Id="fil3E09276D8CAF99FE5BF1889D5E2BEE38" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.GridModule.dll" />
+            </Component>
+            <Component Id="cmp108BF076C77DD1FE837568F03D68E0E5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9E2EBB13-DC35-4171-B9D9-BE75C63AF574}">
+                <File Id="filF8EC5CED69DF0D8F3C465CA5CD5BFAB5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.GridModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpF1F94EB67AF1FEEC4409CB1F8880DDED" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{88552CAC-220E-4897-AE44-A4D196B42BC2}">
+                <File Id="fil396CE6CE034DEBD61DEE5D96BD22F941" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.HotReloadModule.dll" />
+            </Component>
+            <Component Id="cmpDF72A25DACF3A1D73B1F91E87F491AAC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F0833A63-1EB8-4559-A625-ED12A03B5E09}">
+                <File Id="filB339A6F78C6F6FF6F568974302E0ED6B" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.HotReloadModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC0FCA20525B0EE4686A5DA684A390D07" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{688AA63C-4389-4E34-ADCC-05C8EBAA87A2}">
+                <File Id="fil3A4B25D8026DFF3027252FD1F4D6DF3F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ImageConversionModule.dll" />
+            </Component>
+            <Component Id="cmp1944777A34798963AA6C35EC75BDD91E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{97522816-743E-4E54-B55F-EF7A26A23EB3}">
+                <File Id="fil2984DD7DAF04853DBA14EC9E69D28C81" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ImageConversionModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp25A1ADDDC4DCDEEFD283581EB64E3B36" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{87EE97B2-BFEE-492F-B957-13C1D537D694}">
+                <File Id="fil31BB5524E7107E3B49C960831DE06F48" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.IMGUIModule.dll" />
+            </Component>
+            <Component Id="cmpA3F466F7C75FBB0C052C682F12B3D67A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FEC48AE1-78A6-412E-B0A6-7B24886259F3}">
+                <File Id="fil6179DD2C31B575260E455B1580973187" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.IMGUIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp790C50B3507A54F73ECDEA2719F02EAE" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{ADE93C9C-3C3C-42C5-8384-0421324DA69C}">
+                <File Id="fil5DBF583B95006050F67D2298EE21A3F9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+            </Component>
+            <Component Id="cmp11FAAAFE2F219E5DCC338E8F0F262835" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{43DFFA5E-74BC-4F5E-927D-1800F29E60A9}">
+                <File Id="fil36E4C7EFEDC27A4E336F6FF468750445" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.InputLegacyModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp14A04FA5AF20B8CF600E369D0C0C18B7" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1E431019-632F-41FA-A733-DD3FEDBA6081}">
+                <File Id="fil7EE8B6B3749B89077867F278E890A106" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.InputModule.dll" />
+            </Component>
+            <Component Id="cmpD2326C524E54E4F07FCA5BE840F4D158" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C974A3B9-5D4A-4F92-9D0A-E76798A0925D}">
+                <File Id="fil9F9FD20FFC5C2FA2EAAC5F858B7EE12F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.InputModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp3360ED0378E2A4DFE912CF526F6492EA" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DE56CF7C-AC4B-40F3-B537-4A0024D79156}">
+                <File Id="fil92A3BB7CF71A085F1D5CB9FA7EDDD78E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.JSONSerializeModule.dll" />
+            </Component>
+            <Component Id="cmp26E0177C458D026930B286AB3881D953" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{6C9C7D8D-324F-4132-8C51-199992B28BA8}">
+                <File Id="fil3C97B12DFE4520D1B90051F4F2F49E8F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.JSONSerializeModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp1C73702A5071D2B38009516D8D6AFCB6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C13B9393-6E27-45DB-8821-215F5D2E84BD}">
+                <File Id="fil86C723665330AFC891A36E1FAA78DE29" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.LocalizationModule.dll" />
+            </Component>
+            <Component Id="cmp46811000B807D57DB4A74E189B781D8D" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{692C2757-CA46-481E-8045-90AA64A9700A}">
+                <File Id="fil059F302E51E8B1948651506133D183FB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.LocalizationModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp07EA298985A7BF95AABD6010BC0E0771" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{5FDCB206-B3D4-4F33-AE7F-83636486CCA7}">
+                <File Id="filEDA9F0590E21576E4CFC080FB7A519FC" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ParticleSystemModule.dll" />
+            </Component>
+            <Component Id="cmpDC3B0E8D9D1C0187A095321CBA71947C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{00D38738-2B45-4881-97F2-58CD8FF3914D}">
+                <File Id="filB40A0D5CCCF155C923D3352AFC190EBD" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ParticleSystemModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp07273C527BBDE9CFC4F5CC2CBD288036" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{64709A86-FA72-4C85-89CB-082DECA90A5E}">
+                <File Id="fil992B8D40E3B8F5A3BCA3DC9274380204" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.PerformanceReportingModule.dll" />
+            </Component>
+            <Component Id="cmp3786DFE44B48293155D67501973A2954" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{77E28BFD-D290-41A8-80D7-BD6140CAD5A4}">
+                <File Id="fil27B921427DB555E28C2D904EB269FD8A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.PerformanceReportingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp5BA2393775E1CAA36846BD565705CA33" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{43951BF4-F281-4F64-942D-A0F8FF39A458}">
+                <File Id="fil07B63170F6CC483A774FCE9C1C76AF6E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.Physics2DModule.dll" />
+            </Component>
+            <Component Id="cmpE0D8270E4CADA42E70548B23D7B51703" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{DCC53441-4F4B-4033-8AF9-489EF6EAF79A}">
+                <File Id="filA430DD1E6341D811C9A3EF1E695766CE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.Physics2DModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp57315244A0654F87119162F1C4F69114" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{73CD2E64-32EF-4DAC-AE85-B41B23760B28}">
+                <File Id="fil5BC876C03A6CB4D0F4842720A5D85084" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.PhysicsModule.dll" />
+            </Component>
+            <Component Id="cmp96323ED07BD7ADF14E29CC47047FD9C8" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{6A925096-FE54-478D-945A-F45A8EF12418}">
+                <File Id="fil4DD36E9DFA447B50899DF20616C06FB0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.PhysicsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp2BD52DC0F9230CACB1B872F924F30272" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4FAE2C35-DD07-4796-B527-E47467E207C3}">
+                <File Id="fil3B18AD0B053AF2CE9742C0AF1D71555D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ProfilerModule.dll" />
+            </Component>
+            <Component Id="cmp31644442EA7F958DDBF77556118D93AC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{96E83F09-9C9B-41C8-AA99-72F7A8DCCF55}">
+                <File Id="fil817C32177036B56CF805268DD58D093D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ProfilerModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp35DE7E1AEAAD04E1C61A335B659DB94F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2D1AED28-BFA2-42B6-BC7F-5700E4A5022D}">
+                <File Id="fil5CD83040871BC3E05D316525DE509771" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ScreenCaptureModule.dll" />
+            </Component>
+            <Component Id="cmp181E6054BFAA008B3CCED0CFD21CCF7C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4B19F1C0-5DBD-4142-AC9D-0131DC70CE2E}">
+                <File Id="fil0CAD4C1BD765096E34CA420B46E84C71" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.ScreenCaptureModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp35A498927C06FC2BAEC71A93C61507E7" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{6C6C3437-FFA4-4B24-BDB6-C629E79A65B6}">
+                <File Id="fil6264ABA5041A1379A6D193D191EBD8B8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SharedInternalsModule.dll" />
+            </Component>
+            <Component Id="cmp67B73A5463EB1C05D7D1000012621F71" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AB99CEAC-6855-4850-A747-2C322F97DD66}">
+                <File Id="fil75BAE417F91012ED0D3A13D89E2A9A6E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SharedInternalsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp8A845951CA6A855697B7CCE5752BAB19" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9D9354CD-0D0F-47C9-B8FA-439531392897}">
+                <File Id="fil808B48425FBBB8174E97EA4F84D60605" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SpatialTracking.dll" />
+            </Component>
+            <Component Id="cmp71E003CEC3650A99A84EA7874C87B3F6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{524B9055-21D8-495D-A46C-15A60E61E232}">
+                <File Id="filC8CDEAAD2420178C1DF7D845810787B5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SpriteMaskModule.dll" />
+            </Component>
+            <Component Id="cmpEF8641334C347515C1169F747FB3C01E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{21B56BFD-3717-41A5-B488-D5432773D3A6}">
+                <File Id="fil69BA6700686E579176010586E691F809" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SpriteMaskModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp491739042342DC31AC53DF08AC50BA0A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{3C21F113-0C0D-415F-B0B8-E347B61CABE4}">
+                <File Id="fil9DD521ACE3818BCD35E71C3EFAA539DC" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SpriteShapeModule.dll" />
+            </Component>
+            <Component Id="cmp9992A15018FEAF43C454A3D8A1AE801E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{8A98D965-6334-4EF9-BCFC-C35CFC62685A}">
+                <File Id="fil9229AC8A9B14FC71CDA45266949C14F4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SpriteShapeModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp4F26B67469281B913F73D189326D9D70" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D0D831F7-5158-4E3D-B49F-BAB73A1EF35A}">
+                <File Id="fil40A2E0FF3CD1779963846984C07913B5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.StreamingModule.dll" />
+            </Component>
+            <Component Id="cmp20B2E429C9C9D8D96D3FDBD089630ED4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{0A9E3740-7F65-4B25-AF58-15CC6D6858EB}">
+                <File Id="fil6DFB9D5EB74881B38B4D74696845C02B" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.StreamingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp465A5DECE0A94B1744A9F5329C52AD4D" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9E23BBF4-6156-44C1-833C-72528343C8FD}">
+                <File Id="fil910D2F59BDA15F53089A32FCBDB27A87" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SubstanceModule.dll" />
+            </Component>
+            <Component Id="cmp533FBA274DF5F22A96604A53A63589FC" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{11883A24-2948-4E88-B24C-7D3F5548B5C9}">
+                <File Id="fil07DCBC5DF9E2FC9A7047B9CB9E06DD9A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.SubstanceModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp3B54D0838B618313D3A9D973218E3642" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{386B0E30-79B6-431D-BBDA-D535AFB12532}">
+                <File Id="fil22DE930082EF89A1A6CE97C353A8B3CE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TerrainModule.dll" />
+            </Component>
+            <Component Id="cmp46F2F73315D67AB8A97040C66DC25629" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{EE539671-DD1E-4C38-8F13-54F095C8DC58}">
+                <File Id="filC71249C89862B69D8A3A6B2097ED9E63" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TerrainModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp68F57A92139426164E420F0E87509E15" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{7619F19C-3993-47E4-A0DA-AF61D280F397}">
+                <File Id="fil4653017B5A6CF2DDC86C0183183061AE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TerrainPhysicsModule.dll" />
+            </Component>
+            <Component Id="cmp37713DEC6B8A0B05E13DAA1D3AF8751F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2375F121-475B-49EF-9938-2CA9DF66F4D9}">
+                <File Id="filF3A3AD4DA2741A2E714C015916089B05" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TerrainPhysicsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpABC8AE3BACBD83940C83F28A1FC0D5C0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{5960ACF5-853A-485D-BCE3-48F8014437F9}">
+                <File Id="filE02C53864A45E4E1455D83A87488FDF5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TextCoreModule.dll" />
+            </Component>
+            <Component Id="cmpA06DEC768A78E7A86541B078C996B492" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{564CBF2F-A216-4087-80EB-CFB9D8F37826}">
+                <File Id="filE0747A19B39060A63719AF48A10BCCE8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TextCoreModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC9707C2C24788E33A05998B9D5EB38EE" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{133C305F-6F17-45B4-9721-A0FC00C4377A}">
+                <File Id="filB2224F36AC582DA886D4A4BE5385B1C9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TextRenderingModule.dll" />
+            </Component>
+            <Component Id="cmpC0781D27FEC59FFA24852072EDCEDD12" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{126033F2-B0CD-4A59-BA26-42FB627F6371}">
+                <File Id="fil12ED38891EDF7C70270C90DB70E5468E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TextRenderingModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpDB7366E9EA12348ABF4FD36F785A7653" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{AA8BA3C0-10FD-4857-A2A5-2AC29B99139D}">
+                <File Id="fil57232B14CCB05E60E08469F603706AFA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TilemapModule.dll" />
+            </Component>
+            <Component Id="cmpBF7A7F55488A9E51B1FB7B1FE58BCA1A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{7B0A0642-5F40-402B-818E-21F319EC4782}">
+                <File Id="fil011E3B5308C3BABB290BFDBD6A86BC48" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TilemapModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpBCBD5075ED384E3C99D766AB3E2CB6A6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{85785BB4-0A73-4164-97C6-C92CE2973F4B}">
+                <File Id="fil4B3AC45DBBC77D2F24504B7E5582BD83" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TLSModule.dll" />
+            </Component>
+            <Component Id="cmpE6B55906B016D664E52525020A2189A1" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{5CBD0662-7388-4692-8BB4-64287DD9433C}">
+                <File Id="fil512D655FA0729E9A9FB0F85A9B6C2E15" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.TLSModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp64CCA9C7DCA7F7C60FFFA9D0DD4640F4" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{EB3BC185-8372-45F3-B715-2E46AD8B69DB}">
+                <File Id="fil7B092BE29B02DB2FC57BE6FCEE48655C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UI.dll" />
+            </Component>
+            <Component Id="cmp30523E8219ACB391DE86B40356505111" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{13A03CF1-5804-4227-AF5B-D510DCB30456}">
+                <File Id="fil67AF1D61A1E71701C2A56BA03BD39076" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UIElementsModule.dll" />
+            </Component>
+            <Component Id="cmp89B0DB0B99B7985B4BD34FAFFC7C849C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E0FCA921-A81B-462B-8012-19C1C4266EB5}">
+                <File Id="filC7B99BC53C7E53DD9ED0157DF76B11EB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UIElementsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpFF880FDD08D0BA51AB8EB6C9FCA2886F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4CACC143-0C84-4F8B-A4E1-4F240A87DDC2}">
+                <File Id="fil2919A21C9F3F93832FF30D324A460FB5" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UIModule.dll" />
+            </Component>
+            <Component Id="cmpDA821F2247EC5E384E6470E13DE26231" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{0E5CE02C-6375-47BA-B5A4-12D610D15FBA}">
+                <File Id="fil9E31EDB4046A1B6F509958A524CD780B" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UIModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpDCEB57FC37B2DA605127CA2F1949D4D0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{5DF8505D-3700-442C-AEC4-F79E9AA8E099}">
+                <File Id="fil61FF5F5746D87B0A0DA0C8085298C07D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UmbraModule.dll" />
+            </Component>
+            <Component Id="cmpC42987D12B32095B9B47C22DB7CBD6DD" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{F8FF44A3-B616-4A7F-AFB3-0F701C1F6185}">
+                <File Id="fil8CB26B738F292BA18E931C333331D359" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UmbraModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp9831E9524277522D9006CAF8D2A9E31C" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E26E29A2-78F9-43D5-8DF3-DECF48B1F937}">
+                <File Id="fil4FB3E907E059CFC20F610E8CE693F8F8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UNETModule.dll" />
+            </Component>
+            <Component Id="cmp0CCDCCBFC7D2ACBB3801531640519715" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{6D346616-C0E1-41B2-B2F3-6B9585701DDD}">
+                <File Id="fil985C7B7297E7593E1CA5B809034B76BA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UNETModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC36C7F208FF948EC84DD7AB57669BE73" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E58BC023-AAE3-41B1-BAE2-5BC2551A3CD4}">
+                <File Id="fil164A11EFF45008DDA5CD3B8FA553CFDF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityAnalyticsModule.dll" />
+            </Component>
+            <Component Id="cmp1689EAF4ADCD64473947A44CC1730FB3" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{C0AAA63F-1BCF-4C70-8503-D81C9209F2FF}">
+                <File Id="fil5AAC12CA2B81A11C8BE0A7D0F0D8BDFF" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityAnalyticsModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp5C5EAA1CF793C2727FFB3A4BB8A58DA5" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D3927FB7-5AE4-4AC0-838B-94C5B5D2CD80}">
+                <File Id="filF307D81DD484E169BDCAB516DFD2C2CB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityConnectModule.dll" />
+            </Component>
+            <Component Id="cmp354A96AC668075B91FCB5A9438185B74" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{46506AD2-DE62-4BC0-AAC2-5C7D0534E2BA}">
+                <File Id="fil7976127F3EC9ABBF1511379586056092" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityConnectModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpA0BB8A21D2BDB99F099AA43E549F0144" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{B18C830F-2FCE-4656-BCC2-AA4B412FD3EF}">
+                <File Id="fil6625E84C03B1C0535BEAED498BC864DA" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityTestProtocolModule.dll" />
+            </Component>
+            <Component Id="cmp6424793D0205A533AD067C55B174CFC6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{93872116-0DD0-4992-A3F4-4C53C185E1CE}">
+                <File Id="fil48554FDCB62E321151EFE7BE2D006E79" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityTestProtocolModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp59E1BEE2A7FCBA0C29106797B9FFB53F" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{529554B2-555F-4CDC-93D9-B7DB77DC21FC}">
+                <File Id="filC148282B4331F8A20FF8D99E00AA57B0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+            </Component>
+            <Component Id="cmp5D9B96E5CA12C4F28FD7C732A90122B6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{D13C3237-9F3C-4B2D-8F5A-22C0D2E70A01}">
+                <File Id="filB9DA2391389261A181B021DB7A902363" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp3B56A08D52DD9EB3C7A47220F072C7D1" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{7BC1E1E7-CFAA-43C0-A694-A607CEBDC935}">
+                <File Id="fil8B61931695C1DCDFC3A17556FD6ABE46" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll" />
+            </Component>
+            <Component Id="cmpE290D4EF55821C538226103837341015" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2331F5A2-C5D3-42B3-A927-A4895A50113E}">
+                <File Id="filF69FB673FD283D2B1712D59F83E2430E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp918F5E7DD67B19970D1A0C2460428EA0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{082523B9-4D5B-4D6A-A797-AEF7848E47AA}">
+                <File Id="filAAA29E611803A0B574874D4291E7E98E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestModule.dll" />
+            </Component>
+            <Component Id="cmpA7389B3E1C9C833EEE89A561BA09459E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{3478383F-1480-4DC8-91EF-9778E8426EDA}">
+                <File Id="fil3F956741304F9EEF34E9191917B995F7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp66CAE72423AEE7B25AC29D4F55E1A1D6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{BAD7FB54-9660-4603-956F-2B4B90EB6B94}">
+                <File Id="fil80C60998746FFDD3C859532016B65CD4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll" />
+            </Component>
+            <Component Id="cmp81DDFEEC41DA5B29F6A81E7DAFB0FA2B" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{552D6AA2-7487-4A9A-8EFF-AACEF11BA795}">
+                <File Id="fil6AD3D94EB1B446E594A3AF5957F421B7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp7FB0F59C77D43A482E2E826A9EFEADC0" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{17584E00-B183-45C0-A00A-2D6EBA8A8118}">
+                <File Id="filB67CE79FE721FAE272A6B46BD7D64573" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll" />
+            </Component>
+            <Component Id="cmp45F86E2E8DD03A9924A91F3ECF2A6095" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A837D864-58A3-4C45-B5DC-BE1BD0E6EDF0}">
+                <File Id="filD8070D6943169E73111F4983961839A0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpEC4A0405036FD396A04F3986919DDD71" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FA155631-F39A-4BCF-9369-23B4BB5CB9EF}">
+                <File Id="fil319536103A512E06D884DCCE7241C793" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VehiclesModule.dll" />
+            </Component>
+            <Component Id="cmp1DEB8AA6653CCE2BE0965F15C8AEC253" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E0A8C1D2-4B34-4E4E-9009-08857885E026}">
+                <File Id="fil247A1A5270C2C314723E50FD1915D892" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VehiclesModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp47198D518AFD5E5232D5491B4764C2B8" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{2D9A15FC-D3C1-46DB-84A8-5F8E0694F125}">
+                <File Id="fil7D2B3E5CD6F7CADA7A12E4EA892FEBC6" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VFXModule.dll" />
+            </Component>
+            <Component Id="cmp959748AF8134FBF90060ACAFD04A7801" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{1FDF13F9-20EF-496E-A007-BAA57658E050}">
+                <File Id="filE0542CB8F2AE4EE7D8022301C7C5A46A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VFXModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpB60127CCAA7D28902F826D33270D36D9" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{93C4148E-72C0-4F2C-97F8-3802B91E0C42}">
+                <File Id="fil2388468F16B59618E7B254424153941E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VideoModule.dll" />
+            </Component>
+            <Component Id="cmp71583DEC4C68F794C5DA3305DE65694A" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{33FDFA69-E4DB-43EE-8C8F-47B0FCF87844}">
+                <File Id="filC4CAD5D8C3F07AE2874C3ED9A6B40076" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VideoModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpB5FF727FC98775A6BD2DBF4FB2D6E4F1" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{22359068-BFF1-432F-9F77-6A327E408DE1}">
+                <File Id="filDB621752E37AFD8C3A708675FAE093EB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VRModule.dll" />
+            </Component>
+            <Component Id="cmpFA0F8A56E25DCC9D7B62A0F6E0CE15B3" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{A25D6B70-F1E8-4DB8-9ABF-C4B0DC441989}">
+                <File Id="fil6DE3E3B3B379F082BA79CF322834F5E7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.VRModule.dll.mdb" />
+            </Component>
+            <Component Id="cmpC8A80A60FF022D091206D0DD0137A4C6" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{6A4D2949-67A8-442A-B9FE-FB8C27613EF4}">
+                <File Id="fil3FC0555FE0107F873CE44A88404BC4FD" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.WindModule.dll" />
+            </Component>
+            <Component Id="cmp2CD79F876239FA9916B8F21C88CBAE69" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{489B1977-F719-4EE1-B143-9F7B10AB4371}">
+                <File Id="filFD37E2D3BBCCB62F12394F579691B00F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.WindModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp4665AAEE62FEC961EC6CCAF92F10273E" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{E27818F2-A66B-4792-8951-1E47D757DB58}">
+                <File Id="fil981FCDAF5D242CE0CE609C1ADDAB7C63" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll" />
+            </Component>
+            <Component Id="cmp1C24848847D785CE1B237AA2FE6DEC95" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{4B7B50AE-8A1E-4C41-8E78-1EC632844AF6}">
+                <File Id="fil66392FB9FC5F880DB21FA54A5AC2A67A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.XRModule.dll" />
+            </Component>
+            <Component Id="cmp1DA7D6C6CE1B7E2DEE54AD232B0FAC96" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{67E86C50-702F-4A5F-97C4-FF2FED46E031}">
+                <File Id="fil5C405657D63C301D8D69BEED2BCF312A" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\UnityEngine.XRModule.dll.mdb" />
+            </Component>
+            <Component Id="cmp83A69B3D727DF2725967CD7BD94AD59B" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{9425C9FA-A126-44AB-AE99-913B6B0979BA}">
+                <File Id="fil36C948F5388131702024109DB05D2526" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\WebRtcCSharp.dll" />
+            </Component>
+            <Component Id="cmpD86A9A86DF8B8F0695251282F51E2B85" Directory="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Guid="{FBF18F24-7980-48A1-862D-95D83D36A94D}">
+                <File Id="fil1672F2659431D9ACF20F524BC56B8B3F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Managed\wrtc.dll" />
+            </Component>
+            <Component Id="cmp480DD2D8429E9711125C2F8E5955EC84" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{B84923CF-D69A-4CFA-8A50-55C4B92366D6}">
+                <File Id="fil42723529BA127D56860F569E682C3318" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\AudioIn.dll" />
+            </Component>
+            <Component Id="cmpB1D47EA8CF02765723E1F0B02F190BA4" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{03769556-3CD1-4A14-81BF-2A12D25D8AFC}">
+                <File Id="fil37D2D35C396556353D177A57891534E1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\AudioPluginOculusSpatializer.dll" />
+            </Component>
+            <Component Id="cmp8CDE024B20A7D0D2AD68A50A8C648BD1" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{50268AA6-22B4-4C3D-BBB9-B43306140CD6}">
+                <File Id="filF15E6CF718DED8A2F8CF7905A77EDBD1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\boost_system-vc140-mt-1_60.dll" />
+            </Component>
+            <Component Id="cmpFFA2BB389ECDB5D945080CE66DF70103" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{317B1BC9-A83D-43AC-B547-45F2B1799051}">
+                <File Id="fil7A12A4A96738CC493AF2B24DA32B10BD" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\cbia.lib.blas.dyn.rel.x64.12.dll" />
+            </Component>
+            <Component Id="cmpBA7B3A608400151F968FEC658BCA70CB" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{6ED9AA4C-DB8C-48E3-8A95-9426FEB18629}">
+                <File Id="fil202BB5AA2FDBAF3407FF681036281F16" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\cbia.lib.lapack.dyn.rel.x64.12.dll" />
+            </Component>
+            <Component Id="cmp9F6162069348121382D5ECFCDA9F0C00" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{F0CCA4B1-602A-4E08-939B-363B8B55348C}">
+                <File Id="filDA1CDFA8A2A74AC0E3DCC71C1713BFA9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\cublas64_80.dll" />
+            </Component>
+            <Component Id="cmpEA62363C5244E13F5DDE4FCE8545858E" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{518BFE42-677A-42D8-8F47-F01C8586E928}">
+                <File Id="fil0FFB1D143E0B4C6C7C6FB8C9FD2F25C9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\cudart64_80.dll" />
+            </Component>
+            <Component Id="cmp89965FE75F28CD04674DA86377CDE197" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{F0086EF8-DFD8-497E-A008-21D4A314A2A6}">
+                <File Id="fil1CE3E19C691D4335073BADA6B2EB4BD7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\DualCameraInterface.dll" />
+            </Component>
+            <Component Id="cmpB8FBC4E940A7C5C914E6727DAC5D3298" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{DCA1BFCF-51F3-4EF3-B600-1AF35826CCE9}">
+                <File Id="filEE52E9D7EF84279799DC03ADC33897F9" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\Dual_Camera_Device_Intrinsic.dll" />
+            </Component>
+            <Component Id="cmp23D7D1A947A5D6CEF25DFC0B59FD4B79" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{0D92C1EA-756A-4F89-9900-FC53FF5F6064}">
+                <File Id="fil1AB1910C09FB968BD7CF8C9683ECC2EB" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\freeglut.dll" />
+            </Component>
+            <Component Id="cmp40EA9434468FE8289E2CE711EE63622C" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{DB37C507-2054-40FA-8373-661602ADFFB8}">
+                <File Id="fil56FA196F329B97ED4B400FBCF01ABCE1" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\glew32.dll" />
+            </Component>
+            <Component Id="cmp2BF1AD2E693D1DEEF08718BCC71700BE" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{BDD96BB8-A0CF-47E7-AD49-39A35A8D1AAD}">
+                <File Id="fil15A1CC179DF2A24F0DB66D45D688BC94" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\glfw3.dll" />
+            </Component>
+            <Component Id="cmpFBECCB98631B80D4F10CAD545A85406E" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{789347F8-AA2A-4CA3-ADBF-9ACE229E7A05}">
+                <File Id="fil4F9DBC6B727903A466FB3C017BE25A9F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\LeapC.dll" />
+            </Component>
+            <Component Id="cmpFDD313C3B22754A96E7A25562F9EBC56" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{886F7F5A-9131-457C-877B-B7BF07522D13}">
+                <File Id="fil517575A5F5CFBAED1512535ED6E06772" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\libifcoremd.dll" />
+            </Component>
+            <Component Id="cmp6D708826E97526FB6E648D17DEAFBD87" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{9A6C8BD6-9CB3-4DBE-852A-40F2ADD15A1F}">
+                <File Id="fil9241314E66D2290692A6DDACD5D7A7AD" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\libmmd.dll" />
+            </Component>
+            <Component Id="cmp15460C831D87ECD7C5D81712892B1B83" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{02C70EE7-AA6B-4FBD-90FF-E4D744A9B7AE}">
+                <File Id="fil8A51F2ABB33A102C45551AE93904D472" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\Module_Depth.dll" />
+            </Component>
+            <Component Id="cmp76C85651861B4163C7A78D4E12906ED6" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{26C336F7-A5A4-4787-8FA8-2E2F782513C0}">
+                <File Id="fil11A70BFEAC2AE0F54501515B41353A15" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\Module_Undistortion.dll" />
+            </Component>
+            <Component Id="cmpBC573C9D0A49B6ABF94A3E2F5BCF58DD" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{240DC2F6-BDD1-40F3-8F92-DE4CD087AD79}">
+                <File Id="fil91061DAD9B39FC5498050CD2E37F541F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\NatCorder.dll" />
+            </Component>
+            <Component Id="cmpFFF2D10C2E5B2A1F688087EB8C94DEBB" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{67D7E4AC-FFAF-4827-AB92-B7AD785C8D3C}">
+                <File Id="fil762F8085A03732CE1DA85675F64133EE" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\nppc64_80.dll" />
+            </Component>
+            <Component Id="cmp9E1EA7AE290563B17557A8A7AACB5870" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{C99CF4A3-98B7-4683-A292-006800B9A8B0}">
+                <File Id="fil49BC79DAD571F5D15A6637E48EC3ABC0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\nppi64_80.dll" />
+            </Component>
+            <Component Id="cmpDF07829661500294145C8884A4BB8ED5" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{3FE48059-A647-4709-82B5-CBF9B721EF4A}">
+                <File Id="filDEBDCB6709ADB03328DBB1C607FAFD4C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\OnFlyControl.dll" />
+            </Component>
+            <Component Id="cmpC7F660008EAF45077501CA9C82ABFBE7" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{ECAF6592-AD4C-4694-9AB3-99B14C2BA502}">
+                <File Id="filF1CBE4E2A652885C49716BE5B0C04001" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\OnFlyRectifyDll.dll" />
+            </Component>
+            <Component Id="cmp4C4BF221168B4B9B4B5BADE313344A78" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{FE031B1C-3357-4757-B56C-A7594D48A4D1}">
+                <File Id="fil08F708A19C7E7AC9F8EB5C22FE4DB2B8" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_calib3d310.dll" />
+            </Component>
+            <Component Id="cmp9DF2E2B65789984950E8830C6BD4D042" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{D8AB6862-1733-49DD-854A-2C546649DB61}">
+                <File Id="filE4E0526A81266FFF5767287A66D66E1D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_core310.dll" />
+            </Component>
+            <Component Id="cmp276D7036AEC21AF57CC440BC6E05DCC6" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{F672EC48-7B31-460A-9E74-0B7EF6F5EA9E}">
+                <File Id="fil6EB1313888725E07FE78BB3F9DFDDFB0" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_cudawarping310.dll" />
+            </Component>
+            <Component Id="cmp7313E292C943F5098A8AA2D69CFA0A9D" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{7C5BD343-5929-4ADF-85E9-1BFA6D893F5F}">
+                <File Id="fil7EE9A70F89BFF246CA5E2658012E07F7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_features2d310.dll" />
+            </Component>
+            <Component Id="cmpCB7E1675A76CE12F7F9D435662E6B6EA" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{7FADA808-50DD-45DE-AC15-E97F9E53F818}">
+                <File Id="fil5C31D6D0B7E3FFC23DAF0B6C0B0ABC4C" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_flann310.dll" />
+            </Component>
+            <Component Id="cmpDF8DF47C2D7AEFB10D1048B82CF17034" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{3A7B89F2-B4BA-41C1-87E6-6734B6E20AB3}">
+                <File Id="fil1CC70DA4EE634B36EAE7A6FABE9C6F0D" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_imgproc310.dll" />
+            </Component>
+            <Component Id="cmpF20AF7124F193ED6552CC66C111AFE14" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{65CDAE05-FB83-49F3-894C-A416C990B734}">
+                <File Id="fil731DF346EE86CBD21251233D6623ECD7" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opencv_world310.dll" />
+            </Component>
+            <Component Id="cmp33DDCE31D155BDC4094BBEA67CEBA9F0" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{18209921-1F03-4E7F-A9A4-408821FA8C03}">
+                <File Id="fil0ABEB3F1325E4057172FD2ECFB5ACF78" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\openvr_api.dll" />
+            </Component>
+            <Component Id="cmpE3D5F37661A598546B055A5704ADFBCB" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{B9E1F3AA-F63A-48DB-B799-7AD53ABB35FB}">
+                <File Id="fil7E003A1B2DFE231198705979F02C04B2" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\opus_egpv.dll" />
+            </Component>
+            <Component Id="cmpD4B1CCDE4BA7887921D9DC4010AA3157" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{A3A27792-2450-4469-8181-41F693D5AB75}">
+                <File Id="fil31CA614B2BEDC2095F3F6C5EB553B64E" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\OVRPlugin.dll" />
+            </Component>
+            <Component Id="cmpBAC2380A3B3D8CDD93CDFCEB78C8C7E5" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{1B029DB0-2391-4B0A-9755-6AFD6EF1484C}">
+                <File Id="fil443FD49C0033C8387D46C0CE2535A376" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\path_registry.dll" />
+            </Component>
+            <Component Id="cmpF66FB1E4645E69C9CEA245D3B527EEA9" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{6299D3D8-F90E-4BE3-9965-9CAF924780B3}">
+                <File Id="fil1B2BC680364F46EABC947C030F07DC69" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\SRWorks_Log.dll" />
+            </Component>
+            <Component Id="cmpA78C57DC570349102CAB4AADA08772DE" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{6EE5C442-673A-4BF7-8D2C-B61A5E450326}">
+                <File Id="filDA1130938339D503ABD10ADEDA831704" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\svml_dispmd.dll" />
+            </Component>
+            <Component Id="cmpD1CAE07DAA69C8653B1AC4FDECCEA4D7" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{A76FFA71-31A1-4B95-935B-94637D14F176}">
+                <File Id="filCC1008F3E20591F033C484B76640C895" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\ViveDepthSpatialAnalyzerLib.dll" />
+            </Component>
+            <Component Id="cmpDBB55E9C5371997189A6479B0B778E09" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{DD23F223-9FC5-407E-9973-E8684C89389D}">
+                <File Id="fil31FA4748F42BFDFF557ED2544ED81976" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\ViveSR_API.dll" />
+            </Component>
+            <Component Id="cmp1592E6B1104B9314EDC9A9FB037FB86B" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{2F16315E-5127-492E-B261-A6465407DA06}">
+                <File Id="fil5DE5B4128834A27E148F15B78D598319" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\ViveSR_SystemMonitor.dll" />
+            </Component>
+            <Component Id="cmp2D8B8BAC2747B691806A5B57D5C05C4A" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{C66CBAB9-6F07-47F7-9DFA-1056DC2D0298}">
+                <File Id="fil0B4850BAE8B916E5DA0E57F1CCC1B5D4" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\ViveStaticReconstructionLib.dll" />
+            </Component>
+            <Component Id="cmp8C997C5D2499DAEEE511864BAE63A257" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{D786C536-89E5-4B45-ADB7-7365E82D106D}">
+                <File Id="fil235296D345AC6416AC58684198F92D2B" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\webrtc-audio.dll" />
+            </Component>
+            <Component Id="cmpB650642F3B2CFE4704E1139CC6F3FFE3" Directory="dirD6AD02B728576F739AD7D75F726FB353" Guid="{AD9BF78A-6B38-4C16-B3F9-BCAD34374C4D}">
+                <File Id="filBC242128D3E7418B3474A08EBFD2DC33" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Plugins\webrtccsharpwrap.dll" />
+            </Component>
+            <Component Id="cmpAF2A1890D76B11D8FB0DE65D634DFBC1" Directory="dir2E308C161AF6074CF017E6C5C759480D" Guid="{17AED2CB-AACA-415B-A77A-8325BF63F569}">
+                <File Id="filC4D6078AD5ADD5497C91DDF83A92BD39" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Resources\unity default resources" />
+            </Component>
+            <Component Id="cmp44488C9125D1A431FD6A03B9E8C28DB5" Directory="dir2E308C161AF6074CF017E6C5C759480D" Guid="{6E8CE2DF-B502-4620-B27D-CB2F72C30B5B}">
+                <File Id="fil67605BDFBD3920DCC55FF2AEBA5B872F" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\Resources\unity_builtin_extra" />
+            </Component>
+            <Component Id="cmp31E28F36DABE1077B9062AC0DF0EF3E0" Directory="dir9442390D39FD8F893BB5762075E095CB" Guid="{4676D76F-B440-42D6-B174-7E9C777680FD}">
+                <File Id="fil188AEB074711B06CBE27FAD925FD8B24" KeyPath="yes" Source="$(var.ClientAssets)\FactualPlatform_Data\StreamingAssets\ExternalProcesses\GetAllAdminProcesses.bat" />
+            </Component>
+            <Component Id="cmpE7DBE384AF08274D565FA21183760331" Directory="dirAC13006FCDF2B3D834B977FEBD3D7C0A" Guid="{DE925225-84F0-4866-A1F8-57D543ADEA9D}">
+                <File Id="fil9FF2569C9691462C7F3867F38987F7AE" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll" />
+            </Component>
+            <Component Id="cmp27FA1219DC0BC68075E68E794105C3CC" Directory="dirAC13006FCDF2B3D834B977FEBD3D7C0A" Guid="{7FB7B752-6E63-4CDD-8D41-F65D383EB981}">
+                <File Id="fil3884A72A57FB26561CBFF5DE0CA5D179" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll" />
+            </Component>
+            <Component Id="cmpA5DFAA3D928A0E0076420861CF45AE2E" Directory="dirA27EDEAD6B5846C81DB9FDEF14695C8B" Guid="{10D7E94E-7896-4F09-8166-41BC51CF84CF}">
+                <File Id="fil8E09B103964450FA4C42C0A7EA0D76AE" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\browscap.ini" />
+            </Component>
+            <Component Id="cmp3AB9C9FEEA00039357C077EAE08ABDF5" Directory="dirA27EDEAD6B5846C81DB9FDEF14695C8B" Guid="{F76B73E2-A7A7-4F4B-B46E-CF78EEDD29CF}">
+                <File Id="fil860F71412995901FBD32E4DB31589CD9" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\config" />
+            </Component>
+            <Component Id="cmp404C5D11F1389BD0378139F05CC82B3F" Directory="dir698C1361F454B6E5C891C34EEE10B0C5" Guid="{FB6C067C-BD1A-4D39-9DDB-6FB88D781C99}">
+                <File Id="filEAC051886DD71CC465494468CDD028DB" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmpEBA64A1AEB20FF8C0B2CFC6832F9FEEC" Directory="dir698C1361F454B6E5C891C34EEE10B0C5" Guid="{1EF72399-3320-42A5-9003-7F722ACF2A42}">
+                <File Id="filD7D25998C816D34C3D5C0E1DECF9D9FC" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\2.0\machine.config" />
+            </Component>
+            <Component Id="cmpB6EAB18E53412F9D8CCE7CFF41B74E34" Directory="dir698C1361F454B6E5C891C34EEE10B0C5" Guid="{CDAC75CA-C845-4B37-9F70-881DB2EC77C8}">
+                <File Id="filA88EF5D26C1B314AD48B7FEEFE62FBB7" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\2.0\settings.map" />
+            </Component>
+            <Component Id="cmp1DE34B3ED2322E9B49CA35A6DB0F4686" Directory="dir698C1361F454B6E5C891C34EEE10B0C5" Guid="{FA872D40-7587-4F9B-812E-C3080654931E}">
+                <File Id="fil00C3C7396E7A21E820AEF9315603A880" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\2.0\web.config" />
+            </Component>
+            <Component Id="cmpBB301CD1557039C68A05C0DD76C3194B" Directory="dir71B5170A1FEBCC05E4C86BC64B0683FE" Guid="{95E26800-6A15-4DDE-A854-C3AA8962FD19}">
+                <File Id="filDB8BD610F9C2B9602D06F853A5C3D019" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmp7D5B0C10095478AE8691D71C73D9D075" Directory="dir3E88867EC427ECF1D7D66DF63E7AA0AB" Guid="{83BDFB6C-A181-4CD6-891B-41DC09EAC6DD}">
+                <File Id="fil92E787D0697DB3EF01ED04C895C5A01A" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmp482AABDCA79CC58FBB47C7328686416A" Directory="dir3E88867EC427ECF1D7D66DF63E7AA0AB" Guid="{545DCA98-BEE2-4E6C-A80B-2563265D3F43}">
+                <File Id="fil097855ED00B4C52689F40E5AB7C35739" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.0\machine.config" />
+            </Component>
+            <Component Id="cmpA84844886A096E85CC57579EF4BE0035" Directory="dir3E88867EC427ECF1D7D66DF63E7AA0AB" Guid="{2E4AAF72-6C58-4B82-86A1-707E1B373671}">
+                <File Id="fil7EA45722892BC913EA090804F5F5B91F" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.0\settings.map" />
+            </Component>
+            <Component Id="cmp67D97928CE89FE24CA7D1D29D5F2369C" Directory="dir3E88867EC427ECF1D7D66DF63E7AA0AB" Guid="{A3E73D4C-DAFF-4DB9-9710-3AD1DF78ADE6}">
+                <File Id="fil6199615BC121CE065B0EC79F81E5107A" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.0\web.config" />
+            </Component>
+            <Component Id="cmpC5A66652E247B8A6D63FE76D4B5071D9" Directory="dir3358FD24C1541369401D01313EA7F04F" Guid="{A3F3F640-B09A-4751-83B6-AABE7FC34197}">
+                <File Id="filB9CD4FE7021AC1E570363D333344F00D" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmp51328DC6B8381D0E6DAD002629152295" Directory="dir9763A23B216B24FABED0746BACDF6BCC" Guid="{B8C9A18D-A00E-4D2E-B2A2-86B7FBA53CFA}">
+                <File Id="fil1C8495568E536861CC2F06D05B35DBEB" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx" />
+            </Component>
+            <Component Id="cmp410C411E75DA4B0D3B641F51DD54C6E3" Directory="dir9763A23B216B24FABED0746BACDF6BCC" Guid="{C35A0596-F9B9-457E-BA07-F1FAA1757B73}">
+                <File Id="fil6DBABF8EA501C478F9D1484FCC91818B" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.5\machine.config" />
+            </Component>
+            <Component Id="cmpE1001AF9850D6EA375985E6344C216D0" Directory="dir9763A23B216B24FABED0746BACDF6BCC" Guid="{63DD003A-2BCF-4011-9567-A0DA056695C0}">
+                <File Id="fil41923461AD735D00979BBC4C1217CC31" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.5\settings.map" />
+            </Component>
+            <Component Id="cmp3EE0AED715EE97F8272F9ED94A37DCDA" Directory="dir9763A23B216B24FABED0746BACDF6BCC" Guid="{CCAC1B48-775B-45B5-8B41-906B2945842C}">
+                <File Id="fil7EAFA884E72D18B01B68CFA3ADFA6433" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.5\web.config" />
+            </Component>
+            <Component Id="cmpEB05DD50D2DC5DBEA6D0A20AD3BC0EDC" Directory="dir704F9FE54AE3C47A4B9D49E46194DA1D" Guid="{7A1F4DA1-AB4C-4282-949D-DCF9F8A8AB92}">
+                <File Id="fil90F1831D44CAA88C6BC2A3D57ED26E92" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser" />
+            </Component>
+            <Component Id="cmp7AB5279AFEEED5F04C391A931AF4A1B7" Directory="dirFF15EF0BB52EBC8A9CA84DCA43C9D5E2" Guid="{710C97AF-D1C0-446C-A7A3-89F60BD47FA1}">
+                <File Id="fil4C9FF2C6518EC80C167F14A102BD10FB" KeyPath="yes" Source="$(var.ClientAssets)\MonoBleedingEdge\etc\mono\mconfig\config.xml" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9CC62EAFFA9842CB0787C0F229B39A5B">
+            <Directory Id="dir01C26293F7D40A3D6F9B2C9C33F8C46B" Name="Managed" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9CC62EAFFA9842CB0787C0F229B39A5B">
+            <Directory Id="dir12B5A3E256C3C02DD3133EB0A0AD1663" Name="StreamingAssets" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9CC62EAFFA9842CB0787C0F229B39A5B">
+            <Directory Id="dir2E308C161AF6074CF017E6C5C759480D" Name="Resources" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir3E88867EC427ECF1D7D66DF63E7AA0AB">
+            <Directory Id="dir3358FD24C1541369401D01313EA7F04F" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA27EDEAD6B5846C81DB9FDEF14695C8B">
+            <Directory Id="dir3E88867EC427ECF1D7D66DF63E7AA0AB" Name="4.0" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA27EDEAD6B5846C81DB9FDEF14695C8B">
+            <Directory Id="dir698C1361F454B6E5C891C34EEE10B0C5" Name="2.0" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9763A23B216B24FABED0746BACDF6BCC">
+            <Directory Id="dir704F9FE54AE3C47A4B9D49E46194DA1D" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir698C1361F454B6E5C891C34EEE10B0C5">
+            <Directory Id="dir71B5170A1FEBCC05E4C86BC64B0683FE" Name="Browsers" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir12B5A3E256C3C02DD3133EB0A0AD1663">
+            <Directory Id="dir9442390D39FD8F893BB5762075E095CB" Name="ExternalProcesses" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA27EDEAD6B5846C81DB9FDEF14695C8B">
+            <Directory Id="dir9763A23B216B24FABED0746BACDF6BCC" Name="4.5" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirF0CFDDED22ED05F4B6387217B391093E">
+            <Directory Id="dirA27EDEAD6B5846C81DB9FDEF14695C8B" Name="mono" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirC4E056E63F35A6265226986898FE0D8E">
+            <Directory Id="dirAC13006FCDF2B3D834B977FEBD3D7C0A" Name="EmbedRuntime" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dir9CC62EAFFA9842CB0787C0F229B39A5B">
+            <Directory Id="dirD6AD02B728576F739AD7D75F726FB353" Name="Plugins" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirC4E056E63F35A6265226986898FE0D8E">
+            <Directory Id="dirF0CFDDED22ED05F4B6387217B391093E" Name="etc" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <DirectoryRef Id="dirA27EDEAD6B5846C81DB9FDEF14695C8B">
+            <Directory Id="dirFF15EF0BB52EBC8A9CA84DCA43C9D5E2" Name="mconfig" />
+        </DirectoryRef>
+    </Fragment>
+</Wix>

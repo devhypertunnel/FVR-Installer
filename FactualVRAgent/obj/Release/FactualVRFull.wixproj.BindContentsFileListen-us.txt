@@ -1,0 +1,4 @@
+..\Assets\Server\iisftp\scripts\servicerun.bat
+..\Assets\Client\FactualPlatform.exe
+..\Assets\Server\iisftp\scripts\ftpconfig.ps1
+..\Assets\Client\setup.ps1

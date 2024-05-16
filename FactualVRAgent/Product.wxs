@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+  <!-- === Defines & Variables === -->
+
+  <!-- Full version number to display -->
+  <?define VersionNumber="20.06.02" ?>
+  <!-- UpgradeCode must remain the same for minor updates, but must be changed for a major update -->
+  <?define UpgradeCode="EF001F10-C4B5-4875-A865-D6EFA7044A00" ?>
+  <!-- URL to direct clients on add or remove -->
+  <?define InfoURL="https://factualvr.com/" ?>
+  <!-- 32-bit / 64-bit variables -->
+  <?if $(var.Platform) = x64 ?>
+  <?define Win64 = "yes" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFiles64Folder" ?>
+  <?define FactualPlatformExeSourcePath = "$(var.ProjectDir)..\FactualVR\x64\Release\FactualPlatform.exe" ?>
+  <?else ?>
+  <?define Win64 = "no" ?>
+  <?define PlatformProgramFilesFolder = "ProgramFilesFolder" ?>
+  <?define FactualPlatformExeSourcePath = "$(var.ProjectDir)..\FactualVR\Win32\Release\FactualPlatform.exe" ?>
+  <?endif ?>
+
+  <!-- === Main product installer configuration === -->
+
+  <!-- ID must be * for major updates to function correctly -->
+  <Product Id="*"
+    Name="!(loc.ApplicationName)"
+    Language="!(loc.Language)"
+    Version="$(var.VersionNumber)"
+    Manufacturer="!(loc.ManufacturerFullName)"
+    UpgradeCode="$(var.UpgradeCode)" >
+
+    <!-- Installer options -->
+    <Package Id="*"
+      InstallerVersion="400"
+      Compressed="yes"
+      InstallScope="perMachine"
+      Description="!(loc.ProductDescription)"
+      Comments="!(loc.Comments) $(var.VersionNumber)" />
+
+    <!-- License agreement -->
+    <WixVariable Id="WixUILicenseRtf" Value="dummy" />
+
+    <!-- UI customization -->
+    <WixVariable Id="WixUIBannerBmp" Value="..\Images\BannerTop.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="..\Images\Dialog.bmp" />
+    <Icon Id="Icon.exe" SourceFile="..\Images\app.ico" />
+
+    <!-- === Properties === -->
+
+    <!-- Add/remove programs -->
+    <Property Id="WIXUI_DONTVALIDATEPATH" Value="1" />
+    <Property Id="ARPPRODUCTICON" Value="Icon.exe" />
+    <Property Id="ARPHELPLINK" Value="$(var.InfoURL)" />
+    <Property Id="ARPNOREPAIR" Value="yes" Secure="yes" />
+    <!-- Remove repair -->
+    <Property Id="ARPNOMODIFY" Value="yes" Secure="yes" />
+
+    <!-- Determine the directory of a previous installation (if one exists). If not FTPINSTALLPATH stays empty -->
+    <Property Id="DefaultInstallPath" Value="C:\FactualVR\Server" />
+    <Property Id="PhotonInstallPath" Value="C:\FactualVR\Server\photon\deploy\bin_Win64" />
+    <Property Id="CLIENTINSTALLPATH">
+      <RegistrySearch Id="DetermineClientInstallLocation"
+        Type="raw"
+        Root="HKLM"
+        Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)"
+        Name="ClientInstallLocation" />
+    </Property>
+    <Property Id="FTPINSTALLPATH">
+      <RegistrySearch Id="DetermineFtpInstallLocation"
+        Type="raw"
+        Root="HKLM"
+        Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)"
+        Name="FtpInstallLocation" />
+    </Property>
+    <!-- Determine the servers of a previous installation -->
+    <Property Id="SERVERS">
+      <RegistrySearch Id="DetermineServers"
+        Type="raw"
+        Root="HKLM"
+        Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)"
+        Name="Servers" />
+    </Property>
+    <!-- Set default value if registry search comes up empty -->
+    <SetProperty Before='InstallInitialize' Sequence='execute' Id='SERVERS' Value='localhost:19500'>NOT SERVERS</SetProperty>
+
+    <Property Id="MSIUSEREALADMINDETECTION" Value="1" />
+    <Property Id="WIXUI_INSTALLDIR" Value="FTPINSTALLPATH" />
+    <Property Id="WIXUI_CLIENTINSTALLDIR" Value="CLIENTINSTALLPATH" />
+
+    <!-- Upgrade logic -->
+    <MajorUpgrade DowngradeErrorMessage="!(loc.NewerInstalled)" AllowSameVersionUpgrades="yes" />
+
+    <!-- Installer properties -->
+    <CustomAction Id="SetOTHERINSTALLLOCATION" Property="OTHERINSTALLLOCATION" Value="[CLIENTINSTALLPATH]" />
+    <CustomAction Id="SetARPINSTALLLOCATION" Property="ARPINSTALLLOCATION" Value="[FTPINSTALLPATH]" />
+
+    <InstallExecuteSequence>
+      <Custom Action="SetARPINSTALLLOCATION" After="InstallValidate" />
+      <Custom Action="SetOTHERINSTALLLOCATION" After="InstallValidate" />
+    </InstallExecuteSequence>
+
+    <CustomAction
+      Id="SetupServices"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='cmd /c "C:\FactualVR\Server\serviceinstall.bat" INSTALL' />
+
+    <InstallExecuteSequence>
+      <Custom Action="SetupServices" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction
+      Id="SetupPhoton"
+      Directory="PhotonInstallPath"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='cmd /c "C:\FactualVR\Server\photoninstall.bat" INSTALL' />
+
+    <InstallExecuteSequence>
+      <Custom Action="SetupPhoton" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction Id="SetupFTP"
+      Directory="DefaultInstallPath"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -command "Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-WebServerRole;Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPServer;Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPExtensibility;Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPSvc;Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-Webserver;Enable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-WebServerManagementTools"' />
+    <InstallExecuteSequence>
+      <Custom Action="SetupFTP"
+        After="InstallInitialize">NOT Installed AND NOT REMOVE</Custom>
+      <ForceReboot After="SetupFTP">NOT Installed AND NOT AFTERREBOOT</ForceReboot>
+    </InstallExecuteSequence>
+
+    <CustomAction
+      Id="ConfigureFTP"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "C:\FactualVR\Server\iisftp\scripts\ftpconfig.ps1" -FTPRootDir [FTPINSTALLPATH]' />
+
+    <InstallExecuteSequence>
+      <Custom Action="ConfigureFTP"  Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction
+      Id="CreateShortcut1"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "C:\FactualVR\Server\misc\scripts\createshortcut.ps1" -ShortcutName "FactualVR - Client.lnk" -ShortcutTarget "[CLIENTINSTALLPATH]FactualVRPlatform.exe" -ShortcutDesc "Launch FactualVR client." -ShortcutWorkDir "[CLIENTINSTALLPATH]"' />
+
+    <CustomAction
+      Id="CreateShortcut2"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "C:\FactualVR\Server\misc\scripts\createshortcut.ps1" -ShortcutName "FactualVR - Start Server.lnk" -ShortcutTarget "[DefaultInstallPath]servicestart.bat" -ShortcutDesc "Start backend FactualVR services." -ShortcutWorkDir "[DefaultInstallPath]"' />
+
+    <CustomAction
+      Id="CreateShortcut3"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -file "C:\FactualVR\Server\misc\scripts\createshortcut.ps1" -ShortcutName "FactualVR - Stop server.lnk" -ShortcutTarget "[DefaultInstallPath]servicestop.bat" -ShortcutDesc "Stop backend FactualVR services." -ShortcutWorkDir "[DefaultInstallPath]"' />
+
+    <InstallExecuteSequence>
+      <Custom Action="CreateShortcut1" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+      <Custom Action="CreateShortcut2" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+      <Custom Action="CreateShortcut3" Before="InstallFinalize">NOT Installed AND NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+
+    <!--Remove services-->
+    <CustomAction
+      Id="RemoveServices"
+      Directory="FTPINSTALLPATH"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='cmd /c "C:\FactualVR\Server\serviceinstall.bat" REMOVE' />
+
+    <InstallExecuteSequence>
+      <Custom Action="RemoveServices"  After="InstallInitialize">(NOT UPGRADINGPRODUCTCODE) AND (REMOVE="ALL")</Custom>
+    </InstallExecuteSequence>
+
+
+    <CustomAction Id="RemoveFTP"
+      Directory="DefaultInstallPath"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='powershell -executionPolicy bypass -windowstyle hidden -command "Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-WebServerRole;Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPServer;Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPExtensibility;Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-FTPSvc;Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-Webserver;Disable-WindowsOptionalFeature -norestart -Online -FeatureName IIS-WebServerManagementTools"' />
+
+    <InstallExecuteSequence>
+      <Custom Action="RemoveFTP"
+        After="InstallInitialize">(NOT UPGRADINGPRODUCTCODE) AND (REMOVE="ALL")</Custom>
+    </InstallExecuteSequence>
+
+    <CustomAction
+      Id="RemovePhoton"
+      Directory="PhotonInstallPath"
+      Execute="deferred"
+      Impersonate="no"
+      Return="check"
+      ExeCommand='cmd /c "C:\FactualVR\Server\photoninstall.bat" REMOVE' />
+
+    <InstallExecuteSequence>
+      <Custom Action="RemovePhoton" After="InstallInitialize">(NOT UPGRADINGPRODUCTCODE) AND (REMOVE="ALL")</Custom>
+    </InstallExecuteSequence>
+
+    <!-- Launch conditions -->
+    <Condition Message="!(loc.OS2Old)">
+      <![CDATA[Installed OR (VersionNT >= 600)]]>
+    </Condition>
+    <?if $(var.Platform) = x64 ?>
+    <Condition Message="!(loc.x86VersionRequired)">
+      <![CDATA[VersionNT64]]>
+    </Condition>
+    <?endif?>
+    <?if $(var.Platform) = x86 ?>
+    <Condition Message="!(loc.x64VersionRequired)">
+      <![CDATA[NOT VersionNT64]]>
+    </Condition>
+    <?endif?>
+
+    <!-- === Directory structure === -->
+    <!-- For a list of folder variables: http://msdn.microsoft.com/en-us/library/aa372057%28VS.85%29.aspx -->
+
+    <!-- Embedded cabinet file -->
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+
+      <!--FTP data -->
+      <Directory Id="FTPINSTALLPATH" Name="FVR-Data">
+        <Component Id="FTPINSTALLPATH_comp" Guid="E2FF7042-ED00-4FD9-BF74-C6E8AEE8E395">
+          <CreateFolder />
+        </Component>
+      </Directory>
+
+      <Directory Id="CLIENTINSTALLPATH" Name="FactualVR">
+        <Component Id="CLIENTINSTALLPATH_comp" Guid="E1FF7042-ED00-4FD9-BF74-C6E8AEE8E395">
+          <CreateFolder />
+        </Component>
+      </Directory>
+
+      <!--Photon -->
+      <Directory Id="PhotonInstallPath" Name="PhotonPath">
+        <Component Id="PhotonInstallPath_comp" Guid="E2FF7042-ED00-4FD9-BF75-C6E8AEE8E395">
+          <CreateFolder />
+        </Component>
+      </Directory>
+
+      <!-- FactualPlatform directory -->
+      <Directory Id="$(var.PlatformProgramFilesFolder)">
+        <!-- All folders from here on are relative to their parent. -->
+        <Directory Id="ProgramFilesHK" Name="!(loc.ManufacturerName)">
+          <Directory Id="DefaultInstallPath" Name="!(loc.ApplicationName)">
+            <Component Id="DefaultInstallPath_comp" Guid="3A02D1DC-C00E-4A06-B733-31359F357369">
+              <CreateFolder />
+              <RemoveFile Id="RemoveFilesFromAppDirectory" Name="*.*" On="uninstall" />
+            </Component>
+          </Directory>
+        </Directory>
+      </Directory>
+
+      <!-- Registry changes -->
+      <Component Id="RegValFtpInstallLocation_comp" Guid="A507892A-6AD4-4E7F-8396-AB2A104C2889">
+        <!-- This key will be removed on uninstall -->
+        <RegistryKey Root="HKLM" Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)">
+          <RegistryValue Name="FtpInstallLocation" Value="[FTPINSTALLPATH]" Type="string" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+      <Component Id="RegValClientInstallLocation_comp" Guid="A407892A-6AD4-4E7F-8396-AB2A104C2889">
+        <!-- This key will be removed on uninstall -->
+        <RegistryKey Root="HKLM" Key="Software\!(loc.ManufacturerName)\InstalledProducts\!(loc.ApplicationName)">
+          <RegistryValue Name="ClientInstallLocation" Value="[CLIENTINSTALLPATH]" Type="string" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+    </Directory>
+
+    <!-- === Features === -->
+
+    <!-- Server -->
+    <Feature Id="Server"
+      Title="!(loc.ApplicationName)"
+      Description="!(loc.FeatureCompleteDescription)"
+      Display="expand"
+      Level="1"
+      ConfigurableDirectory="FTPINSTALLPATH">
+
+      <!-- Install harvested client/server files -->
+      <ComponentGroupRef Id="ServerFilesGroup" />
+      <ComponentGroupRef Id="ClientFilesGroup" />
+
+      <!-- GUI feature block -->
+      <Feature Id="ServerProgram"
+        Title="!(loc.FeatureServerProgramTitle)"
+        Description="!(loc.FeatureServerProgramDescription)"
+        Level="1">
+
+        <!--Server-->
+        <ComponentRef Id="FTPINSTALLPATH_comp" />
+        <ComponentRef Id="DefaultInstallPath_comp" />
+        <ComponentRef Id="PhotonInstallPath_comp" />
+        <ComponentRef Id="RegValFtpInstallLocation_comp" />
+
+        <!--Client-->
+        <ComponentRef Id="CLIENTINSTALLPATH_comp" />
+        <ComponentRef Id="RegValClientInstallLocation_comp" />
+      </Feature>
+    </Feature>
+
+    <!-- Define the installer UI -->
+    <UI>
+      <UIRef Id="WixUI_HK" />
+    </UI>
+  </Product>
+</Wix>

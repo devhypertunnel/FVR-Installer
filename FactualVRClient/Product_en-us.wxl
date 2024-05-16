@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" 
+  Codepage="1252" 
+  xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="Language">1033</String>
+
+  <String Id="ApplicationName">FactualVR</String>
+  <String Id="ManufacturerName">FactualVR</String>
+  <String Id="ManufacturerFullName">FactualVR</String>
+  <String Id="ProductDescription">FactualVR Client and Server</String>
+  <String Id="Comments">Installs FactualVR</String>
+
+  <String Id="LicenseRtf" 
+    Overridable="yes">Eula-en.rtf</String>
+
+  <String Id="OS2Old">FactualVR requires Windows 7 or greater.</String>
+  <String Id="NewerInstalled">A more recent version of this software is already installed.</String>
+  <String Id="x64VersionRequired">Please install the 64-bit version of this product on 64-bit Windows.</String>
+  <String Id="x86VersionRequired">Please install the 32-bit version of this product on 32-bit Windows.</String>
+
+  <String Id="FeatureCompleteDescription">FactualVR with client, server, and configuration.</String>
+  <String Id="FeatureClientPackageDescription">The full version of FactualVR including all dependencies.</String>
+  <String Id="FeatureClientPackageTitle">FactualVR Server</String>
+
+  <String Id="FeatureClientProgramDescription">The full version of FactualVR including all dependencies.</String>
+  <String Id="FeatureClientProgramTitle">FactualVR Client</String>
+
+  <String Id="ServiceDisplayName">FactualVR</String>
+  <String Id="ServiceDescription">FactualVR service.</String>
+</WixLocalization>      

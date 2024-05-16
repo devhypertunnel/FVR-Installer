@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRBundle", "FactualVRBundle\FactualVRBundle.wixproj", "{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRClient", "FactualVRClient\FactualVRClient.wixproj", "{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRFull", "FactualVRFull\FactualVRFull.wixproj", "{951397E1-26F6-4EE1-B837-3EB470D3FFBD}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRFTP", "FactualVRFTP\FactualVRFTP.wixproj", "{2E43213F-E6C3-42BF-B114-4625D10F4585}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRSusan", "FactualVRSusan\FactualVRSusan.wixproj", "{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "FactualVRAgent", "FactualVRAgent\FactualVRAgent.wixproj", "{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Debug|x64.ActiveCfg = Debug|x64
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Debug|x64.Build.0 = Debug|x64
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Debug|x86.ActiveCfg = Debug|x86
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Debug|x86.Build.0 = Debug|x86
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Release|x64.ActiveCfg = Release|x64
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Release|x64.Build.0 = Release|x64
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Release|x86.ActiveCfg = Release|x86
+		{6BFBFA5B-BD28-4526-A711-9EC6BC6B25A9}.Release|x86.Build.0 = Release|x86
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Debug|x64.ActiveCfg = Debug|x64
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Debug|x64.Build.0 = Debug|x64
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Debug|x86.ActiveCfg = Debug|x64
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Release|x64.ActiveCfg = Release|x64
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Release|x64.Build.0 = Release|x64
+		{6C6EE254-6338-4210-AC2E-E7D1A3EDCEA2}.Release|x86.ActiveCfg = Release|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Debug|x64.ActiveCfg = Debug|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Debug|x64.Build.0 = Debug|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Debug|x86.ActiveCfg = Debug|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Release|x64.ActiveCfg = Release|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Release|x64.Build.0 = Release|x64
+		{951397E1-26F6-4EE1-B837-3EB470D3FFBD}.Release|x86.ActiveCfg = Release|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Debug|x64.ActiveCfg = Debug|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Debug|x64.Build.0 = Debug|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Debug|x86.ActiveCfg = Debug|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Release|x64.ActiveCfg = Release|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Release|x64.Build.0 = Release|x64
+		{2E43213F-E6C3-42BF-B114-4625D10F4585}.Release|x86.ActiveCfg = Release|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Debug|x64.ActiveCfg = Debug|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Debug|x64.Build.0 = Debug|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Debug|x86.ActiveCfg = Debug|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Release|x64.ActiveCfg = Release|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Release|x64.Build.0 = Release|x64
+		{8F10F0EF-06CA-47EC-8EEE-EDD923E8F27B}.Release|x86.ActiveCfg = Release|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Debug|x64.ActiveCfg = Debug|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Debug|x64.Build.0 = Debug|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Debug|x86.ActiveCfg = Debug|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Release|x64.ActiveCfg = Release|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Release|x64.Build.0 = Release|x64
+		{C8CE0847-C83C-4918-9FD3-A08C6A293FA9}.Release|x86.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8304833D-3587-406A-9540-9E2351505300}
+	EndGlobalSection
+EndGlobal

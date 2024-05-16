@@ -1,0 +1,2 @@
+C:\Workspace\FVR-API-Installer\Build\FactualVR - Full.exe
+C:\Workspace\FVR-API-Installer\Build\FactualVR - Full.wixpdb

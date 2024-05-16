@@ -1,0 +1,14 @@
+obj\Release\ClientFiles.wixobj
+obj\Release\FtpInstallDirDlg_HK.wixobj
+obj\Release\Product.wixobj
+obj\Release\ServerFiles.wixobj
+obj\Release\WixUI_HK.wixobj
+obj\Release\ClientInstallDirDlg_HK.wixobj
+obj\Release\LicenseAgreementDlg_HK.wixobj
+obj\Release\FactualVRFull.wixproj.BindContentsFileListen-us.txt
+obj\Release\FactualVRFull.wixproj.BindOutputsFileListen-us.txt
+obj\Release\FactualVRFull.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - Full.msi
+C:\Workspace\FVR-API-Installer\Build\en-us\FactualVR - Full.wixpdb
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Full.msi
+C:\Workspace\FVR-Installer\Build\en-us\FactualVR - Full.wixpdb

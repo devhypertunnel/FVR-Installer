@@ -1,0 +1,10 @@
+C:\Workspace\Wix-VS16\Sample\Sample\bin\x64\Release\en-us\Sample.msi
+C:\Workspace\Wix-VS16\Sample\Sample\bin\x64\Release\en-us\Sample.wixpdb
+obj\x64\Release\WixUI_HK.wixobj
+obj\x64\Release\ServerDlg.wixobj
+obj\x64\Release\LicenseAgreementDlg_HK.wixobj
+obj\x64\Release\Product.wixobj
+obj\x64\Release\Sample.wixproj.BindContentsFileListen-us.txt
+obj\x64\Release\Sample.wixproj.BindOutputsFileListen-us.txt
+obj\x64\Release\Sample.wixproj.BindBuiltOutputsFileListen-us.txt
+obj\x64\Release\ReleaseFiles.wixobj
